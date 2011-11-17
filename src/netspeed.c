@@ -1692,5 +1692,5 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 	return TRUE;
 }
 
-MATE_PANEL_APPLET_COMPONENT_FACTORY("OAFIID:MATE_NetspeedApplet_Factory", PANEL_TYPE_APPLET,
+MATE_PANEL_APPLET_MATECOMPONENT_FACTORY("OAFIID:MATE_NetspeedApplet_Factory", PANEL_TYPE_APPLET,
 			PACKAGE, VERSION, (MatePanelAppletFactoryCallback)mate_netspeed_applet_factory, NULL)
