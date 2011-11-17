@@ -1376,6 +1376,7 @@ applet_button_press(GtkWidget *widget, GdkEventButton *event, MateNetspeedApplet
 			applet->connect_dialog = gtk_message_dialog_new(NULL, 
 					GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
 					GTK_MESSAGE_QUESTION, GTK_BUTTONS_YES_NO,
+					"%s",
 					question);
 			response = gtk_dialog_run(GTK_DIALOG(applet->connect_dialog));
 			gtk_widget_destroy (applet->connect_dialog);
@@ -1393,9 +1394,11 @@ applet_button_press(GtkWidget *widget, GdkEventButton *event, MateNetspeedApplet
 
 				if (!g_spawn_command_line_async(command, &error))
 				{
+					
 					dialog = gtk_message_dialog_new(NULL, 
 							GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
 							GTK_MESSAGE_ERROR, GTK_BUTTONS_OK,
+							"%s",
 							error->message);
 					gtk_dialog_run (GTK_DIALOG (dialog));
 					gtk_widget_destroy (dialog);
