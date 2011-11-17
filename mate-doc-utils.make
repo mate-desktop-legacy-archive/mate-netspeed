@@ -1,5 +1,5 @@
-# gnome-doc-utils.make - make magic for building documentation
-# Copyright (C) 2004-2005 Shaun McCance <shaunm@gnome.org>
+# mate-doc-utils.make - make magic for building documentation
+# Copyright (C) 2004-2005 Shaun McCance <shaunm@mate.org>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -60,8 +60,8 @@ $(DOC_H_FILE): $(DOC_H_DOCS);
 	cp $@.tmp $@ && rm -f $@.tmp
 
 dist-check-gdu:
-if !HAVE_GNOME_DOC_UTILS
-	@echo "*** GNOME Doc Utils must be installed in order to make dist"
+if !HAVE_MATE_DOC_UTILS
+	@echo "*** MATE Doc Utils must be installed in order to make dist"
 	@false
 endif
 
@@ -124,11 +124,11 @@ _DOC_ABS_SRCDIR = @abs_srcdir@
 
 _xml2po ?= `which xml2po`
 
-_db2html ?= `$(PKG_CONFIG) --variable db2html gnome-doc-utils`
-_db2omf  ?= `$(PKG_CONFIG) --variable db2omf gnome-doc-utils`
-_chunks  ?= `$(PKG_CONFIG) --variable xmldir gnome-doc-utils`/gnome/xslt/docbook/utils/chunks.xsl
-_credits ?= `$(PKG_CONFIG) --variable xmldir gnome-doc-utils`/gnome/xslt/docbook/utils/credits.xsl
-_ids ?= `$(PKG_CONFIG) --variable xmldir gnome-doc-utils`/gnome/xslt/docbook/utils/ids.xsl
+_db2html ?= `$(PKG_CONFIG) --variable db2html mate-doc-utils`
+_db2omf  ?= `$(PKG_CONFIG) --variable db2omf mate-doc-utils`
+_chunks  ?= `$(PKG_CONFIG) --variable xmldir mate-doc-utils`/mate/xslt/docbook/utils/chunks.xsl
+_credits ?= `$(PKG_CONFIG) --variable xmldir mate-doc-utils`/mate/xslt/docbook/utils/credits.xsl
+_ids ?= `$(PKG_CONFIG) --variable xmldir mate-doc-utils`/mate/xslt/docbook/utils/ids.xsl
 
 if ENABLE_SK
 _ENABLE_SK = true

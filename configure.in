@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT(netspeed_applet, 0.15.2, http://www.wh-hms.uni-ulm.de/~mfcn/netspeed)
+AC_INIT(mate_netspeed_applet, 0.15.2, https://github.com/stefano-k/mate-netspeed)
 AC_CONFIG_SRCDIR(src/netspeed.c)
 AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
 
@@ -16,7 +16,7 @@ AC_PROG_INSTALL
 AC_PROG_MAKE_SET
 
 AM_GLIB_GNU_GETTEXT
-GETTEXT_PACKAGE=netspeed_applet
+GETTEXT_PACKAGE=mate_netspeed_applet
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", GETTEXT_PACKAGE)
 
@@ -25,7 +25,7 @@ PKG_CHECK_MODULES(NETSPEED, libmatepanelapplet-2.0 libgtop-2.0 >= 2.14.2)
 AC_SUBST(NETSPEED_APPLET_CFLAGS)
 AC_SUBST(NETSPEED_APPLET_LIBS)
 
-GNOME_DOC_INIT
+MATE_DOC_INIT
 
 ac_have_iwevgenie=no
 AC_MSG_CHECKING([for wireless-tools >= 28pre9])
@@ -44,7 +44,7 @@ if test "$ac_have_iwevgenie" = yes; then
 fi
 
 AC_OUTPUT([
-netspeed_applet.spec
+mate_netspeed_applet.spec
 Makefile
 icons/Makefile
 icons/16x16/Makefile
