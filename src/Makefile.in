@@ -36,7 +36,7 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
-libexec_PROGRAMS = netspeed_applet2$(EXEEXT)
+libexec_PROGRAMS = mate_netspeed_applet2$(EXEEXT)
 subdir = src
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -49,10 +49,10 @@ CONFIG_CLEAN_FILES =
 am__installdirs = "$(DESTDIR)$(libexecdir)"
 libexecPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(libexec_PROGRAMS)
-am_netspeed_applet2_OBJECTS = backend.$(OBJEXT) netspeed.$(OBJEXT)
-netspeed_applet2_OBJECTS = $(am_netspeed_applet2_OBJECTS)
+am_mate_netspeed_applet2_OBJECTS = backend.$(OBJEXT) netspeed.$(OBJEXT)
+mate_netspeed_applet2_OBJECTS = $(am_netspeed_applet2_OBJECTS)
 am__DEPENDENCIES_1 =
-netspeed_applet2_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+mate_netspeed_applet2_DEPENDENCIES = $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
 DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
@@ -65,8 +65,8 @@ LTCOMPILE = $(LIBTOOL) --tag=CC --mode=compile $(CC) $(DEFS) \
 CCLD = $(CC)
 LINK = $(LIBTOOL) --tag=CC --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 	$(AM_LDFLAGS) $(LDFLAGS) -o $@
-SOURCES = $(netspeed_applet2_SOURCES)
-DIST_SOURCES = $(netspeed_applet2_SOURCES)
+SOURCES = $(mate_netspeed_applet2_SOURCES)
+DIST_SOURCES = $(mate_netspeed_applet2_SOURCES)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
@@ -112,8 +112,8 @@ GETTEXT_PACKAGE = @GETTEXT_PACKAGE@
 GMOFILES = @GMOFILES@
 GMSGFMT = @GMSGFMT@
 GREP = @GREP@
-HAVE_GNOME_DOC_UTILS_FALSE = @HAVE_GNOME_DOC_UTILS_FALSE@
-HAVE_GNOME_DOC_UTILS_TRUE = @HAVE_GNOME_DOC_UTILS_TRUE@
+HAVE_MATE_DOC_UTILS_FALSE = @HAVE_MATE_DOC_UTILS_FALSE@
+HAVE_MATE_DOC_UTILS_TRUE = @HAVE_MATE_DOC_UTILS_TRUE@
 HELP_DIR = @HELP_DIR@
 INSTALL_DATA = @INSTALL_DATA@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
@@ -234,14 +234,14 @@ sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
 target_alias = @target_alias@
 INCLUDES = -I$(top_srcdir) -I$(includedir) $(NETSPEED_CFLAGS) $(NETSPEED_LIBGTOP_CFLAGS) \
-       -DGNOMELOCALEDIR=\""$(datadir)/locale"\" \
+       -DMATELOCALEDIR=\""$(datadir)/locale"\" \
        -DDATADIR=\""$(datadir)/"\" \
        -DPREFIX=\""$(prefix)/"\" \
        -DLIBDIR=\""$(libdir)/"\" \
        -DSYSCONFDIR=\""$(sysconfdir)/"\"
 
-netspeed_applet2_SOURCES = backend.h backend.c netspeed.c
-netspeed_applet2_LDADD = $(NETSPEED_LIBS) $(NETSPEED_LIBGTOP_LIBS) $(IWLIB) $(INTLLIBS)
+mate_netspeed_applet2_SOURCES = backend.h backend.c netspeed.c
+mate_netspeed_applet2_LDADD = $(NETSPEED_LIBS) $(NETSPEED_LIBGTOP_LIBS) $(IWLIB) $(INTLLIBS)
 all: all-am
 
 .SUFFIXES:
@@ -303,9 +303,9 @@ clean-libexecPROGRAMS:
 	  echo " rm -f $$p $$f"; \
 	  rm -f $$p $$f ; \
 	done
-netspeed_applet2$(EXEEXT): $(netspeed_applet2_OBJECTS) $(netspeed_applet2_DEPENDENCIES) 
-	@rm -f netspeed_applet2$(EXEEXT)
-	$(LINK) $(netspeed_applet2_LDFLAGS) $(netspeed_applet2_OBJECTS) $(netspeed_applet2_LDADD) $(LIBS)
+mate_netspeed_applet2$(EXEEXT): $(netspeed_applet2_OBJECTS) $(netspeed_applet2_DEPENDENCIES) 
+	@rm -f mate_netspeed_applet2$(EXEEXT)
+	$(LINK) $(mate_netspeed_applet2_LDFLAGS) $(mate_netspeed_applet2_OBJECTS) $(mate_netspeed_applet2_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)

@@ -5,9 +5,9 @@ context = devices
 iconsdir = $(themedir)/$(size)/$(context)
 
 icons_DATA = \
-	netspeed-loopback.png \
-	netspeed-plip.png \
-	netspeed-ppp.png 
+	mate-netspeed-loopback.png \
+	mate-netspeed-plip.png \
+	mate-netspeed-ppp.png 
 
 EXTRA_DIST =		\
 	$(icons_DATA)

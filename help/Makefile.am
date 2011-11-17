@@ -1,7 +1,7 @@
-include $(top_srcdir)/gnome-doc-utils.make
+include $(top_srcdir)/mate-doc-utils.make
 dist-hook: doc-dist-hook
 
-DOC_MODULE = netspeed_applet
+DOC_MODULE = mate_netspeed_applet
 DOC_ENTITIES = legal.xml
 DOC_INCLUDES = 
 DOC_FIGURES = \
@@ -9,7 +9,7 @@ figures/details.png \
 figures/ethernet.png \
 figures/eth_sum_48.png \
 figures/loopback.png \
-figures/netspeed_applet.png \
+figures/mate_netspeed_applet.png \
 figures/plip.png \
 figures/ppp.png \
 figures/settings.png \

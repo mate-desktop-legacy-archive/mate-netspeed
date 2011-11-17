@@ -5,8 +5,8 @@ INCLUDES = -I$(top_srcdir) -I$(includedir) $(NETSPEED_CFLAGS) $(NETSPEED_LIBGTOP
        -DLIBDIR=\""$(libdir)/"\" \
        -DSYSCONFDIR=\""$(sysconfdir)/"\"
 
-libexec_PROGRAMS = netspeed_applet2
+libexec_PROGRAMS = mate_netspeed_applet2
 
-netspeed_applet2_SOURCES = backend.h backend.c netspeed.c
+mate_netspeed_applet2_SOURCES = backend.h backend.c netspeed.c
 
-netspeed_applet2_LDADD = $(NETSPEED_LIBS) $(NETSPEED_LIBGTOP_LIBS) $(IWLIB) $(INTLLIBS)
+mate_netspeed_applet2_LDADD = $(NETSPEED_LIBS) $(NETSPEED_LIBGTOP_LIBS) $(IWLIB) $(INTLLIBS)

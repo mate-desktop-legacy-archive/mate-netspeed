@@ -5,7 +5,7 @@ context = apps
 iconsdir = $(themedir)/$(size)/$(context)
 
 icons_DATA = \
-	netspeed-applet.png
+	mate-netspeed-applet.png
 
 EXTRA_DIST =		\
 	$(icons_DATA)

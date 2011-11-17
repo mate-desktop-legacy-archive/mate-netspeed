@@ -1,21 +1,21 @@
 Summary: Applet that shows traffic on a network device
-Name: netspeed_applet
+Name: mate_netspeed_applet
 Version: 0.15.2
 Release: 1
-URL: http://mfcn.ilo.de/netspeed_applet/
+URL: https://github.com/stefano-k/mate-netspeed/
 Source0: %{name}-%{version}.tar.gz
 License: GPL
-Group: Gnome/Applets
+Group: Mate/Applets
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 Prefix: %{_prefix}
 BuildRequires: pkgconfig
 BuildRequires: intltool
-BuildRequires: gnome-panel-devel
-BuildRequires: libgnomeui-devel
+BuildRequires: mate-panel-devel
+BuildRequires: libmateui-devel
 BuildRequires: libgtop-devel
 
 %description
-netspeed_applet is a little GNOME applet that shows the traffic on a
+mate_netspeed_applet is a little MATE applet that shows the traffic on a
 specified network device (for example eth0) in kbytes/s.
 
 %prep
@@ -28,14 +28,14 @@ specified network device (for example eth0) in kbytes/s.
 %install
 rm -rf %{buildroot}
 %makeinstall
-%find_lang netspeed_applet
+%find_lang mate_netspeed_applet
 
 %clean
 rm -rf %{buildroot}
 
-%files -f netspeed_applet.lang
+%files -f mate_netspeed_applet.lang
 %defattr(-,root,root)
 %doc AUTHORS COPYING NEWS README TODO
 %{prefix}/libexec/*
-%{prefix}/lib/bonobo/servers/*
+%{prefix}/lib/matecomponent/servers/*
 %{prefix}/share/pixmaps/*
