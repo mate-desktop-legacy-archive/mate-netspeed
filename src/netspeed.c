@@ -933,7 +933,7 @@ changeicon_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
 
 /* Creates the settings dialog
  * After its been closed, take the new values and store
- * them in the gconf database
+ * them in the mateconf database
  */
 static void
 settings_cb(MateComponentUIComponent *uic, gpointer data, const gchar *verbname)

@@ -1,5 +1,5 @@
 INCLUDES = -I$(top_srcdir) -I$(includedir) $(NETSPEED_CFLAGS) $(NETSPEED_LIBGTOP_CFLAGS) \
-       -DGNOMELOCALEDIR=\""$(datadir)/locale"\" \
+       -DMATELOCALEDIR=\""$(datadir)/locale"\" \
        -DDATADIR=\""$(datadir)/"\" \
        -DPREFIX=\""$(prefix)/"\" \
        -DLIBDIR=\""$(libdir)/"\" \
