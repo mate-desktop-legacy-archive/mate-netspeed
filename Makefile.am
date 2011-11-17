@@ -1,7 +1,7 @@
 SUBDIRS = help icons po src
 
-serverdir = $(libdir)/bonobo/servers
-server_DATA = GNOME_NetspeedApplet.server
+serverdir = $(libdir)/matecomponent/servers
+server_DATA = MATE_NetspeedApplet.server
 server_in_files = $(server_DATA:=.in)
 server_in_in_files = $(server_in_files:=.in)
 @INTLTOOL_SERVER_RULE@
@@ -9,7 +9,7 @@ server_in_in_files = $(server_in_files:=.in)
 distuninstallcheck_listfiles = find . -type f -print | grep -v scrollkeeper
 
 spec = $(PACKAGE).spec
-EXTRA_DIST = GNOME_NetspeedApplet.server.in.in \
+EXTRA_DIST = MATE_NetspeedApplet.server.in.in \
              $(spec) \
              gnome-doc-utils.make \
              intltool-update.in \
@@ -23,7 +23,7 @@ $(server_in_files): $(server_in_in_files) Makefile
 
 CLEANFILES = $(server_DATA)
 DISTCLEANFILES = \
-                 gnome-doc-utils.make \
+                 mate-doc-utils.make \
                  intltool-extract \
                  intltool-merge \
                  intltool-update \
