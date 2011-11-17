@@ -268,7 +268,7 @@ change_background_cb(MatePanelApplet *applet_widget,
 	gtk_rc_style_unref (rc_style);
 
 	switch (type) {
-		case MATE_PANEL_PIXMAP_BACKGROUND:
+		case PANEL_PIXMAP_BACKGROUND:
 			style = gtk_style_copy (GTK_WIDGET (applet_widget)->style);
 			if(style->bg_pixmap[GTK_STATE_NORMAL])
 				g_object_unref (style->bg_pixmap[GTK_STATE_NORMAL]);
@@ -277,11 +277,11 @@ change_background_cb(MatePanelApplet *applet_widget,
 			g_object_unref (style);
 			break;
 
-		case MATE_PANEL_COLOR_BACKGROUND:
+		case PANEL_COLOR_BACKGROUND:
 			gtk_widget_modify_bg(GTK_WIDGET(applet_widget), GTK_STATE_NORMAL, color);
 			break;
 
-		case MATE_PANEL_NO_BACKGROUND:
+		case PANEL_NO_BACKGROUND:
 			break;
 	}
 }
@@ -769,7 +769,7 @@ display_help (GtkWidget *dialog, const gchar *section)
 /* Opens gnome help application
  */
 static void
-help_cb (MateComponentUI *uic, MateNetspeedApplet *ap, const gchar *verbname)
+help_cb (MateComponentUIComponent *uic, MateNetspeedApplet *ap, const gchar *verbname)
 {
 	display_help (GTK_WIDGET (ap->applet), NULL);
 }
@@ -816,7 +816,7 @@ handle_links (GtkAboutDialog *about, const gchar *link, gpointer data)
 /* Just the about window... If it's already open, just fokus it
  */
 static void
-about_cb(MateComponentUI *uic, gpointer data, const gchar *verbname)
+about_cb(MateComponentUIComponent *uic, gpointer data, const gchar *verbname)
 {
 	const char *authors[] = 
 	{
@@ -936,7 +936,7 @@ changeicon_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
  * them in the gconf database
  */
 static void
-settings_cb(MateComponentUI *uic, gpointer data, const gchar *verbname)
+settings_cb(MateComponentUIComponent *uic, gpointer data, const gchar *verbname)
 {
 	MateNetspeedApplet *applet = (MateNetspeedApplet*)data;
 	GtkWidget *vbox;
@@ -1133,7 +1133,7 @@ info_response_cb (GtkDialog *dialog, gint id, MateNetspeedApplet *applet)
 /* Creates the details dialog
  */
 static void
-showinfo_cb(MateComponentUI *uic, gpointer data, const gchar *verbname)
+showinfo_cb(MateComponentUIComponent *uic, gpointer data, const gchar *verbname)
 {
 	MateNetspeedApplet *applet = (MateNetspeedApplet*)data;
 	GtkWidget *box, *hbox;
@@ -1503,7 +1503,7 @@ mate_netspeed_leave_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data
 /* The "main" function of the applet
  */
 static gboolean
-mate_netspeed_applet_factory(PanelApplet *applet_widget, const gchar *iid, gpointer data)
+mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, gpointer data)
 {
 	MateNetspeedApplet *applet;
 	int i;
@@ -1692,5 +1692,5 @@ mate_netspeed_applet_factory(PanelApplet *applet_widget, const gchar *iid, gpoin
 	return TRUE;
 }
 
-MATE_PANEL_APPLET_COMPONENT_FACTORY("OAFIID:MATE_NetspeedApplet_Factory", MATE_PANEL_TYPE_APPLET,
+MATE_PANEL_APPLET_COMPONENT_FACTORY("OAFIID:MATE_NetspeedApplet_Factory", PANEL_TYPE_APPLET,
 			PACKAGE, VERSION, (MatePanelAppletFactoryCallback)mate_netspeed_applet_factory, NULL)
