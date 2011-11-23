@@ -32,13 +32,13 @@
 
  /* Icons for the interfaces */
 static const char* const dev_type_icon[DEV_UNKNOWN + 1] = {
-	"mate-netspeed-loopback",         /* DEV_LO */
-	"mate-network-wired",             /* DEV_ETHERNET */
-	"mate-network-wireless",          /* DEV_WIRELESS */
-	"mate-netspeed-ppp",              /* DEV_PPP */
-	"mate-netspeed-plip",             /* DEV_PLIP */
-	"mate-netspeed-plip",             /* DEV_SLIP */
-	"mate-network-workgroup",         /* DEV_UNKNOWN */
+	"mate-netspeed-loopback",    /* DEV_LO */
+	"network-wired",             /* DEV_ETHERNET */
+	"network-wireless",          /* DEV_WIRELESS */
+	"mate-netspeed-ppp",         /* DEV_PPP */
+	"mate-netspeed-plip",        /* DEV_PLIP */
+	"mate-netspeed-plip",        /* DEV_SLIP */
+	"network-workgroup",         /* DEV_UNKNOWN */
 };
 
 static const char* wireless_quality_icon[] = {
@@ -824,7 +824,8 @@ about_cb(MateComponentUIComponent *uic, gpointer data, const gchar *verbname)
 		"Dennis Cranston <dennis_cranston@yahoo.com>",
 		"Pedro Villavicencio Garrido <pvillavi@gnome.org>",
 		"Benoît Dejean <benoit@placenet.org>",
-        "Stefano Karapetsas <stefano@karapetsas.com>",
+		"Stefano Karapetsas <stefano@karapetsas.com>",
+		"Perberos <perberos@gmail.com>",
 		NULL
 	};
     
