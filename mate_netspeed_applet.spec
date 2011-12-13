@@ -1,6 +1,6 @@
 Summary: Applet that shows traffic on a network device
 Name: mate_netspeed_applet
-Version: 0.15.2
+Version: 1.1.0
 Release: 1
 URL: https://github.com/stefano-k/mate-netspeed/
 Source0: %{name}-%{version}.tar.gz
