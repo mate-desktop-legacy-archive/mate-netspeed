@@ -842,8 +842,8 @@ about_cb(MateComponentUIComponent *uic, gpointer data, const gchar *verbname)
 			       "authors", authors, 
 			       "documenters", NULL, 
 			       "translator-credits", _("translator-credits"),
-			       "website", "https://github.com/stefano-k/mate-netspeed/",
-			       "website-label", _("Mate Netspeed Website"),
+			       "website", "http://www.mate-desktop.org/",
+			       "website-label", _("MATE Website"),
 			       "logo-icon-name", LOGO_ICON,
 			       NULL);
 	
