@@ -1,3 +1,74 @@
+commit fcc3bfa53e2795be1815ecee53776f29d86eeef3
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Thu Jul 12 12:43:44 2012 +0200
+
+    sync translations with transifex
+
+ po/LINGUAS              |    6 +-
+ po/af.po                |  259 +++++++++++++++++++++++++++++++++++++++
+ po/ar.po                |  252 ++++++++++++++++++--------------------
+ po/ast.po               |  259 +++++++++++++++++++++++++++++++++++++++
+ po/cs.po                |  274 ++++++++++++++++++++++--------------------
+ po/el.po                |  234 +++++++++++++++++-------------------
+ po/es.po                |  184 +++++++++++++---------------
+ po/eu.po                |  175 +++++++++++++--------------
+ po/fi.po                |  191 +++++++++++++----------------
+ po/fr.po                |  182 +++++++++++++---------------
+ po/gnome-copyrights.txt |  283 +++++++++++++++++++++++++++++++++++++++++++
+ po/he.po                |  259 +++++++++++++++++++++++++++++++++++++++
+ po/hu.po                |  233 +++++++++++++++++------------------
+ po/id.po                |  259 +++++++++++++++++++++++++++++++++++++++
+ po/it.po                |  276 ++++++++++++++++++++++--------------------
+ po/ja.po                |  234 ++++++++++++++++++------------------
+ po/lt.po                |  174 ++++++++++++---------------
+ po/ms.po                |  307 +++++++++++++++++++++++++----------------------
+ po/nb.po                |  171 +++++++++++++-------------
+ po/oc.po                |  248 ++++++++++++++++++--------------------
+ po/pl.po                |  220 +++++++++++++--------------------
+ po/ps.po                |  236 +++++++++++++++++-------------------
+ po/pt.po                |  225 ++++++++++++++++------------------
+ po/ro.po                |  256 ++++++++++++++++++++++-----------------
+ po/ru.po                |  257 ++++++++++++++++++---------------------
+ po/sl.po                |  183 +++++++++++++---------------
+ po/sv.po                |  195 +++++++++++++-----------------
+ po/tr.po                |  284 +++++++++++++++++++++++--------------------
+ po/uk.po                |  259 +++++++++++++++++++++++++++++++++++++++
+ po/zh_CN.po             |  279 +++++++++++++++++++++---------------------
+ 30 files changed, 4120 insertions(+), 2734 deletions(-)
+
+commit 806a381098c2a4ef0681ba81378aa5c6dba428cd
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Thu Jul 12 12:35:11 2012 +0200
+
+    fix combobox interface selection
+    fix help links
+
+ src/netspeed.c |    6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit bb0da06fd8ebab37f2a277f74db2abff3ed9a78a
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sun Mar 11 17:09:06 2012 +0100
+
+    update translations (de, et, nl, pt_BR)
+
+ po/de.po    |  247 +++++++++++++++++++++++---------------------------
+ po/et.po    |  290 +++++++++++++++++++++++++++++++----------------------------
+ po/nl.po    |  276 +++++++++++++++++++++++++-------------------------------
+ po/pt_BR.po |  206 ++++++++++++++++++------------------------
+ 4 files changed, 473 insertions(+), 546 deletions(-)
+
+commit b2d9ff1dcc15011a4f0f50211b08ebfb32608acc
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sun Mar 11 17:07:44 2012 +0100
+
+    prepare for 1.2 release
+
+ ChangeLog    |  972 +++++++++++++++++++++++++---------------------------------
+ autogen.sh   |    4 +-
+ configure.in |    2 +-
+ 3 files changed, 421 insertions(+), 557 deletions(-)
+
 commit 3d93a9d6bd7d6b3ec0019ef9d76292331aa66477
 Author: Stefano Karapetsas <stefano@karapetsas.com>
 Date:   Sun Mar 11 16:51:16 2012 +0100
@@ -15,7 +86,7 @@ Date:   Tue Jan 10 14:24:03 2012 -0500
     Fixed translator address
 
  po/ChangeLog |    2 +-
- 1 files changed, 1 insertions(+), 1 deletions(-)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 3820659eddac5b8f98b5d6f5e2097d01912f6f27
 Author: Stefano Karapetsas <stefano@karapetsas.com>
@@ -24,7 +95,7 @@ Date:   Thu Dec 29 17:07:06 2011 +0100
     updated info for MATE
 
  src/netspeed.c |    4 ++--
- 1 files changed, 2 insertions(+), 2 deletions(-)
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 
 commit 5480cc5b235147fcf6ed78e01f7134159bec9165
 Author: Stefano Karapetsas <stefano@karapetsas.com>
@@ -33,7 +104,7 @@ Date:   Tue Dec 13 23:36:46 2011 +0100
     other version fix
 
  mate_netspeed_applet.spec |    2 +-
- 1 files changed, 1 insertions(+), 1 deletions(-)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit fa16a2f20d5bad0e087c8493ab1bfc848f453b94
 Author: Stefano Karapetsas <stefano@karapetsas.com>
@@ -72,7 +143,7 @@ Date:   Tue Dec 13 23:35:27 2011 +0100
  mkinstalldirs                   |  158 -
  po/Makefile.in.in               |  218 -
  src/Makefile.in                 |  522 -
- 31 files changed, 0 insertions(+), 42526 deletions(-)
+ 31 files changed, 42526 deletions(-)
 
 commit b391451ab2823c0203d3fecea7a919f7f1a469d7
 Author: Steve Zesch <stevezesch2@gmail.com>
@@ -81,7 +152,7 @@ Date:   Fri Dec 9 23:44:26 2011 -0500
     updated version
 
  configure.in |    2 +-
- 1 files changed, 1 insertions(+), 1 deletions(-)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit f7f8313f7204d0e326c496339cfd95ed321618ff
 Author: Steve Zesch <stevezesch2@gmail.com>
@@ -90,7 +161,7 @@ Date:   Fri Dec 2 21:04:20 2011 -0500
     Changed version to 2011.12.01
 
  configure.in |    2 +-
- 1 files changed, 1 insertions(+), 1 deletions(-)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 79642b65373a1e350dada28623b07c95289e6b4c
 Author: Stefano Karapetsas <stefano@karapetsas.com>
@@ -99,7 +170,7 @@ Date:   Wed Nov 23 16:40:12 2011 +0100
     fixed applet icon
 
  MATE_NetspeedApplet.server.in.in |    2 +-
- 1 files changed, 1 insertions(+), 1 deletions(-)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 3bf16266d2c59fc34314afd251a8d12aced9a436
 Author: Stefano Karapetsas <stefano@karapetsas.com>
@@ -108,7 +179,7 @@ Date:   Wed Nov 23 16:06:17 2011 +0100
     fixed icons
 
  src/netspeed.c |   17 +++++++++--------
- 1 files changed, 9 insertions(+), 8 deletions(-)
+ 1 file changed, 9 insertions(+), 8 deletions(-)
 
 commit 4fa24bf7335c8bd44099ae31920a1eab69be1c8d
 Author: Perberos <perberos@gmail.com>
@@ -117,7 +188,7 @@ Date:   Thu Nov 17 15:26:57 2011 -0200
     Update MATE_NetspeedApplet.server.in.in
 
  MATE_NetspeedApplet.server.in.in |    2 +-
- 1 files changed, 1 insertions(+), 1 deletions(-)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 166dbfba027aab6b6d0673def98763a6d87a50fe
 Author: Perberos <perberos@gmail.com>
@@ -126,7 +197,7 @@ Date:   Thu Nov 17 15:16:46 2011 -0200
     Update MATE_NetspeedApplet.server.in.in
 
  MATE_NetspeedApplet.server.in.in |   16 ++++++++--------
- 1 files changed, 8 insertions(+), 8 deletions(-)
+ 1 file changed, 8 insertions(+), 8 deletions(-)
 
 commit 01c6f8061186c6402f845619419fe593fca0a614
 Author: Perberos <perberos@gmail.com>
@@ -135,7 +206,7 @@ Date:   Thu Nov 17 13:22:03 2011 -0200
     quick fix
 
  src/netspeed.c |    3 +++
- 1 files changed, 3 insertions(+), 0 deletions(-)
+ 1 file changed, 3 insertions(+)
 
 commit e35849946a39147cc21332fb49e26debed7b57e9
 Author: Stefano Karapetsas <stefano@karapetsas.com>
@@ -154,7 +225,7 @@ Date:   Thu Nov 17 15:37:20 2011 +0100
     fixed error in netspeed.c
 
  src/netspeed.c |    2 +-
- 1 files changed, 1 insertions(+), 1 deletions(-)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 3b50696d43c7a65b863b247f6d547133e0d4c6dd
 Author: Stefano Karapetsas <stefano@karapetsas.com>
@@ -163,7 +234,7 @@ Date:   Thu Nov 17 14:50:19 2011 +0100
     fixed netspeed.c
 
  src/netspeed.c |   18 +++++++++---------
- 1 files changed, 9 insertions(+), 9 deletions(-)
+ 1 file changed, 9 insertions(+), 9 deletions(-)
 
 commit 062c8175e13e1c7d7d4076e5f79bac89d754420f
 Author: Stefano Karapetsas <stefano@karapetsas.com>
@@ -172,7 +243,7 @@ Date:   Thu Nov 17 12:39:50 2011 +0100
     added autogen.sh
 
  autogen.sh |   24 ++++++++++++++++++++++++
- 1 files changed, 24 insertions(+), 0 deletions(-)
+ 1 file changed, 24 insertions(+)
 
 commit d759aced70fe4d73e60de1fb0888804d01e7a6a8
 Author: Stefano Karapetsas <stefano@karapetsas.com>
@@ -201,7 +272,7 @@ Date:   Thu Nov 17 10:44:29 2011 +0100
     updated configure script
 
  configure |   42 +++++++++++++++++++++---------------------
- 1 files changed, 21 insertions(+), 21 deletions(-)
+ 1 file changed, 21 insertions(+), 21 deletions(-)
 
 commit d5b2704fa51c3e4f3b910c470802b2a02c639bfb
 Author: Stefano Karapetsas <stefano@karapetsas.com>
@@ -231,7 +302,7 @@ Date:   Thu Nov 17 02:14:30 2011 +0100
     updated configure
 
  configure |   52 ++++++++++++++++++++++++++--------------------------
- 1 files changed, 26 insertions(+), 26 deletions(-)
+ 1 file changed, 26 insertions(+), 26 deletions(-)
 
 commit 7583d144cbda3a51a5f86021bcc28e62a680fc15
 Author: Stefano Karapetsas <stefano@karapetsas.com>
@@ -308,7 +379,7 @@ Date:   Thu Nov 17 02:11:52 2011 +0100
  src/Makefile.am                                   |    6 +-
  src/Makefile.in                                   |   28 +-
  src/backend.c                                     |    2 +
- src/netspeed.c                                    |  233 +++++----
+ src/netspeed.c                                    |  233 ++++-----
  70 files changed, 1408 insertions(+), 1402 deletions(-)
 
 commit e47eaef46e38c313e8ae1186e00ddcef165f069c
@@ -459,4 +530,4 @@ Date:   Thu Nov 17 01:19:22 2011 +0100
  src/backend.c                                |  316 +
  src/backend.h                                |   95 +
  src/netspeed.c                               | 1693 ++
- 142 files changed, 73871 insertions(+), 0 deletions(-)
+ 142 files changed, 73871 insertions(+)
