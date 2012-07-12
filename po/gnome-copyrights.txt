@@ -1,0 +1,283 @@
+========== ar.po ==========
+# Arabic translations for PACKAGE package.
+# Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2008.
+#
+
+
+
+
+========== cs.po ==========
+# Netspeed applet cs.po
+# Copyright (C) 2002 Michal Bukovjan
+# This file is distributed under the same license as the Netspeed package.
+# Michal Bukovjan <bukm@centrum.cz>, 2002.
+#
+
+
+
+
+========== de.po ==========
+# translation of netspeed_applet.
+# Copyright (C) 2002 Free Software Foundation, Inc.
+# Jörgen Scheibengruber <mfcn@gmx.de>, 2002.
+# Hendrik Richter <hendi@gnome-de.org>, 2005.
+# Andre Klapper <ak-47@gmx.net>, 2008.
+# 
+
+
+
+
+========== el.po ==========
+# translation of el.po to Greek
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Simos Xenitellis <simos@gnome.org>, 2008.
+
+
+
+
+========== es.po ==========
+# translation of netspeed.HEAD.po to Español
+# Héctor Enríquez Díaz <henrique@alumnos.ubiobio.cl> 2005.
+#
+# Ramón Rey Vicente <ramon.rey@hispalinux.es>, 2003.
+# Daniel Mustieles <daniel.mustieles@ie.edu>, 2008.
+# Jorge González <jorgegonz@svn.gnome.org>, 2008.
+
+
+
+
+========== et.po ==========
+# netspeed rakendi eesti tõlge.
+# Copyright (C) 2002, 2003 Free Software Foundation, Inc.
+# Tõivo Leedjärv <toivo@linux.ee>, 2002, 2003.
+#
+
+
+
+
+========== eu.po ==========
+# translation of eu.po to Basque
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008.
+
+
+
+
+========== fi.po ==========
+# Finnish messages for netspeed_applet
+# Copyright (C) 2006-2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the netspeed package.
+# Ilkka Tuohela <hile@iki.fi>, 2006-2008
+#
+
+
+
+
+========== fr.po ==========
+# traduction de netspeed_applet
+# Copyright (C) 2002-2008 THE NetSpeed_applet'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the NetSpeed_applet package.
+#
+# Benoît Dejean <benoit@placenet.org>, 2005-2006.
+# Christophe Merlet <christophe@merlet.net>, 2002.
+# Baptiste MILLE-MATHIAS <bmm80@ifrance.com>, 2002.
+# Sebastien Bacher <seb128@debian.org>, 2005.
+#
+
+
+
+
+========== hu.po ==========
+# Netspeed Applet Hungarian translation.
+# Andras Timar <timar@gnome.hu>, 2002.
+# Gabor Kelemen <kelemeng@gnome.hu>, 2006, 2008.
+# Copyright (C) 2002, Free Software Foundation
+# This file is distributed under the same license as the Netspeed Applet package.
+
+
+
+
+========== it.po ==========
+# Translation of netspeed_applet.
+# Copyright (C) 2002 THE netspeed_applet'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the netspeed_applet package.
+# Lapo Calamandrei <lapo.calamandrei@virgilio.it>, 2002.
+# Roberto Inzerillo <robicd@gmx.net>, 2005.
+# 
+# 
+
+
+
+
+========== ja.po ==========
+# netspeed_applet ja.po.
+# Copyright (C) 2003, 2005, 2006 Free Software Foundation, Inc.
+# This file is distributed under the same license as the netspeed_applet package.
+# Takeshi AIHANA <aihana@gnome.gr.jp>, 2003, 2005, 2006.
+#
+
+
+
+
+========== lt.po ==========
+# translation of lt to Lithuanian
+# Copyright (C) 2008 Gintautas Miliauskas
+# This file is distributed under the same license as the netspeed package.
+#
+# Gintautas Miliauskas <gintas@akl.lt>, 2008.
+
+
+
+
+========== ms.po ==========
+# Malay translation of netspeed.
+# Copyright (C) 2002 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Hasbullah Bin Pit (sebol) <sebol@ikhlas.com>, 2002.
+#
+
+
+
+
+========== nb.po ==========
+# Norwegian (bokmål dialect) translation of the netspeed
+# Copyright (C) 1998, 1999 Free Software Foundation, Inc.
+# Kjartan Maraas <kmaraas@broadpark.no>, 1998-2008.
+# Eskild Hustvedt <i18n@zerodogg.org>, 2007
+#
+
+
+
+
+========== nl.po ==========
+# Dutch translation of Netspeed-applet.
+# Copyright (C) 2002 Free Software Foundation, Inc.
+#
+# Vincent van Adrighem <V.vanAdrighem@dirck.mine.nu>, 2002.
+# Wouter Bolsterlee <uws+gnome@xs4all.nl>, 2006.
+# 
+
+
+
+
+========== oc.po ==========
+# Occitan translation of netspeed_applet
+# Copyright (C) 2002-2006 THE NetSpeed_applet'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the NetSpeed_applet package.
+#
+# Yannig MARCHEGAY (yannig@marchegay.org) - 2006-2007
+#
+
+
+
+
+========== pl.po ==========
+# Netspeed applet pl.po
+# Copyright (C) 2006 Paweł Marciniak
+# This file is distributed under the same license as the Netspeed package.
+#
+#
+# Paweł Marciniak <pmarciniak@lodz.home.pl>, 2006.
+# Julian Sikorski <belegdol@gmail.com>, 2008.
+
+
+
+
+========== ps.po ==========
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+
+
+
+
+========== pt.po ==========
+# Netspeed-applet's portuguese translation
+# Copyright © 2008 Netspeed-applet
+# This file is distributed under the same license as the Netspeed-applet package.
+# António Lima <amrlima@gmail.com>, 2008.
+#
+
+
+
+
+========== pt_BR.po ==========
+# Brazilian Portuguese translation of netspeed.
+# This file is distributed under the same license as the netspeed package.
+# Leonardo Gregianin <leogregianin@gmail.com>, 2006-2008.
+# Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
+#
+
+
+
+
+========== ro.po ==========
+# Romanian translation of netspeed_applet.
+# Copyright (C) 2003 THE netspeed_applet'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the netspeed_applet package.
+# Mugurel Tudor <mugurelu@go.ro>, 2003.
+# , fuzzy
+# 
+# 
+
+
+
+
+========== ru.po ==========
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Nail Abdrahmanov <nail@gella.com.ru>, 2002.
+# Диконов Вячеслав (Vyacheslav Dikonov) <slava@altlinux.ru>, 2002. 
+
+
+
+
+========== sl.po ==========
+# This file is distributed under the same license as the netspeed package.
+#
+# Matej Urbančič <mateju@svn.gnome.org>, 2008.
+#
+
+
+
+
+========== sv.po ==========
+# Swedish translation of Netspeed Applet.
+# Copyright (C) 2004, 2006, 2008 Jörgen Scheibengruber <mfcn@gmx.de>
+# This file is distributed under the same license as the Netspeed package.
+# Daniel Nylander <po@danielnylander.se>, 2006, 2008.
+# Joakim Lundborg <jl@kth.se>, 2004.
+#
+#
+
+
+
+
+========== tr.po ==========
+# translation of neetspeed.tr.po.
+# Copyright (C) 2002,2003 Free Software Foundation, Inc.
+# Arman Aksoy <armish@linux-sevenler.de>, 2003.
+#
+
+
+
+
+========== zh_CN.po ==========
+# Netspeed applet zh_CN.po
+# Copyright (C) 2002 Zhengang Li
+# This file is distributed under the same license as the Netspeed package.
+# Zhengang Li  <iamme@etang.com>, 2002.
+#
+
+
+
+
