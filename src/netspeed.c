@@ -743,9 +743,9 @@ display_help (GtkWidget *dialog, const gchar *section)
 	char *uri;
 
 	if (section)
-		uri = g_strdup_printf ("ghelp:mate_netspeed_applet?%s", section);
+		uri = g_strdup_printf ("http://wiki.mate-desktop.org/docs:mate-netspeed#%s", section);
 	else
-		uri = g_strdup ("ghelp:mate_netspeed_applet");
+		uri = g_strdup ("http://wiki.mate-desktop.org/docs:mate-netspeed");
 
 	ret = open_uri (dialog, uri, &error);
 	g_free (uri);
@@ -1028,7 +1028,7 @@ settings_cb(MateComponentUIComponent *uic, gpointer data, const gchar *verbname)
 	ptr = devices = get_available_devices();
 	for (i = 0; ptr; ptr = g_list_next(ptr)) {
 		gtk_combo_box_append_text(GTK_COMBO_BOX(applet->network_device_combo), ptr->data);
-		if (g_str_equal(ptr->data, applet->devinfo.name)) active = i;
+		if (g_str_equal(ptr->data, applet->devinfo.name)) active = (i + 1);
 		++i;
 	}
 	if (active < 0 || applet->auto_change_device) {
