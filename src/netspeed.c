@@ -364,14 +364,22 @@ init_quality_pixbufs(MateNetspeedApplet *applet)
 {
 	GtkIconTheme *icon_theme;
 	int i;
+	GdkPixbuf *pixbuf;
 	
 	icon_theme = gtk_icon_theme_get_default();
 
 	for (i = 0; i < 4; i++) {
 		if (applet->qual_pixbufs[i])
 			g_object_unref(applet->qual_pixbufs[i]);
-		applet->qual_pixbufs[i] = gtk_icon_theme_load_icon(icon_theme, 
+		pixbuf = gtk_icon_theme_load_icon(icon_theme, 
 			wireless_quality_icon[i], 24, 0, NULL);
+		if (pixbuf) {
+		  applet->qual_pixbufs[i] = gdk_pixbuf_copy(pixbuf);
+		  g_object_unref(pixbuf);
+		}
+		else {
+		  applet->qual_pixbufs[i] = NULL;
+		}
 	}
 }
 
@@ -674,12 +682,12 @@ update_applet(MateNetspeedApplet *applet)
 
 	/* Refresh the values of the Infodialog */
 	if (applet->inbytes_text) {
-		inbytes = bytes_to_string((double)applet->devinfo.rx, FALSE, applet->show_bits);
+		inbytes = bytes_to_string((double)applet->devinfo.rx, FALSE, FALSE);
 		gtk_label_set_text(GTK_LABEL(applet->inbytes_text), inbytes);
 		g_free(inbytes);
 	}	
 	if (applet->outbytes_text) {
-		outbytes = bytes_to_string((double)applet->devinfo.tx, FALSE, applet->show_bits);
+		outbytes = bytes_to_string((double)applet->devinfo.tx, FALSE, FALSE);
 		gtk_label_set_text(GTK_LABEL(applet->outbytes_text), outbytes);
 		g_free(outbytes);
 	}
