@@ -682,12 +682,12 @@ update_applet(MateNetspeedApplet *applet)
 
 	/* Refresh the values of the Infodialog */
 	if (applet->inbytes_text) {
-		inbytes = bytes_to_string((double)applet->devinfo.rx, FALSE, applet->show_bits);
+		inbytes = bytes_to_string((double)applet->devinfo.rx, FALSE, FALSE);
 		gtk_label_set_text(GTK_LABEL(applet->inbytes_text), inbytes);
 		g_free(inbytes);
 	}	
 	if (applet->outbytes_text) {
-		outbytes = bytes_to_string((double)applet->devinfo.tx, FALSE, applet->show_bits);
+		outbytes = bytes_to_string((double)applet->devinfo.tx, FALSE, FALSE);
 		gtk_label_set_text(GTK_LABEL(applet->outbytes_text), outbytes);
 		g_free(outbytes);
 	}
