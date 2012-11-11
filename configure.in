@@ -20,7 +20,7 @@ GETTEXT_PACKAGE=mate-netspeed
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", GETTEXT_PACKAGE)
 
-PKG_CHECK_MODULES(NETSPEED, libmatepanelapplet-2.0 libgtop-2.0 >= 2.14.2)
+PKG_CHECK_MODULES(NETSPEED, libmatepanelapplet-4.0 libgtop-2.0 >= 2.14.2 gio-2.0)
 
 AC_SUBST(NETSPEED_APPLET_CFLAGS)
 AC_SUBST(NETSPEED_APPLET_LIBS)
@@ -43,9 +43,11 @@ if test "$ac_have_iwevgenie" = yes; then
 	AC_SUBST(IWLIB)
 fi
 
+GLIB_GSETTINGS
+
 AC_OUTPUT([
-mate_netspeed_applet.spec
 Makefile
+data/Makefile
 icons/Makefile
 icons/16x16/Makefile
 icons/16x16/apps/Makefile

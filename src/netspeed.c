@@ -26,8 +26,10 @@
 #include <math.h>
 #include <gtk/gtk.h>
 #include <mate-panel-applet.h>
-#include <mate-panel-applet-mateconf.h>
-#include <mateconf/mateconf-client.h>
+#include <mate-panel-applet-gsettings.h>
+#include <glib.h>
+#include <glib/gi18n.h>
+#include <gio/gio.h>
 #include "backend.h"
 
  /* Icons for the interfaces */
@@ -102,22 +104,9 @@ typedef struct
 	GtkWidget *connect_dialog;
 	
 	gboolean show_tooltip;
+	
+	GSettings *gsettings;
 } MateNetspeedApplet;
-
-static const char 
-mate_netspeed_applet_menu_xml [] =
-	"<popup name=\"button3\">\n"
-	"   <menuitem name=\"Properties Item\" verb=\"MateNetspeedAppletDetails\" label=\"%s\"\n"
-	"             pixtype=\"stock\" pixname=\"gtk-info\"/>\n"
-	"   <separator/>\n"
-	"   <menuitem name=\"Properties Item\" verb=\"MateNetspeedAppletProperties\" label=\"%s\"\n"
-	"             pixtype=\"stock\" pixname=\"gtk-properties\"/>\n"
-	"   <menuitem name=\"Help Item\" verb=\"MateNetspeedAppletHelp\" label=\"%s\"\n"
-	"             pixtype=\"stock\" pixname=\"gtk-help\"/>\n"
-	"   <menuitem name=\"About Item\" verb=\"MateNetspeedAppletAbout\" label=\"%s\"\n"
-	"             pixtype=\"stock\" pixname=\"gtk-about\"/>\n"
-	"</popup>\n";
-
 
 static void
 update_tooltip(MateNetspeedApplet* applet);
@@ -777,7 +766,7 @@ display_help (GtkWidget *dialog, const gchar *section)
 /* Opens gnome help application
  */
 static void
-help_cb (MateComponentUIComponent *uic, MateNetspeedApplet *ap, const gchar *verbname)
+help_cb (GtkAction *action, MateNetspeedApplet *ap)
 {
 	display_help (GTK_WIDGET (ap->applet), NULL);
 }
@@ -824,7 +813,7 @@ handle_links (GtkAboutDialog *about, const gchar *link, gpointer data)
 /* Just the about window... If it's already open, just fokus it
  */
 static void
-about_cb(MateComponentUIComponent *uic, gpointer data, const gchar *verbname)
+about_cb(GtkAction *action, gpointer data)
 {
 	const char *authors[] = 
 	{
@@ -902,12 +891,13 @@ pref_response_cb (GtkDialog *dialog, gint id, gpointer data)
         display_help (GTK_WIDGET (dialog), "netspeed_applet-settings");
 	return;
     }
-    mate_panel_applet_mateconf_set_string(MATE_PANEL_APPLET(applet->applet), "device", applet->devinfo.name, NULL);
-    mate_panel_applet_mateconf_set_bool(MATE_PANEL_APPLET(applet->applet), "show_sum", applet->show_sum, NULL);
-    mate_panel_applet_mateconf_set_bool(MATE_PANEL_APPLET(applet->applet), "show_bits", applet->show_bits, NULL);
-    mate_panel_applet_mateconf_set_bool(MATE_PANEL_APPLET(applet->applet), "change_icon", applet->change_icon, NULL);
-    mate_panel_applet_mateconf_set_bool(MATE_PANEL_APPLET(applet->applet), "auto_change_device", applet->auto_change_device, NULL);
-    mate_panel_applet_mateconf_set_bool(MATE_PANEL_APPLET(applet->applet), "have_settings", TRUE, NULL);
+    g_settings_delay (applet->gsettings);
+    g_settings_set_string (applet->gsettings, "device", applet->devinfo.name);
+    g_settings_set_boolean (applet->gsettings, "show-sum", applet->show_sum);
+    g_settings_set_boolean (applet->gsettings, "show-bits", applet->show_bits);
+    g_settings_set_boolean (applet->gsettings, "change-icon", applet->change_icon);
+    g_settings_set_boolean (applet->gsettings, "auto-change-device", applet->auto_change_device);
+    g_settings_apply (applet->gsettings);
 
     gtk_widget_destroy(GTK_WIDGET(applet->settings));
     applet->settings = NULL;
@@ -942,10 +932,10 @@ changeicon_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
 
 /* Creates the settings dialog
  * After its been closed, take the new values and store
- * them in the mateconf database
+ * them in the gsettings database
  */
 static void
-settings_cb(MateComponentUIComponent *uic, gpointer data, const gchar *verbname)
+settings_cb(GtkAction *action, gpointer data)
 {
 	MateNetspeedApplet *applet = (MateNetspeedApplet*)data;
 	GtkWidget *vbox;
@@ -1098,8 +1088,7 @@ incolor_changed_cb (GtkColorButton *cb, gpointer data)
 	applet->in_color = clr;
 	
 	color = g_strdup_printf ("#%04x%04x%04x", clr.red, clr.green, clr.blue);
-	mate_panel_applet_mateconf_set_string (MATE_PANEL_APPLET (applet->applet), "in_color", color, NULL);
-	mate_panel_applet_mateconf_set_bool (MATE_PANEL_APPLET (applet->applet), "have_settings", TRUE, NULL);
+	g_settings_set_string (applet->gsettings, "in-color", color);
 	g_free (color);
 }
 
@@ -1114,8 +1103,7 @@ outcolor_changed_cb (GtkColorButton *cb, gpointer data)
 	applet->out_color = clr;
 	
 	color = g_strdup_printf ("#%04x%04x%04x", clr.red, clr.green, clr.blue);
-	mate_panel_applet_mateconf_set_string (MATE_PANEL_APPLET (applet->applet), "out_color", color, NULL);
-	mate_panel_applet_mateconf_set_bool (MATE_PANEL_APPLET (applet->applet), "have_settings", TRUE, NULL);
+	g_settings_set_string (applet->gsettings, "out-color", color);
 	g_free (color);
 }
 
@@ -1142,7 +1130,7 @@ info_response_cb (GtkDialog *dialog, gint id, MateNetspeedApplet *applet)
 /* Creates the details dialog
  */
 static void
-showinfo_cb(MateComponentUIComponent *uic, gpointer data, const gchar *verbname)
+showinfo_cb(GtkAction *action, gpointer data)
 {
 	MateNetspeedApplet *applet = (MateNetspeedApplet*)data;
 	GtkWidget *box, *hbox;
@@ -1325,17 +1313,17 @@ showinfo_cb(MateComponentUIComponent *uic, gpointer data, const gchar *verbname)
 
 	gtk_container_add(GTK_CONTAINER(applet->details->vbox), box); 
 	gtk_widget_show_all(GTK_WIDGET(applet->details));
-}	
+}
 
-static const MateComponentUIVerb
-mate_netspeed_applet_menu_verbs [] = 
-{
-		MATECOMPONENT_UI_VERB("MateNetspeedAppletDetails", showinfo_cb),
-		MATECOMPONENT_UI_VERB("MateNetspeedAppletProperties", settings_cb),
-		MATECOMPONENT_UI_UNSAFE_VERB("MateNetspeedAppletHelp", help_cb),
-		MATECOMPONENT_UI_VERB("MateNetspeedAppletAbout", about_cb),
-	
-		MATECOMPONENT_UI_VERB_END
+static const GtkActionEntry mate_netspeed_applet_menu_actions [] = {
+		{ "MateNetspeedAppletDetails", GTK_STOCK_INFO, N_("Device _Details"),
+		  NULL, NULL, G_CALLBACK (showinfo_cb) },
+		{ "MateNetspeedAppletProperties", GTK_STOCK_PROPERTIES, N_("Preferences..."),
+		  NULL, NULL, G_CALLBACK (settings_cb) },
+		{ "MateNetspeedAppletHelp", GTK_STOCK_HELP, N_("Help"),
+		  NULL, NULL, G_CALLBACK (help_cb) },
+		{ "MateNetspeedAppletAbout", GTK_STOCK_ABOUT, N_("About..."),
+		  NULL, NULL, G_CALLBACK (about_cb) }
 };
 
 /* Block the size_request signal emit by the label if the
@@ -1436,6 +1424,8 @@ applet_destroy(MatePanelApplet *applet_widget, MateNetspeedApplet *applet)
 		g_free(applet->up_cmd);
 	if (applet->down_cmd)
 		g_free(applet->down_cmd);
+	if (applet->gsettings)
+		g_object_unref (applet->gsettings);
 	
 	/* Should never be NULL */
 	free_device_info(&applet->devinfo);
@@ -1523,7 +1513,7 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 	GtkIconTheme *icon_theme;
 	GtkWidget *spacer, *spacer_box;
 	
-	if (strcmp (iid, "OAFIID:MATE_NetspeedApplet"))
+	if (strcmp (iid, "NetspeedApplet"))
 		return FALSE;
 
 	glibtop_init();
@@ -1558,48 +1548,47 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 		applet->out_graph[i] = -1;
 	}	
 	
-	/* Get stored settings from the mateconf database
+	applet->gsettings = mate_panel_applet_settings_new (applet_widget, "org.mate.panel.applet.netspeed");
+	
+	/* Get stored settings from gsettings
 	 */
-	if (mate_panel_applet_mateconf_get_bool(MATE_PANEL_APPLET(applet->applet), "have_settings", NULL))
-	{	
-		char *tmp = NULL;
-		
-		applet->show_sum = mate_panel_applet_mateconf_get_bool(applet_widget, "show_sum", NULL);
-		applet->show_bits = mate_panel_applet_mateconf_get_bool(applet_widget, "show_bits", NULL);
-		applet->change_icon = mate_panel_applet_mateconf_get_bool(applet_widget, "change_icon", NULL);
-		applet->auto_change_device = mate_panel_applet_mateconf_get_bool(applet_widget, "auto_change_device", NULL);
-		
-		tmp = mate_panel_applet_mateconf_get_string(applet_widget, "device", NULL);
-		if (tmp && strcmp(tmp, "")) 
-		{
-			get_device_info(tmp, &applet->devinfo);
-			g_free(tmp);
-		}
-		tmp = mate_panel_applet_mateconf_get_string(applet_widget, "up_command", NULL);
-		if (tmp && strcmp(tmp, "")) 
-		{
-			applet->up_cmd = g_strdup(tmp);
-			g_free(tmp);
-		}
-		tmp = mate_panel_applet_mateconf_get_string(applet_widget, "down_command", NULL);
-		if (tmp && strcmp(tmp, "")) 
-		{
-			applet->down_cmd = g_strdup(tmp);
-			g_free(tmp);
-		}
-		
-		tmp = mate_panel_applet_mateconf_get_string(applet_widget, "in_color", NULL);
-		if (tmp)
-		{
-			gdk_color_parse(tmp, &applet->in_color);
-			g_free(tmp);
-		}
-		tmp = mate_panel_applet_mateconf_get_string(applet_widget, "out_color", NULL);
-		if (tmp)
-		{
-			gdk_color_parse(tmp, &applet->out_color);
-			g_free(tmp);
-		}
+	char *tmp = NULL;
+	
+	applet->show_sum = g_settings_get_boolean (applet->gsettings, "show-sum");
+	applet->show_bits = g_settings_get_boolean (applet->gsettings, "show-bits");
+	applet->change_icon = g_settings_get_boolean (applet->gsettings, "change-icon");
+	applet->auto_change_device = g_settings_get_boolean (applet->gsettings, "auto-change-device");
+	
+	tmp = g_settings_get_string (applet->gsettings, "device");
+	if (tmp && strcmp(tmp, "")) 
+	{
+		get_device_info(tmp, &applet->devinfo);
+		g_free(tmp);
+	}
+	tmp = g_settings_get_string (applet->gsettings, "up-command");
+	if (tmp && strcmp(tmp, "")) 
+	{
+		applet->up_cmd = g_strdup(tmp);
+		g_free(tmp);
+	}
+	tmp = g_settings_get_string (applet->gsettings, "down-command");
+	if (tmp && strcmp(tmp, "")) 
+	{
+		applet->down_cmd = g_strdup(tmp);
+		g_free(tmp);
+	}
+	
+	tmp = g_settings_get_string (applet->gsettings, "in-color");
+	if (tmp)
+	{
+		gdk_color_parse(tmp, &applet->in_color);
+		g_free(tmp);
+	}
+	tmp = g_settings_get_string (applet->gsettings, "out-color");
+	if (tmp)
+	{
+		gdk_color_parse(tmp, &applet->out_color);
+		g_free(tmp);
 	}
 	
 	if (!applet->devinfo.name) {
@@ -1694,15 +1683,24 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 			 G_CALLBACK(mate_netspeed_enter_cb),
 			 (gpointer)applet);
 
+	GtkActionGroup *action_group;
+	gchar *ui_path;
+	action_group = gtk_action_group_new ("Netspeed Applet Actions");
+	gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
+	gtk_action_group_add_actions (action_group,
+                                  mate_netspeed_applet_menu_actions,
+                                  G_N_ELEMENTS (mate_netspeed_applet_menu_actions),
+                                  applet);
+	ui_path = g_build_filename (NETSPEED_MENU_UI_DIR, "netspeed-menu.xml", NULL);
+	mate_panel_applet_setup_menu_from_file (MATE_PANEL_APPLET (applet->applet), ui_path, action_group);
+	g_free (ui_path);
+	g_object_unref (action_group);
 
-	menu_string = g_strdup_printf(mate_netspeed_applet_menu_xml, _("Device _Details"), _("_Preferences..."), _("_Help"), _("_About..."));
-	mate_panel_applet_setup_menu(applet_widget, menu_string,
-                                 mate_netspeed_applet_menu_verbs,
-                                 (gpointer)applet);
-	g_free(menu_string);
-	
 	return TRUE;
 }
 
-MATE_PANEL_APPLET_MATECOMPONENT_FACTORY("OAFIID:MATE_NetspeedApplet_Factory", PANEL_TYPE_APPLET,
-			PACKAGE, VERSION, (MatePanelAppletFactoryCallback)mate_netspeed_applet_factory, NULL)
+MATE_PANEL_APPLET_OUT_PROCESS_FACTORY("NetspeedAppletFactory",
+									  PANEL_TYPE_APPLET,
+									  "NetspeedApplet",
+									  mate_netspeed_applet_factory,
+									  NULL)

@@ -1,3 +1,4 @@
-MATE_NetspeedApplet.server.in.in
+data/org.mate.panel.applet.netspeed.gschema.xml.in
+data/org.mate.panel.NetspeedApplet.mate-panel-applet.in.in
 src/netspeed.c
 
