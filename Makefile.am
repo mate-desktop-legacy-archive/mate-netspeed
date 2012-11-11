@@ -8,15 +8,13 @@ server_in_in_files = $(server_in_files:=.in)
 
 distuninstallcheck_listfiles = find . -type f -print | grep -v scrollkeeper
 
-spec = $(PACKAGE).spec
 EXTRA_DIST = MATE_NetspeedApplet.server.in.in \
-             $(spec) \
              gnome-doc-utils.make \
              intltool-update.in \
              intltool-merge.in \
              intltool-extract.in
 
-all-local: $(spec) $(server_DATA)
+all-local: $(server_DATA)
 
 $(server_in_files): $(server_in_in_files) Makefile
 	sed s,@LIBEXECDIR@,$(libexecdir),g <$< >$@
