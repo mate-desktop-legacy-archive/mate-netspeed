@@ -26,4 +26,7 @@ gsettings_SCHEMAS = org.mate.panel.applet.netspeed.gschema.xml
 @INTLTOOL_XML_NOMERGE_RULE@
 @GSETTINGS_RULES@
 
-EXTRA_DIST = org.mate.panel.NetspeedApplet.mate-panel-applet.in.in $(xmlui_DATA) $(service_in_files)
+convertdir = $(datadir)/MateConf/gsettings
+convert_DATA = mate-netspeed.convert
+
+EXTRA_DIST = org.mate.panel.NetspeedApplet.mate-panel-applet.in.in $(xmlui_DATA) $(service_in_files) $(convert_DATA)
