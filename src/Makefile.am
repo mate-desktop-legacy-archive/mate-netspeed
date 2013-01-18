@@ -10,4 +10,4 @@ libexec_PROGRAMS = mate-netspeed-applet
 
 mate_netspeed_applet_SOURCES = backend.h backend.c netspeed.c
 
-mate_netspeed_applet_LDADD = $(NETSPEED_LIBS) $(NETSPEED_LIBGTOP_LIBS) $(IWLIB) $(INTLLIBS)
+mate_netspeed_applet_LDADD = $(NETSPEED_LIBS) $(NETSPEED_LIBGTOP_LIBS) $(IWLIB) $(INTLLIBS) -lm
