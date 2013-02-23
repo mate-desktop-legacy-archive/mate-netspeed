@@ -8,225 +8,225 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2011-12-29 17:09+0100\n"
-"PO-Revision-Date: 2012-06-26 12:56+0000\n"
-"Last-Translator: Alexei Sorokin <sor.alexei@hotbox.ru>\n"
+"POT-Creation-Date: 2013-02-23 11:34+0100\n"
+"PO-Revision-Date: 2013-02-23 10:44+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/MATE/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../MATE_NetspeedApplet.server.in.in.h:1
-msgid "Internet"
-msgstr "Интернет"
-
-#: ../MATE_NetspeedApplet.server.in.in.h:2
-msgid "Netspeed Applet"
-msgstr "Индикатор скорости"
-
-#: ../MATE_NetspeedApplet.server.in.in.h:3
-msgid "Netspeed Applet Factory"
-msgstr "Фабрика индикаторов скорости"
-
-#: ../MATE_NetspeedApplet.server.in.in.h:4
-msgid "Network Monitor"
-msgstr "Индикатор скорости"
-
-#: ../src/netspeed.c:409
+#: ../src/netspeed.c:406
 msgid "b/s"
 msgstr "б/с"
 
-#: ../src/netspeed.c:409
+#: ../src/netspeed.c:406
 msgid "B/s"
 msgstr "Б/с"
 
-#: ../src/netspeed.c:411
+#: ../src/netspeed.c:408
 msgid "bits"
 msgstr "бит"
 
-#: ../src/netspeed.c:411
+#: ../src/netspeed.c:408
 msgid "bytes"
 msgstr "байт"
 
-#: ../src/netspeed.c:418
+#: ../src/netspeed.c:415
 msgid "kb/s"
 msgstr "кб/с"
 
-#: ../src/netspeed.c:418
+#: ../src/netspeed.c:415
 msgid "KiB/s"
 msgstr "кБ/с"
 
-#: ../src/netspeed.c:420
+#: ../src/netspeed.c:417
 msgid "kb"
 msgstr "кб"
 
-#: ../src/netspeed.c:420
+#: ../src/netspeed.c:417
 msgid "KiB"
 msgstr "кБ"
 
-#: ../src/netspeed.c:429
+#: ../src/netspeed.c:426
 msgid "Mb/s"
 msgstr "мб/с"
 
-#: ../src/netspeed.c:429
+#: ../src/netspeed.c:426
 msgid "MiB/s"
 msgstr "мБ/с"
 
-#: ../src/netspeed.c:431
+#: ../src/netspeed.c:428
 msgid "Mb"
 msgstr "мб"
 
-#: ../src/netspeed.c:431
+#: ../src/netspeed.c:428
 msgid "MiB"
 msgstr "мБ"
 
-#: ../src/netspeed.c:757
+#: ../src/netspeed.c:754
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
 "%s"
 msgstr "Ошибка при показе справки:\n%s"
 
-#: ../src/netspeed.c:808
+#: ../src/netspeed.c:805
 #, c-format
 msgid ""
 "Failed to show:\n"
 "%s"
 msgstr "Не удалось показать:\n%s"
 
-#: ../src/netspeed.c:841
+#: ../src/netspeed.c:838
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
 msgstr "Индикатор скорости сообщает статистические сведения о проходящем через выбранное сетевое устройство потоке данных."
 
-#: ../src/netspeed.c:844
+#: ../src/netspeed.c:841
 msgid "translator-credits"
 msgstr "Алексей Сорокин, Вячеслав Диконов"
 
-#: ../src/netspeed.c:846
+#: ../src/netspeed.c:843
 msgid "MATE Website"
 msgstr "Сайт MATE"
 
-#: ../src/netspeed.c:972
+#: ../src/netspeed.c:970
 msgid "Mate Netspeed Preferences"
 msgstr "Настройки Mate Netspeed"
 
-#: ../src/netspeed.c:995
+#: ../src/netspeed.c:993
 msgid "General Settings"
 msgstr "Общие"
 
-#: ../src/netspeed.c:1016
+#: ../src/netspeed.c:1014
 msgid "Network _device:"
 msgstr "Сетевое устройство:"
 
 #. Default means device with default route set
-#: ../src/netspeed.c:1027
+#: ../src/netspeed.c:1025
 msgid "Default"
 msgstr "По умолчанию"
 
-#: ../src/netspeed.c:1040
+#: ../src/netspeed.c:1038
 msgid "Show _sum instead of in & out"
 msgstr "Показывать суммарную скорость входящего и исходящего трафика"
 
-#: ../src/netspeed.c:1044
+#: ../src/netspeed.c:1042
 msgid "Show _bits instead of bytes"
 msgstr "Показывать скорость в _бит/сек (б/с) вместо байт/сек (Б/с)"
 
-#: ../src/netspeed.c:1048
+#: ../src/netspeed.c:1046
 msgid "Change _icon according to the selected device"
 msgstr "Менять _пиктограмму в соответствии с типом устройства"
 
-#: ../src/netspeed.c:1159
+#: ../src/netspeed.c:1155
 #, c-format
 msgid "Device Details for %s"
 msgstr "Информация об устройстве %s"
 
-#: ../src/netspeed.c:1185
+#: ../src/netspeed.c:1181
 msgid "_In graph color"
 msgstr "Цвет графика _входящих данных"
 
-#: ../src/netspeed.c:1186
+#: ../src/netspeed.c:1182
 msgid "_Out graph color"
 msgstr "Цвет графика _исходящих данных"
 
-#: ../src/netspeed.c:1202
+#: ../src/netspeed.c:1198
 msgid "Internet Address:"
 msgstr "IP адрес:"
 
-#: ../src/netspeed.c:1203
+#: ../src/netspeed.c:1199
 msgid "Netmask:"
 msgstr "Маска подсети:"
 
-#: ../src/netspeed.c:1204
+#: ../src/netspeed.c:1200
 msgid "Hardware Address:"
 msgstr "Аппаратный адрес:"
 
-#: ../src/netspeed.c:1205
+#: ../src/netspeed.c:1201
 msgid "P-t-P Address:"
 msgstr "Адрес точка-точка"
 
-#: ../src/netspeed.c:1206
+#: ../src/netspeed.c:1202
 msgid "Bytes in:"
 msgstr "Объём входящего трафика:"
 
-#: ../src/netspeed.c:1207
+#: ../src/netspeed.c:1203
 msgid "Bytes out:"
 msgstr "Объём исходящего трафика:"
 
-#: ../src/netspeed.c:1209 ../src/netspeed.c:1210 ../src/netspeed.c:1211
-#: ../src/netspeed.c:1212
+#: ../src/netspeed.c:1205 ../src/netspeed.c:1206 ../src/netspeed.c:1207
+#: ../src/netspeed.c:1208
 msgid "none"
 msgstr "нет"
 
-#: ../src/netspeed.c:1251
+#: ../src/netspeed.c:1247
 msgid "IPV6 Address:"
 msgstr "Адрес IPV6"
 
-#: ../src/netspeed.c:1283
+#: ../src/netspeed.c:1279
 msgid "Signal Strength:"
 msgstr "Сила сигнала"
 
-#: ../src/netspeed.c:1284
+#: ../src/netspeed.c:1280
 msgid "ESSID:"
 msgstr "ESSID:"
 
-#: ../src/netspeed.c:1370
+#: ../src/netspeed.c:1319
+msgid "Device _Details"
+msgstr "Подробнее..."
+
+#: ../src/netspeed.c:1321
+msgid "Preferences..."
+msgstr ""
+
+#: ../src/netspeed.c:1323
+msgid "Help"
+msgstr ""
+
+#: ../src/netspeed.c:1325
+msgid "About..."
+msgstr ""
+
+#: ../src/netspeed.c:1366
 #, c-format
 msgid "Do you want to disconnect %s now?"
 msgstr "Отключить %s сейчас?"
 
-#: ../src/netspeed.c:1374
+#: ../src/netspeed.c:1370
 #, c-format
 msgid "Do you want to connect %s now?"
 msgstr "Подключить %s сейчас?"
 
-#: ../src/netspeed.c:1451
+#: ../src/netspeed.c:1449
 #, c-format
 msgid "%s is down"
 msgstr "%s отключен"
 
-#: ../src/netspeed.c:1456
+#: ../src/netspeed.c:1454
 #, c-format
 msgid ""
 "%s: %s\n"
 "in: %s out: %s"
 msgstr "%s :%s\nвходящий: %s исходящий: %s"
 
-#: ../src/netspeed.c:1458 ../src/netspeed.c:1467
+#: ../src/netspeed.c:1456 ../src/netspeed.c:1465
 msgid "has no ip"
 msgstr "нет IP адреса"
 
-#: ../src/netspeed.c:1465
+#: ../src/netspeed.c:1463
 #, c-format
 msgid ""
 "%s: %s\n"
 "sum: %s"
 msgstr "%s :%s\nсуммарная скорость: %s"
 
-#: ../src/netspeed.c:1474
+#: ../src/netspeed.c:1472
 #, c-format
 msgid ""
 "\n"
@@ -234,26 +234,10 @@ msgid ""
 "Strength: %d %%"
 msgstr "\nESSID: %s\nСила: %d %%"
 
-#: ../src/netspeed.c:1475
+#: ../src/netspeed.c:1473
 msgid "unknown"
 msgstr "неизвестно"
 
-#: ../src/netspeed.c:1522
+#: ../src/netspeed.c:1520
 msgid "Mate Netspeed"
 msgstr "Mate Netspeed"
-
-#: ../src/netspeed.c:1690
-msgid "Device _Details"
-msgstr "Подробнее..."
-
-#: ../src/netspeed.c:1690
-msgid "_Preferences..."
-msgstr "_Изменить настройки"
-
-#: ../src/netspeed.c:1690
-msgid "_Help"
-msgstr "Получить _справку"
-
-#: ../src/netspeed.c:1690
-msgid "_About..."
-msgstr "_Об апплете..."

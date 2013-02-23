@@ -3,7 +3,8 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-#   <nato323@gmail.com>, 2012.
+#   <informatica@actiu.net>, 2012.
+# Pere Orga <gotrunks@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
@@ -11,80 +12,80 @@ msgstr ""
 "POT-Creation-Date: 2013-02-23 11:34+0100\n"
 "PO-Revision-Date: 2013-02-23 10:44+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Afrikaans (http://www.transifex.com/projects/p/MATE/language/af/)\n"
+"Language-Team: Catalan (http://www.transifex.com/projects/p/MATE/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: af\n"
+"Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../src/netspeed.c:406
 msgid "b/s"
-msgstr ""
+msgstr "b/s"
 
 #: ../src/netspeed.c:406
 msgid "B/s"
-msgstr ""
+msgstr "B/s"
 
 #: ../src/netspeed.c:408
 msgid "bits"
-msgstr ""
+msgstr "bits"
 
 #: ../src/netspeed.c:408
 msgid "bytes"
-msgstr ""
+msgstr "bytes"
 
 #: ../src/netspeed.c:415
 msgid "kb/s"
-msgstr ""
+msgstr "kb/s"
 
 #: ../src/netspeed.c:415
 msgid "KiB/s"
-msgstr ""
+msgstr "KiB/s"
 
 #: ../src/netspeed.c:417
 msgid "kb"
-msgstr ""
+msgstr "kb"
 
 #: ../src/netspeed.c:417
 msgid "KiB"
-msgstr ""
+msgstr "KiB"
 
 #: ../src/netspeed.c:426
 msgid "Mb/s"
-msgstr ""
+msgstr "Mb/s"
 
 #: ../src/netspeed.c:426
 msgid "MiB/s"
-msgstr ""
+msgstr "MiB/s"
 
 #: ../src/netspeed.c:428
 msgid "Mb"
-msgstr ""
+msgstr "Mb"
 
 #: ../src/netspeed.c:428
 msgid "MiB"
-msgstr ""
+msgstr "MiB"
 
 #: ../src/netspeed.c:754
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
 "%s"
-msgstr "Daar was 'n fout met die vertooning van hulp:\n%s"
+msgstr "Hi hagué un error mostrant l'ajuda:\n%s"
 
 #: ../src/netspeed.c:805
 #, c-format
 msgid ""
 "Failed to show:\n"
 "%s"
-msgstr ""
+msgstr "Fallada en mostrar:\n%s"
 
 #: ../src/netspeed.c:838
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
-msgstr "'n Klein program wat inligting wys oor die verkeer op die gespesifiseerde netwerk toestel."
+msgstr ""
 
 #: ../src/netspeed.c:841
 msgid "translator-credits"
@@ -92,15 +93,15 @@ msgstr ""
 
 #: ../src/netspeed.c:843
 msgid "MATE Website"
-msgstr "MATE Webwerf"
+msgstr "Lloc web del MATE"
 
 #: ../src/netspeed.c:970
 msgid "Mate Netspeed Preferences"
-msgstr ""
+msgstr "Preferències del Mate Netspeed"
 
 #: ../src/netspeed.c:993
 msgid "General Settings"
-msgstr "Algemene Verstellings"
+msgstr "Configuració general"
 
 #: ../src/netspeed.c:1014
 msgid "Network _device:"
@@ -109,24 +110,24 @@ msgstr ""
 #. Default means device with default route set
 #: ../src/netspeed.c:1025
 msgid "Default"
-msgstr ""
+msgstr "Predeterminada"
 
 #: ../src/netspeed.c:1038
 msgid "Show _sum instead of in & out"
-msgstr ""
+msgstr "Mostrar _suma en lloc de entra & surt"
 
 #: ../src/netspeed.c:1042
 msgid "Show _bits instead of bytes"
-msgstr ""
+msgstr "Mostrar _bits en lloc de bytes"
 
 #: ../src/netspeed.c:1046
 msgid "Change _icon according to the selected device"
-msgstr ""
+msgstr "Canviar _icona d'acord amb el dispositiu seleccionat"
 
 #: ../src/netspeed.c:1155
 #, c-format
 msgid "Device Details for %s"
-msgstr ""
+msgstr "Detalls de dispositiu per %s"
 
 #: ../src/netspeed.c:1181
 msgid "_In graph color"
@@ -138,48 +139,48 @@ msgstr ""
 
 #: ../src/netspeed.c:1198
 msgid "Internet Address:"
-msgstr ""
+msgstr "Adreça d'Internet:"
 
 #: ../src/netspeed.c:1199
 msgid "Netmask:"
-msgstr ""
+msgstr "Màscara de xarxa:"
 
 #: ../src/netspeed.c:1200
 msgid "Hardware Address:"
-msgstr ""
+msgstr "Adreça del maquinari:"
 
 #: ../src/netspeed.c:1201
 msgid "P-t-P Address:"
-msgstr ""
+msgstr "Adreça P-t-P:"
 
 #: ../src/netspeed.c:1202
 msgid "Bytes in:"
-msgstr ""
+msgstr "Bytes entrants:"
 
 #: ../src/netspeed.c:1203
 msgid "Bytes out:"
-msgstr ""
+msgstr "Bytes sortint:"
 
 #: ../src/netspeed.c:1205 ../src/netspeed.c:1206 ../src/netspeed.c:1207
 #: ../src/netspeed.c:1208
 msgid "none"
-msgstr "niks"
+msgstr ""
 
 #: ../src/netspeed.c:1247
 msgid "IPV6 Address:"
-msgstr "IPV6 Adres:"
+msgstr "Adreça IPV6:"
 
 #: ../src/netspeed.c:1279
 msgid "Signal Strength:"
-msgstr "Seinsterkte:"
+msgstr "Fortalesa del senyal:"
 
 #: ../src/netspeed.c:1280
 msgid "ESSID:"
-msgstr ""
+msgstr "ESSID:"
 
 #: ../src/netspeed.c:1319
 msgid "Device _Details"
-msgstr ""
+msgstr "_Detalls de Dispositiu"
 
 #: ../src/netspeed.c:1321
 msgid "Preferences..."
@@ -196,12 +197,12 @@ msgstr ""
 #: ../src/netspeed.c:1366
 #, c-format
 msgid "Do you want to disconnect %s now?"
-msgstr "Wil u nou %s ontkoppel?"
+msgstr "Voleu desconnectar %s ara?"
 
 #: ../src/netspeed.c:1370
 #, c-format
 msgid "Do you want to connect %s now?"
-msgstr "Wil u nou %s koppel?"
+msgstr "Voleu connectar %s ara?"
 
 #: ../src/netspeed.c:1449
 #, c-format
@@ -213,18 +214,18 @@ msgstr ""
 msgid ""
 "%s: %s\n"
 "in: %s out: %s"
-msgstr "%s: %s\nin: %s uit: %s"
+msgstr "%s: %s\nentrada: %s sortida: %s"
 
 #: ../src/netspeed.c:1456 ../src/netspeed.c:1465
 msgid "has no ip"
-msgstr "het geen IP-adres"
+msgstr "no té ip"
 
 #: ../src/netspeed.c:1463
 #, c-format
 msgid ""
 "%s: %s\n"
 "sum: %s"
-msgstr "%s: %s\nsom: %s"
+msgstr "%s: %s\nsuma: %s"
 
 #: ../src/netspeed.c:1472
 #, c-format
@@ -232,11 +233,11 @@ msgid ""
 "\n"
 "ESSID: %s\n"
 "Strength: %d %%"
-msgstr "\nESSID: %s\nSterkte: %d %%"
+msgstr "\nESSID: %s\nFortalesa: %d %%"
 
 #: ../src/netspeed.c:1473
 msgid "unknown"
-msgstr "onbekend"
+msgstr "desconeguda"
 
 #: ../src/netspeed.c:1520
 msgid "Mate Netspeed"
