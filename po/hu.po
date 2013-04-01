@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
 "POT-Creation-Date: 2013-02-23 11:34+0100\n"
-"PO-Revision-Date: 2013-02-23 10:44+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"PO-Revision-Date: 2013-03-11 16:31+0000\n"
+"Last-Translator: Rezső Páder <rezso@rezso.net>\n"
 "Language-Team: Hungarian (http://www.transifex.com/projects/p/MATE/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -183,15 +183,15 @@ msgstr "Eszköz _adatai..."
 
 #: ../src/netspeed.c:1321
 msgid "Preferences..."
-msgstr ""
+msgstr "Beállítások..."
 
 #: ../src/netspeed.c:1323
 msgid "Help"
-msgstr ""
+msgstr "Súgó"
 
 #: ../src/netspeed.c:1325
 msgid "About..."
-msgstr ""
+msgstr "Névjegy..."
 
 #: ../src/netspeed.c:1366
 #, c-format

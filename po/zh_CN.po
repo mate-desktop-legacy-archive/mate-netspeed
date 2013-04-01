@@ -214,7 +214,7 @@ msgstr "%s 已经断开"
 msgid ""
 "%s: %s\n"
 "in: %s out: %s"
-msgstr "%s: %s\\n下载：%s 上传：%s"
+msgstr "%s: %s\n下载：%s 上传：%s"
 
 #: ../src/netspeed.c:1456 ../src/netspeed.c:1465
 msgid "has no ip"
