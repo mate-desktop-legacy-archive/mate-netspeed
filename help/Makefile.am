@@ -9,7 +9,7 @@ figures/details.png \
 figures/ethernet.png \
 figures/eth_sum_48.png \
 figures/loopback.png \
-figures/mate_netspeed_applet.png \
+figures/netspeed_applet.png \
 figures/plip.png \
 figures/ppp.png \
 figures/settings.png \
