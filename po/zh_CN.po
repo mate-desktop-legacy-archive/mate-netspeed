@@ -184,15 +184,15 @@ msgstr "设备详细信息(_D)"
 
 #: ../src/netspeed.c:1321
 msgid "Preferences..."
-msgstr ""
+msgstr "首选项..."
 
 #: ../src/netspeed.c:1323
 msgid "Help"
-msgstr ""
+msgstr "帮助"
 
 #: ../src/netspeed.c:1325
 msgid "About..."
-msgstr ""
+msgstr "关于..."
 
 #: ../src/netspeed.c:1366
 #, c-format
