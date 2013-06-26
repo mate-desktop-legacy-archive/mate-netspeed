@@ -29,12 +29,12 @@ MATE_DOC_INIT
 
 ac_have_iwevgenie=no
 AC_MSG_CHECKING([for wireless-tools >= 28pre9])
-AC_COMPILE_IFELSE([
+AC_COMPILE_IFELSE([AC_LANG_PROGRAM([
 		#include <iwlib.h>
                 #ifndef IWEVGENIE
                 #error "not found"
-                #endif],
-               ac_have_iwevgenie=yes
+                #endif])],
+               [ac_have_iwevgenie=yes]
 )
 AC_MSG_RESULT([$ac_have_iwevgenie])
 if test "$ac_have_iwevgenie" = yes; then
