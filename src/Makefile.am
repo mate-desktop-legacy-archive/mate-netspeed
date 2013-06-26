@@ -1,4 +1,4 @@
-INCLUDES = -I$(top_srcdir) -I$(includedir) $(NETSPEED_CFLAGS) $(NETSPEED_LIBGTOP_CFLAGS) \
+AM_CPPFLAGS = -I$(top_srcdir) -I$(includedir) $(NETSPEED_CFLAGS) $(NETSPEED_LIBGTOP_CFLAGS) \
        -DMATELOCALEDIR=\""$(datadir)/locale"\" \
        -DDATADIR=\""$(datadir)/"\" \
        -DPREFIX=\""$(prefix)/"\" \
