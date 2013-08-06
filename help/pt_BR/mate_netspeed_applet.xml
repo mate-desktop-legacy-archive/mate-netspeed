@@ -39,7 +39,7 @@
     </publisher>
 
 	  <legalnotice id="legalnotice">
-	<para>É dada a permissão para copiar, redistribuir e/ou modificar este documento sob os termos da Licença de Documentação Livre GNU (GFDL)  Versão 1.1 ou qualquer versão superior publicada pela Free Software Foundation sem quaisquer Seções Invariantes, Textos de Capa ou Prefácios, e sem Textos Finais ou Posfácios. Você pode encontrar uma cópia da GFDL neste<ulink type="help" url="ghelp:fdl">link</ulink> ou no arquivo COPYING-DOCS distribuído com este manual.</para>
+	<para>É dada a permissão para copiar, redistribuir e/ou modificar este documento sob os termos da Licença de Documentação Livre GNU (GFDL)  Versão 1.1 ou qualquer versão superior publicada pela Free Software Foundation sem quaisquer Seções Invariantes, Textos de Capa ou Prefácios, e sem Textos Finais ou Posfácios. Você pode encontrar uma cópia da GFDL neste<ulink type="help" url="help:fdl">link</ulink> ou no arquivo COPYING-DOCS distribuído com este manual.</para>
          <para>Este manual é parte da coleção de manuais do GNOME distribuído sob os termos da licença GFDL. Se você quer distribuir este manual separadamente da coleção, você pode fazer desde que inclua uma cópia da licença do manual, como descrito na seção 6 da licença.</para>
 
 	<para>Muitos dos nomes usados por companhias para distinguir seus produtos e serviços são mencionados como marcas comerciais.  Onde estes nomes apareciam em qualquer documentação do GNOME, e os membros do Projeto de Documentação GNOME estão atentos a estas marcas registradas, então os nomes estão em letras maiúsculas ou com as iniciais em maiúsculas.</para>

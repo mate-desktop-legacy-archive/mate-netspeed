@@ -25,7 +25,7 @@ PKG_CHECK_MODULES(NETSPEED, libmatepanelapplet-4.0 libgtop-2.0 >= 2.14.2 gio-2.0
 AC_SUBST(NETSPEED_APPLET_CFLAGS)
 AC_SUBST(NETSPEED_APPLET_LIBS)
 
-MATE_DOC_INIT
+YELP_HELP_INIT
 
 ac_have_iwevgenie=no
 AC_MSG_CHECKING([for wireless-tools >= 28pre9])
