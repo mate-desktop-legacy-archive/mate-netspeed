@@ -26,7 +26,11 @@ gsettings_SCHEMAS = org.mate.panel.applet.netspeed.gschema.xml
 @INTLTOOL_XML_NOMERGE_RULE@
 @GSETTINGS_RULES@
 
-EXTRA_DIST = org.mate.panel.NetspeedApplet.mate-panel-applet.in.in $(xmlui_DATA) $(service_in_files) $(gsettings_SCHEMAS).in
+EXTRA_DIST = \
+	org.mate.panel.NetspeedApplet.mate-panel-applet.in.in \
+	$(xmlui_DATA) \
+	$(service_in_files) \
+	$(gsettings_SCHEMAS).in
 
 CLEANFILES = \
 	$(gsettings_SCHEMAS) \
