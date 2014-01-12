@@ -87,7 +87,8 @@ typedef struct
 	int refresh_time;
 	char *up_cmd, *down_cmd;
 	gboolean show_sum, show_bits;
-	gboolean show_icon, change_icon, auto_change_device;
+	gboolean change_icon, auto_change_device;
+	gboolean show_icon, short_unit;
 	GdkColor in_color, out_color;
 	int width;
 	
@@ -238,6 +239,9 @@ applet_change_size_or_orient(MatePanelApplet *applet_widget, int arg1, MateNetsp
 	}		
 	
 	gtk_widget_show_all(applet->box);
+	if (!applet->show_icon) {
+		gtk_widget_hide(applet->dev_pix);
+	}
 	gtk_container_add(GTK_CONTAINER(applet->applet), applet->box);
 }
 
@@ -392,7 +396,7 @@ icon_theme_changed_cb(GtkIconTheme *icon_theme, gpointer user_data)
  * The string has to be freed
  */
 static char* 
-bytes_to_string(double bytes, gboolean per_sec, gboolean bits)
+bytes_to_string(double bytes, gboolean per_sec, gboolean bits, gboolean shortened)
 {
 	const char *format;
 	const char *unit;
@@ -409,7 +413,11 @@ bytes_to_string(double bytes, gboolean per_sec, gboolean bits)
 		format = "%.0f %s";
 
 		if (per_sec)
-			unit = bits ? N_("b")   : N_("B");
+			if (shortened) {
+				unit = bits ? N_("b")   : N_("B");
+			} else {
+				unit = bits ? N_("b/s")   : N_("B/s");
+			}
 		else
 			unit = bits ? N_("bits")  : N_("bytes");
 
@@ -418,7 +426,11 @@ bytes_to_string(double bytes, gboolean per_sec, gboolean bits)
 		bytes /= kilo;
 
 		if (per_sec)
-			unit = bits ? N_("k") : N_("K");
+			if (shortened) {
+				unit = bits ? N_("k") : N_("K");
+			} else {
+				unit = bits ? N_("kb/s") : N_("KiB/s");
+			}
 		else
 			unit = bits ? N_("kb")   : N_("KiB");
 
@@ -429,9 +441,13 @@ bytes_to_string(double bytes, gboolean per_sec, gboolean bits)
 		bytes /= kilo * kilo;
 
 		if (per_sec)
-			unit = bits ? N_("m") : N_("M");
+			if (shortened) {
+				unit = bits ? N_("m") : N_("M");
+			} else {
+				unit = bits ? N_("mb/s") : N_("MiB/s");
+			}
 		else
-			unit = bits ? N_("Mb")   : N_("MiB");
+			unit = bits ? N_("mb")   : N_("MiB");
 	}
 
 	return g_strdup_printf(format, bytes, gettext(unit));
@@ -506,7 +522,7 @@ redraw_graph(MateNetspeedApplet *applet)
 	ra.x = 0; ra.y = 0;
 	ra.width = w; ra.height = h;
 	
-	text = bytes_to_string(max_val, TRUE, applet->show_bits);
+	text = bytes_to_string(max_val, TRUE, applet->show_bits, applet->short_unit);
 	add_markup_fgcolor(&text, "white");
 	layout = gtk_widget_create_pango_layout (da, NULL);
 	pango_layout_set_markup(layout, text, -1);
@@ -514,7 +530,7 @@ redraw_graph(MateNetspeedApplet *applet)
 	gtk_paint_layout(da->style, window, state,	FALSE, &ra, da, "max_graph", 3, 2, layout);
 	g_object_unref(G_OBJECT(layout));
 
-	text = bytes_to_string(0.0, TRUE, applet->show_bits);
+	text = bytes_to_string(0.0, TRUE, applet->show_bits, applet->short_unit);
 	add_markup_fgcolor(&text, "white");
 	layout = gtk_widget_create_pango_layout (da, NULL);
 	pango_layout_set_markup(layout, text, -1);
@@ -635,9 +651,9 @@ update_applet(MateNetspeedApplet *applet)
 		applet->max_graph = MAX(inrate, applet->max_graph);
 		applet->max_graph = MAX(outrate, applet->max_graph);
 		
-		applet->devinfo.rx_rate = bytes_to_string(inrate, TRUE, applet->show_bits);
-		applet->devinfo.tx_rate = bytes_to_string(outrate, TRUE, applet->show_bits);
-		applet->devinfo.sum_rate = bytes_to_string(inrate + outrate, TRUE, applet->show_bits);
+		applet->devinfo.rx_rate = bytes_to_string(inrate, TRUE, applet->show_bits, applet->short_unit);
+		applet->devinfo.tx_rate = bytes_to_string(outrate, TRUE, applet->show_bits, applet->short_unit);
+		applet->devinfo.sum_rate = bytes_to_string(inrate + outrate, TRUE, applet->show_bits, applet->short_unit);
 	} else {
 		applet->devinfo.rx_rate = g_strdup("");
 		applet->devinfo.tx_rate = g_strdup("");
@@ -677,12 +693,12 @@ update_applet(MateNetspeedApplet *applet)
 
 	/* Refresh the values of the Infodialog */
 	if (applet->inbytes_text) {
-		inbytes = bytes_to_string((double)applet->devinfo.rx, FALSE, FALSE);
+		inbytes = bytes_to_string((double)applet->devinfo.rx, FALSE, FALSE, FALSE);
 		gtk_label_set_text(GTK_LABEL(applet->inbytes_text), inbytes);
 		g_free(inbytes);
 	}	
 	if (applet->outbytes_text) {
-		outbytes = bytes_to_string((double)applet->devinfo.tx, FALSE, FALSE);
+		outbytes = bytes_to_string((double)applet->devinfo.tx, FALSE, FALSE, FALSE);
 		gtk_label_set_text(GTK_LABEL(applet->outbytes_text), outbytes);
 		g_free(outbytes);
 	}
@@ -901,6 +917,7 @@ pref_response_cb (GtkDialog *dialog, gint id, gpointer data)
     g_settings_set_string (applet->gsettings, "device", applet->devinfo.name);
     g_settings_set_boolean (applet->gsettings, "show-sum", applet->show_sum);
     g_settings_set_boolean (applet->gsettings, "show-bits", applet->show_bits);
+    g_settings_set_boolean (applet->gsettings, "short-unit", applet->short_unit);
     g_settings_set_boolean (applet->gsettings, "show-icon", applet->show_icon);
     g_settings_set_boolean (applet->gsettings, "change-icon", applet->change_icon);
     g_settings_set_boolean (applet->gsettings, "auto-change-device", applet->auto_change_device);
@@ -926,6 +943,14 @@ static void
 showbits_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
 {
 	applet->show_bits = gtk_toggle_button_get_active(togglebutton);
+}
+
+/* Called when the shortunit checkbutton is toggled...
+ */
+static void
+shortunit_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
+{
+	applet->short_unit = gtk_toggle_button_get_active(togglebutton);
 }
 
 /* Called when the showicon checkbutton is toggled...
@@ -965,6 +990,7 @@ settings_cb(GtkAction *action, gpointer data)
 	GtkWidget *indent_label;
 	GtkWidget *show_sum_checkbutton;
 	GtkWidget *show_bits_checkbutton;
+	GtkWidget *short_unit_checkbutton;
 	GtkWidget *show_icon_checkbutton;
 	GtkWidget *change_icon_checkbutton;
 	GtkSizeGroup *category_label_size_group;
@@ -1060,13 +1086,17 @@ settings_cb(GtkAction *action, gpointer data)
 	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(show_bits_checkbutton), applet->show_bits);
 	gtk_box_pack_start(GTK_BOX(controls_vbox), show_bits_checkbutton, FALSE, FALSE, 0);
 	
+	short_unit_checkbutton = gtk_check_button_new_with_mnemonic(_("Shorten _unit legend"));
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(short_unit_checkbutton), applet->short_unit);
+	gtk_box_pack_start(GTK_BOX(controls_vbox), short_unit_checkbutton, FALSE, FALSE, 0);
+
 	change_icon_checkbutton = gtk_check_button_new_with_mnemonic(_("Change _icon according to the selected device"));
 	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(change_icon_checkbutton), applet->change_icon);
-  	gtk_box_pack_start(GTK_BOX(controls_vbox), change_icon_checkbutton, FALSE, FALSE, 0);
+	gtk_box_pack_start(GTK_BOX(controls_vbox), change_icon_checkbutton, FALSE, FALSE, 0);
 	
 	show_icon_checkbutton = gtk_check_button_new_with_mnemonic(_("Show _icon"));
 	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(show_icon_checkbutton), applet->show_icon);
-  	gtk_box_pack_start(GTK_BOX(controls_vbox), show_icon_checkbutton, FALSE, FALSE, 0);
+	gtk_box_pack_start(GTK_BOX(controls_vbox), show_icon_checkbutton, FALSE, FALSE, 0);
 
 	g_signal_connect(G_OBJECT (applet->network_device_combo), "changed",
 			 G_CALLBACK(device_change_cb), (gpointer)applet);
@@ -1076,6 +1106,9 @@ settings_cb(GtkAction *action, gpointer data)
 
 	g_signal_connect(G_OBJECT (show_bits_checkbutton), "toggled",
 			 G_CALLBACK(showbits_change_cb), (gpointer)applet);
+
+	g_signal_connect(G_OBJECT (short_unit_checkbutton), "toggled",
+			 G_CALLBACK(shortunit_change_cb), (gpointer)applet);
 
 	g_signal_connect(G_OBJECT (show_icon_checkbutton), "toggled",
 			 G_CALLBACK(showicon_change_cb), (gpointer)applet);
@@ -1554,6 +1587,7 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 	applet->refresh_time = 1000.0;
 	applet->show_sum = FALSE;
 	applet->show_bits = FALSE;
+	applet->short_unit = FALSE;
 	applet->show_icon = TRUE;
 	applet->change_icon = TRUE;
 	applet->auto_change_device = TRUE;
@@ -1581,6 +1615,7 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 	
 	applet->show_sum = g_settings_get_boolean (applet->gsettings, "show-sum");
 	applet->show_bits = g_settings_get_boolean (applet->gsettings, "show-bits");
+	applet->short_unit = g_settings_get_boolean (applet->gsettings, "short-unit");
 	applet->show_icon = g_settings_get_boolean (applet->gsettings, "show-icon");
 	applet->change_icon = g_settings_get_boolean (applet->gsettings, "change-icon");
 	applet->auto_change_device = g_settings_get_boolean (applet->gsettings, "auto-change-device");
