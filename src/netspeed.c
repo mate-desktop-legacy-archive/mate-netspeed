@@ -1012,8 +1012,7 @@ settings_cb(GtkAction *action, gpointer data)
   
 	applet->settings = GTK_DIALOG(gtk_dialog_new_with_buttons(_("Mate Netspeed Preferences"), 
 								  NULL, 
-								  GTK_DIALOG_DESTROY_WITH_PARENT |
-								  GTK_DIALOG_NO_SEPARATOR,	
+								  GTK_DIALOG_DESTROY_WITH_PARENT,
 								  GTK_STOCK_HELP, GTK_RESPONSE_HELP, 
 								  GTK_STOCK_CLOSE, GTK_RESPONSE_ACCEPT, 
 								  NULL));
@@ -1212,8 +1211,7 @@ showinfo_cb(GtkAction *action, gpointer data)
 	title = g_strdup_printf(_("Device Details for %s"), applet->devinfo.name);
 	applet->details = GTK_DIALOG(gtk_dialog_new_with_buttons(title, 
 		NULL, 
-		GTK_DIALOG_DESTROY_WITH_PARENT |
-	 	GTK_DIALOG_NO_SEPARATOR,
+		GTK_DIALOG_DESTROY_WITH_PARENT,
 		GTK_STOCK_CLOSE, GTK_RESPONSE_ACCEPT, 
 		GTK_STOCK_HELP, GTK_RESPONSE_HELP,
 		NULL));
