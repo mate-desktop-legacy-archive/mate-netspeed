@@ -10,12 +10,12 @@ msgstr ""
 "POT-Creation-Date: 2014-01-24 21:07+0100\n"
 "PO-Revision-Date: 2014-01-24 20:11+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Occitan (post 1500) (http://www.transifex.com/projects/p/MATE/language/oc/)\n"
+"Language-Team: Kazakh (http://www.transifex.com/projects/p/MATE/language/kk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: oc\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: kk\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../src/netspeed.c:417
 msgid "b"
@@ -27,19 +27,19 @@ msgstr ""
 
 #: ../src/netspeed.c:419
 msgid "b/s"
-msgstr "b/s"
+msgstr ""
 
 #: ../src/netspeed.c:419
 msgid "B/s"
-msgstr "o/s"
+msgstr ""
 
 #: ../src/netspeed.c:422
 msgid "bits"
-msgstr "bits"
+msgstr ""
 
 #: ../src/netspeed.c:422
 msgid "bytes"
-msgstr "octets"
+msgstr "байт"
 
 #: ../src/netspeed.c:430
 msgid "k"
@@ -51,19 +51,19 @@ msgstr ""
 
 #: ../src/netspeed.c:432
 msgid "kb/s"
-msgstr "ko/s"
+msgstr ""
 
 #: ../src/netspeed.c:432
 msgid "KiB/s"
-msgstr "ko/s"
+msgstr ""
 
 #: ../src/netspeed.c:435
 msgid "kb"
-msgstr "ko"
+msgstr ""
 
 #: ../src/netspeed.c:435
 msgid "KiB"
-msgstr "ko"
+msgstr "КиБ"
 
 #: ../src/netspeed.c:445
 msgid "m"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../src/netspeed.c:447
 msgid "MiB/s"
-msgstr "Mo/s"
+msgstr ""
 
 #: ../src/netspeed.c:450
 msgid "mb"
@@ -87,14 +87,14 @@ msgstr ""
 
 #: ../src/netspeed.c:450
 msgid "MiB"
-msgstr "Mo"
+msgstr "МиБ"
 
 #: ../src/netspeed.c:776
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
 "%s"
-msgstr "I a agut una error al moment de mostrar l'ajuda :\n%s"
+msgstr ""
 
 #: ../src/netspeed.c:827
 #, c-format
@@ -111,7 +111,7 @@ msgstr ""
 
 #: ../src/netspeed.c:863
 msgid "translator-credits"
-msgstr "La còla occitana de revirada d'Ubuntu, 2007 - ubuntu-l10n-oci@lists.ubuntu.com"
+msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010"
 
 #: ../src/netspeed.c:865
 msgid "MATE Website"
@@ -123,7 +123,7 @@ msgstr ""
 
 #: ../src/netspeed.c:1035
 msgid "General Settings"
-msgstr "Paramètres generals"
+msgstr ""
 
 #: ../src/netspeed.c:1056
 msgid "Network _device:"
@@ -132,7 +132,7 @@ msgstr ""
 #. Default means device with default route set
 #: ../src/netspeed.c:1067
 msgid "Default"
-msgstr ""
+msgstr "Бастапқы"
 
 #: ../src/netspeed.c:1080
 msgid "Show _sum instead of in & out"
@@ -173,11 +173,11 @@ msgstr ""
 
 #: ../src/netspeed.c:1254
 msgid "Netmask:"
-msgstr "Masqueta ret :"
+msgstr ""
 
 #: ../src/netspeed.c:1255
 msgid "Hardware Address:"
-msgstr ""
+msgstr "Құрылғы адресі:"
 
 #: ../src/netspeed.c:1256
 msgid "P-t-P Address:"
@@ -194,7 +194,7 @@ msgstr ""
 #: ../src/netspeed.c:1260 ../src/netspeed.c:1261 ../src/netspeed.c:1262
 #: ../src/netspeed.c:1263
 msgid "none"
-msgstr "pas cap"
+msgstr "ешнәрсе"
 
 #: ../src/netspeed.c:1302
 msgid "IPV6 Address:"
@@ -214,11 +214,11 @@ msgstr ""
 
 #: ../src/netspeed.c:1376
 msgid "Preferences..."
-msgstr ""
+msgstr "Параметрлер..."
 
 #: ../src/netspeed.c:1378
 msgid "Help"
-msgstr ""
+msgstr "Көмек"
 
 #: ../src/netspeed.c:1380
 msgid "About..."
@@ -267,7 +267,7 @@ msgstr ""
 
 #: ../src/netspeed.c:1528
 msgid "unknown"
-msgstr ""
+msgstr "белгісіз"
 
 #: ../src/netspeed.c:1575
 msgid "Mate Netspeed"

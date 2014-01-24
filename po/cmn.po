@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Wei-Lun Chao <bluebat@member.fsf.org>, 2012-2013
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
@@ -10,12 +11,12 @@ msgstr ""
 "POT-Creation-Date: 2014-01-24 21:07+0100\n"
 "PO-Revision-Date: 2014-01-24 20:11+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Occitan (post 1500) (http://www.transifex.com/projects/p/MATE/language/oc/)\n"
+"Language-Team: Chinese (Mandarin) (http://www.transifex.com/projects/p/MATE/language/cmn/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: oc\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: cmn\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../src/netspeed.c:417
 msgid "b"
@@ -27,19 +28,19 @@ msgstr ""
 
 #: ../src/netspeed.c:419
 msgid "b/s"
-msgstr "b/s"
+msgstr "位元/秒"
 
 #: ../src/netspeed.c:419
 msgid "B/s"
-msgstr "o/s"
+msgstr "位元組/秒"
 
 #: ../src/netspeed.c:422
 msgid "bits"
-msgstr "bits"
+msgstr "位元"
 
 #: ../src/netspeed.c:422
 msgid "bytes"
-msgstr "octets"
+msgstr "位元組"
 
 #: ../src/netspeed.c:430
 msgid "k"
@@ -51,19 +52,19 @@ msgstr ""
 
 #: ../src/netspeed.c:432
 msgid "kb/s"
-msgstr "ko/s"
+msgstr "kb/s"
 
 #: ../src/netspeed.c:432
 msgid "KiB/s"
-msgstr "ko/s"
+msgstr "KiB/s"
 
 #: ../src/netspeed.c:435
 msgid "kb"
-msgstr "ko"
+msgstr "kb"
 
 #: ../src/netspeed.c:435
 msgid "KiB"
-msgstr "ko"
+msgstr "KiB"
 
 #: ../src/netspeed.c:445
 msgid "m"
@@ -79,7 +80,7 @@ msgstr ""
 
 #: ../src/netspeed.c:447
 msgid "MiB/s"
-msgstr "Mo/s"
+msgstr "MiB/s"
 
 #: ../src/netspeed.c:450
 msgid "mb"
@@ -87,60 +88,60 @@ msgstr ""
 
 #: ../src/netspeed.c:450
 msgid "MiB"
-msgstr "Mo"
+msgstr "MiB"
 
 #: ../src/netspeed.c:776
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
 "%s"
-msgstr "I a agut una error al moment de mostrar l'ajuda :\n%s"
+msgstr "出現了錯誤顯示說明：\n%s"
 
 #: ../src/netspeed.c:827
 #, c-format
 msgid ""
 "Failed to show:\n"
 "%s"
-msgstr ""
+msgstr "顯示時失敗：\n%s"
 
 #: ../src/netspeed.c:860
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
-msgstr ""
+msgstr "會顯示在指定網路裝置上流量的某些資訊的小型程式"
 
 #: ../src/netspeed.c:863
 msgid "translator-credits"
-msgstr "La còla occitana de revirada d'Ubuntu, 2007 - ubuntu-l10n-oci@lists.ubuntu.com"
+msgstr "趙惟倫 <bluebat@member.fsf.org>, 2012, 2013"
 
 #: ../src/netspeed.c:865
 msgid "MATE Website"
-msgstr ""
+msgstr "MATE 網站"
 
 #: ../src/netspeed.c:1013
 msgid "Mate Netspeed Preferences"
-msgstr ""
+msgstr "Mate Netspeed 偏好設定"
 
 #: ../src/netspeed.c:1035
 msgid "General Settings"
-msgstr "Paramètres generals"
+msgstr "一般設定"
 
 #: ../src/netspeed.c:1056
 msgid "Network _device:"
-msgstr ""
+msgstr "網路裝置(_D)："
 
 #. Default means device with default route set
 #: ../src/netspeed.c:1067
 msgid "Default"
-msgstr ""
+msgstr "預設"
 
 #: ../src/netspeed.c:1080
 msgid "Show _sum instead of in & out"
-msgstr ""
+msgstr "顯示總和以代替流入 & 流出(_S)"
 
 #: ../src/netspeed.c:1084
 msgid "Show _bits instead of bytes"
-msgstr ""
+msgstr "顯示位元以代替位元組(_B)"
 
 #: ../src/netspeed.c:1088
 msgid "Shorten _unit legend"
@@ -148,7 +149,7 @@ msgstr ""
 
 #: ../src/netspeed.c:1092
 msgid "Change _icon according to the selected device"
-msgstr ""
+msgstr "根據已選裝置變更圖示(_I)"
 
 #: ../src/netspeed.c:1096
 msgid "Show _icon"
@@ -157,105 +158,105 @@ msgstr ""
 #: ../src/netspeed.c:1211
 #, c-format
 msgid "Device Details for %s"
-msgstr ""
+msgstr "關於 %s 的裝置詳細資訊"
 
 #: ../src/netspeed.c:1236
 msgid "_In graph color"
-msgstr ""
+msgstr "流入的圖形顏色(_I)"
 
 #: ../src/netspeed.c:1237
 msgid "_Out graph color"
-msgstr ""
+msgstr "流出的圖形顏色(_O)"
 
 #: ../src/netspeed.c:1253
 msgid "Internet Address:"
-msgstr ""
+msgstr "網際網路位址："
 
 #: ../src/netspeed.c:1254
 msgid "Netmask:"
-msgstr "Masqueta ret :"
+msgstr "網路遮罩："
 
 #: ../src/netspeed.c:1255
 msgid "Hardware Address:"
-msgstr ""
+msgstr "硬體位址："
 
 #: ../src/netspeed.c:1256
 msgid "P-t-P Address:"
-msgstr ""
+msgstr "P-t-P 位址："
 
 #: ../src/netspeed.c:1257
 msgid "Bytes in:"
-msgstr ""
+msgstr "位元組流入："
 
 #: ../src/netspeed.c:1258
 msgid "Bytes out:"
-msgstr ""
+msgstr "位元組流出："
 
 #: ../src/netspeed.c:1260 ../src/netspeed.c:1261 ../src/netspeed.c:1262
 #: ../src/netspeed.c:1263
 msgid "none"
-msgstr "pas cap"
+msgstr "無"
 
 #: ../src/netspeed.c:1302
 msgid "IPV6 Address:"
-msgstr ""
+msgstr "IPV6 位址："
 
 #: ../src/netspeed.c:1334
 msgid "Signal Strength:"
-msgstr ""
+msgstr "信號強度："
 
 #: ../src/netspeed.c:1335
 msgid "ESSID:"
-msgstr ""
+msgstr "ESSID："
 
 #: ../src/netspeed.c:1374
 msgid "Device _Details"
-msgstr ""
+msgstr "裝置詳細資訊(_D)"
 
 #: ../src/netspeed.c:1376
 msgid "Preferences..."
-msgstr ""
+msgstr "偏好設定…"
 
 #: ../src/netspeed.c:1378
 msgid "Help"
-msgstr ""
+msgstr "求助"
 
 #: ../src/netspeed.c:1380
 msgid "About..."
-msgstr ""
+msgstr "關於…"
 
 #: ../src/netspeed.c:1421
 #, c-format
 msgid "Do you want to disconnect %s now?"
-msgstr ""
+msgstr "您現在要中斷連線 %s 嗎？"
 
 #: ../src/netspeed.c:1425
 #, c-format
 msgid "Do you want to connect %s now?"
-msgstr ""
+msgstr "您現在要連接 %s 嗎？"
 
 #: ../src/netspeed.c:1504
 #, c-format
 msgid "%s is down"
-msgstr ""
+msgstr "%s 已停止"
 
 #: ../src/netspeed.c:1509
 #, c-format
 msgid ""
 "%s: %s\n"
 "in: %s out: %s"
-msgstr ""
+msgstr "%s：%s\n流入：%s 流出：%s"
 
 #: ../src/netspeed.c:1511 ../src/netspeed.c:1520
 msgid "has no ip"
-msgstr ""
+msgstr "沒有任何 ip"
 
 #: ../src/netspeed.c:1518
 #, c-format
 msgid ""
 "%s: %s\n"
 "sum: %s"
-msgstr ""
+msgstr "%s：%s\n總和：%s"
 
 #: ../src/netspeed.c:1527
 #, c-format
@@ -263,12 +264,12 @@ msgid ""
 "\n"
 "ESSID: %s\n"
 "Strength: %d %%"
-msgstr ""
+msgstr "\nESSID：%s\n強度：%d %%"
 
 #: ../src/netspeed.c:1528
 msgid "unknown"
-msgstr ""
+msgstr "不明"
 
 #: ../src/netspeed.c:1575
 msgid "Mate Netspeed"
-msgstr ""
+msgstr "Mate Netspeed"

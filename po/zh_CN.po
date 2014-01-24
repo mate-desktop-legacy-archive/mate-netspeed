@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Christopher Meng <cickumqt@gmail.com>, 2012.
-# Dianjin Wang <1132321739qq@gmail.com>, 2012.
+# Christopher Meng <cickumqt@gmail.com>, 2012
+# Dianjin Wang <1132321739qq@gmail.com>, 2012
+# zodiac lee <zodiac8765@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2013-02-23 11:34+0100\n"
-"PO-Revision-Date: 2013-02-23 10:44+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 21:07+0100\n"
+"PO-Revision-Date: 2014-01-24 20:11+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/MATE/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -19,215 +20,247 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../src/netspeed.c:406
+#: ../src/netspeed.c:417
+msgid "b"
+msgstr ""
+
+#: ../src/netspeed.c:417
+msgid "B"
+msgstr ""
+
+#: ../src/netspeed.c:419
 msgid "b/s"
 msgstr "b/s"
 
-#: ../src/netspeed.c:406
+#: ../src/netspeed.c:419
 msgid "B/s"
 msgstr "B/s"
 
-#: ../src/netspeed.c:408
+#: ../src/netspeed.c:422
 msgid "bits"
 msgstr "比特"
 
-#: ../src/netspeed.c:408
+#: ../src/netspeed.c:422
 msgid "bytes"
 msgstr "字节"
 
-#: ../src/netspeed.c:415
+#: ../src/netspeed.c:430
+msgid "k"
+msgstr ""
+
+#: ../src/netspeed.c:430
+msgid "K"
+msgstr ""
+
+#: ../src/netspeed.c:432
 msgid "kb/s"
 msgstr "kb/s"
 
-#: ../src/netspeed.c:415
+#: ../src/netspeed.c:432
 msgid "KiB/s"
 msgstr "KiB/秒"
 
-#: ../src/netspeed.c:417
+#: ../src/netspeed.c:435
 msgid "kb"
 msgstr "kb"
 
-#: ../src/netspeed.c:417
+#: ../src/netspeed.c:435
 msgid "KiB"
 msgstr "KiB"
 
-#: ../src/netspeed.c:426
-msgid "Mb/s"
-msgstr "Mb/s"
+#: ../src/netspeed.c:445
+msgid "m"
+msgstr ""
 
-#: ../src/netspeed.c:426
+#: ../src/netspeed.c:445
+msgid "M"
+msgstr ""
+
+#: ../src/netspeed.c:447
+msgid "mb/s"
+msgstr ""
+
+#: ../src/netspeed.c:447
 msgid "MiB/s"
 msgstr "MiB/秒"
 
-#: ../src/netspeed.c:428
-msgid "Mb"
-msgstr "Mb"
+#: ../src/netspeed.c:450
+msgid "mb"
+msgstr ""
 
-#: ../src/netspeed.c:428
+#: ../src/netspeed.c:450
 msgid "MiB"
 msgstr "MiB"
 
-#: ../src/netspeed.c:754
+#: ../src/netspeed.c:776
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
 "%s"
 msgstr "显示帮助时出错了：\n%s"
 
-#: ../src/netspeed.c:805
+#: ../src/netspeed.c:827
 #, c-format
 msgid ""
 "Failed to show:\n"
 "%s"
 msgstr "显示失败：\n%s"
 
-#: ../src/netspeed.c:838
+#: ../src/netspeed.c:860
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
 msgstr "Netspeed显示指定网络设备上的流量信息."
 
-#: ../src/netspeed.c:841
+#: ../src/netspeed.c:863
 msgid "translator-credits"
 msgstr "翻译人员信息"
 
-#: ../src/netspeed.c:843
+#: ../src/netspeed.c:865
 msgid "MATE Website"
 msgstr "MATE 主页"
 
-#: ../src/netspeed.c:970
+#: ../src/netspeed.c:1013
 msgid "Mate Netspeed Preferences"
 msgstr "Mate 网速偏好设置"
 
-#: ../src/netspeed.c:993
+#: ../src/netspeed.c:1035
 msgid "General Settings"
 msgstr "普通设置："
 
-#: ../src/netspeed.c:1014
+#: ../src/netspeed.c:1056
 msgid "Network _device:"
 msgstr "网络设备(_D)："
 
 #. Default means device with default route set
-#: ../src/netspeed.c:1025
+#: ../src/netspeed.c:1067
 msgid "Default"
 msgstr "默认"
 
-#: ../src/netspeed.c:1038
+#: ../src/netspeed.c:1080
 msgid "Show _sum instead of in & out"
 msgstr "只显示接受发送流量总和(_S)"
 
-#: ../src/netspeed.c:1042
+#: ../src/netspeed.c:1084
 msgid "Show _bits instead of bytes"
 msgstr "使用 _bits 替代字节显示"
 
-#: ../src/netspeed.c:1046
+#: ../src/netspeed.c:1088
+msgid "Shorten _unit legend"
+msgstr ""
+
+#: ../src/netspeed.c:1092
 msgid "Change _icon according to the selected device"
 msgstr "根据指定的设备改变图标"
 
-#: ../src/netspeed.c:1155
+#: ../src/netspeed.c:1096
+msgid "Show _icon"
+msgstr ""
+
+#: ../src/netspeed.c:1211
 #, c-format
 msgid "Device Details for %s"
 msgstr "设备 %s 的详细信息"
 
-#: ../src/netspeed.c:1181
+#: ../src/netspeed.c:1236
 msgid "_In graph color"
 msgstr "接收图像颜色(_I)"
 
-#: ../src/netspeed.c:1182
+#: ../src/netspeed.c:1237
 msgid "_Out graph color"
 msgstr "发送图像颜色(_O)"
 
-#: ../src/netspeed.c:1198
+#: ../src/netspeed.c:1253
 msgid "Internet Address:"
 msgstr "IP 地址："
 
-#: ../src/netspeed.c:1199
+#: ../src/netspeed.c:1254
 msgid "Netmask:"
 msgstr "网络掩码："
 
-#: ../src/netspeed.c:1200
+#: ../src/netspeed.c:1255
 msgid "Hardware Address:"
 msgstr "硬件地址："
 
-#: ../src/netspeed.c:1201
+#: ../src/netspeed.c:1256
 msgid "P-t-P Address:"
 msgstr "P-t-P 地址："
 
-#: ../src/netspeed.c:1202
+#: ../src/netspeed.c:1257
 msgid "Bytes in:"
 msgstr "接受字节："
 
-#: ../src/netspeed.c:1203
+#: ../src/netspeed.c:1258
 msgid "Bytes out:"
 msgstr "发送字节："
 
-#: ../src/netspeed.c:1205 ../src/netspeed.c:1206 ../src/netspeed.c:1207
-#: ../src/netspeed.c:1208
+#: ../src/netspeed.c:1260 ../src/netspeed.c:1261 ../src/netspeed.c:1262
+#: ../src/netspeed.c:1263
 msgid "none"
 msgstr "无"
 
-#: ../src/netspeed.c:1247
+#: ../src/netspeed.c:1302
 msgid "IPV6 Address:"
 msgstr "IPV6 地址："
 
-#: ../src/netspeed.c:1279
+#: ../src/netspeed.c:1334
 msgid "Signal Strength:"
 msgstr "信号强度："
 
-#: ../src/netspeed.c:1280
+#: ../src/netspeed.c:1335
 msgid "ESSID:"
 msgstr "SSID："
 
-#: ../src/netspeed.c:1319
+#: ../src/netspeed.c:1374
 msgid "Device _Details"
 msgstr "设备详细信息(_D)"
 
-#: ../src/netspeed.c:1321
+#: ../src/netspeed.c:1376
 msgid "Preferences..."
-msgstr ""
+msgstr "首选项..."
 
-#: ../src/netspeed.c:1323
+#: ../src/netspeed.c:1378
 msgid "Help"
-msgstr ""
+msgstr "帮助"
 
-#: ../src/netspeed.c:1325
+#: ../src/netspeed.c:1380
 msgid "About..."
-msgstr ""
+msgstr "关于..."
 
-#: ../src/netspeed.c:1366
+#: ../src/netspeed.c:1421
 #, c-format
 msgid "Do you want to disconnect %s now?"
 msgstr "您想要断开 %s 的连接吗？"
 
-#: ../src/netspeed.c:1370
+#: ../src/netspeed.c:1425
 #, c-format
 msgid "Do you want to connect %s now?"
 msgstr "你要现在就连接到 %s 吗？"
 
-#: ../src/netspeed.c:1449
+#: ../src/netspeed.c:1504
 #, c-format
 msgid "%s is down"
 msgstr "%s 已经断开"
 
-#: ../src/netspeed.c:1454
+#: ../src/netspeed.c:1509
 #, c-format
 msgid ""
 "%s: %s\n"
 "in: %s out: %s"
 msgstr "%s: %s\n下载：%s 上传：%s"
 
-#: ../src/netspeed.c:1456 ../src/netspeed.c:1465
+#: ../src/netspeed.c:1511 ../src/netspeed.c:1520
 msgid "has no ip"
 msgstr "没有 IP"
 
-#: ../src/netspeed.c:1463
+#: ../src/netspeed.c:1518
 #, c-format
 msgid ""
 "%s: %s\n"
 "sum: %s"
 msgstr "%s: %s\n共: %s"
 
-#: ../src/netspeed.c:1472
+#: ../src/netspeed.c:1527
 #, c-format
 msgid ""
 "\n"
@@ -235,10 +268,10 @@ msgid ""
 "Strength: %d %%"
 msgstr "\nESSID： %s\n信号强度： %d %%"
 
-#: ../src/netspeed.c:1473
+#: ../src/netspeed.c:1528
 msgid "unknown"
 msgstr "未知"
 
-#: ../src/netspeed.c:1520
+#: ../src/netspeed.c:1575
 msgid "Mate Netspeed"
 msgstr "Mate 网速工具"
