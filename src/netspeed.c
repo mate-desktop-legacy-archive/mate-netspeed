@@ -414,12 +414,12 @@ bytes_to_string(double bytes, gboolean per_sec, gboolean bits, gboolean shortene
 
 		if (per_sec)
 			if (shortened) {
-				unit = bits ? N_("b")   : N_("B");
+				unit = bits ? /* translators: bits (short) */ N_("b"): /* translators: Bytes (short) */ N_("B");
 			} else {
-				unit = bits ? N_("b/s")   : N_("B/s");
+				unit = bits ? N_("b/s") : N_("B/s");
 			}
 		else
-			unit = bits ? N_("bits")  : N_("bytes");
+			unit = bits ? N_("bits") : N_("bytes");
 
 	} else if (bytes < (kilo * kilo)) {
 		format = (bytes < (100 * kilo)) ? "%.1f %s" : "%.0f %s";
@@ -427,7 +427,7 @@ bytes_to_string(double bytes, gboolean per_sec, gboolean bits, gboolean shortene
 
 		if (per_sec)
 			if (shortened) {
-				unit = bits ? N_("k") : N_("K");
+				unit = bits ? /* translators: kilobits (short) */ N_("k") : /* translators: Kilobytes (short) */ N_("K");
 			} else {
 				unit = bits ? N_("kb/s") : N_("KiB/s");
 			}
@@ -442,7 +442,7 @@ bytes_to_string(double bytes, gboolean per_sec, gboolean bits, gboolean shortene
 
 		if (per_sec)
 			if (shortened) {
-				unit = bits ? N_("m") : N_("M");
+				unit = bits ? /* translators: megabits (short) */ N_("m") : /* translators: Megabytes (short) */ N_("M");
 			} else {
 				unit = bits ? N_("mb/s") : N_("MiB/s");
 			}
