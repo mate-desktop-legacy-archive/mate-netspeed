@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# breaker loc <breaker9loc@gmail.com>, 2014
 # sahwar <ve4ernik@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-24 21:07+0100\n"
-"PO-Revision-Date: 2014-01-24 20:11+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"POT-Creation-Date: 2014-01-28 19:26+0100\n"
+"PO-Revision-Date: 2014-01-24 20:29+0000\n"
+"Last-Translator: breaker loc <breaker9loc@gmail.com>\n"
 "Language-Team: Bulgarian (http://www.transifex.com/projects/p/MATE/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,45 +19,49 @@ msgstr ""
 "Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#. translators: bits (short)
 #: ../src/netspeed.c:417
 msgid "b"
 msgstr ""
 
+#. translators: Bytes (short)
 #: ../src/netspeed.c:417
 msgid "B"
 msgstr ""
 
 #: ../src/netspeed.c:419
 msgid "b/s"
-msgstr ""
+msgstr "b/s"
 
 #: ../src/netspeed.c:419
 msgid "B/s"
-msgstr ""
+msgstr "B/s"
 
 #: ../src/netspeed.c:422
 msgid "bits"
-msgstr ""
+msgstr "бита"
 
 #: ../src/netspeed.c:422
 msgid "bytes"
-msgstr ""
+msgstr "Байта"
 
+#. translators: kilobits (short)
 #: ../src/netspeed.c:430
 msgid "k"
 msgstr ""
 
+#. translators: Kilobytes (short)
 #: ../src/netspeed.c:430
 msgid "K"
 msgstr ""
 
 #: ../src/netspeed.c:432
 msgid "kb/s"
-msgstr ""
+msgstr "kb/s"
 
 #: ../src/netspeed.c:432
 msgid "KiB/s"
-msgstr ""
+msgstr "KiB/s"
 
 #: ../src/netspeed.c:435
 msgid "kb"
@@ -64,12 +69,14 @@ msgstr ""
 
 #: ../src/netspeed.c:435
 msgid "KiB"
-msgstr ""
+msgstr "KiB"
 
+#. translators: megabits (short)
 #: ../src/netspeed.c:445
 msgid "m"
 msgstr ""
 
+#. translators: Megabytes (short)
 #: ../src/netspeed.c:445
 msgid "M"
 msgstr ""
@@ -80,7 +87,7 @@ msgstr ""
 
 #: ../src/netspeed.c:447
 msgid "MiB/s"
-msgstr ""
+msgstr "MiB/s"
 
 #: ../src/netspeed.c:450
 msgid "mb"
@@ -128,12 +135,12 @@ msgstr "Общи настройки"
 
 #: ../src/netspeed.c:1056
 msgid "Network _device:"
-msgstr ""
+msgstr "Мрежово_устройство:"
 
 #. Default means device with default route set
 #: ../src/netspeed.c:1067
 msgid "Default"
-msgstr ""
+msgstr "По подразбиране"
 
 #: ../src/netspeed.c:1080
 msgid "Show _sum instead of in & out"
@@ -174,7 +181,7 @@ msgstr "Интернет адрес:"
 
 #: ../src/netspeed.c:1254
 msgid "Netmask:"
-msgstr ""
+msgstr "Мрежова маска:"
 
 #: ../src/netspeed.c:1255
 msgid "Hardware Address:"
@@ -268,7 +275,7 @@ msgstr "\nESSID: %s\nСила: %d %%"
 
 #: ../src/netspeed.c:1528
 msgid "unknown"
-msgstr ""
+msgstr "неизвестен"
 
 #: ../src/netspeed.c:1575
 msgid "Mate Netspeed"

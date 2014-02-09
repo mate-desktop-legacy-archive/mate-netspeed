@@ -5,13 +5,14 @@
 # Translators:
 # benpicco <benpicco@zedat.fu-berlin.de>, 2012
 # muesli4 <muesli4@gmail.com>, 2013
+# to_ba, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-24 21:07+0100\n"
-"PO-Revision-Date: 2014-01-24 20:11+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"POT-Creation-Date: 2014-01-28 19:26+0100\n"
+"PO-Revision-Date: 2014-01-24 23:12+0000\n"
+"Last-Translator: to_ba\n"
 "Language-Team: German (http://www.transifex.com/projects/p/MATE/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,13 +20,15 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#. translators: bits (short)
 #: ../src/netspeed.c:417
 msgid "b"
-msgstr ""
+msgstr "b"
 
+#. translators: Bytes (short)
 #: ../src/netspeed.c:417
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: ../src/netspeed.c:419
 msgid "b/s"
@@ -43,13 +46,15 @@ msgstr "Bit"
 msgid "bytes"
 msgstr "Byte"
 
+#. translators: kilobits (short)
 #: ../src/netspeed.c:430
 msgid "k"
-msgstr ""
+msgstr "k"
 
+#. translators: Kilobytes (short)
 #: ../src/netspeed.c:430
 msgid "K"
-msgstr ""
+msgstr "K"
 
 #: ../src/netspeed.c:432
 msgid "kb/s"
@@ -67,17 +72,19 @@ msgstr "kb"
 msgid "KiB"
 msgstr "KB"
 
+#. translators: megabits (short)
 #: ../src/netspeed.c:445
 msgid "m"
-msgstr ""
+msgstr "m"
 
+#. translators: Megabytes (short)
 #: ../src/netspeed.c:445
 msgid "M"
-msgstr ""
+msgstr "M"
 
 #: ../src/netspeed.c:447
 msgid "mb/s"
-msgstr ""
+msgstr "mb/s"
 
 #: ../src/netspeed.c:447
 msgid "MiB/s"
@@ -85,7 +92,7 @@ msgstr "MB/s"
 
 #: ../src/netspeed.c:450
 msgid "mb"
-msgstr ""
+msgstr "mb"
 
 #: ../src/netspeed.c:450
 msgid "MiB"
@@ -117,15 +124,15 @@ msgstr "Jörgen Scheibengruber <mfcn@gmx.de>\nHendrik Richter <hendi@gnome-de.or
 
 #: ../src/netspeed.c:865
 msgid "MATE Website"
-msgstr "MATE Website"
+msgstr "MATE-Webseite"
 
 #: ../src/netspeed.c:1013
 msgid "Mate Netspeed Preferences"
-msgstr "Mate Netzwerkmonitor Einstellungen"
+msgstr "Einstellungen des Mate-Netzwerkmonitors"
 
 #: ../src/netspeed.c:1035
 msgid "General Settings"
-msgstr "Allgemeine Einstellungen:"
+msgstr "Allgemeine Einstellungen"
 
 #: ../src/netspeed.c:1056
 msgid "Network _device:"
@@ -138,11 +145,11 @@ msgstr "Voreinstellung"
 
 #: ../src/netspeed.c:1080
 msgid "Show _sum instead of in & out"
-msgstr "Zeige die _Summe anstelle von Rein & Raus"
+msgstr "Die _Summe anstelle von Rein & Raus anzeigen"
 
 #: ../src/netspeed.c:1084
 msgid "Show _bits instead of bytes"
-msgstr "Zeige _Bits anstelle von Bytes"
+msgstr "_Bits anstelle von Bytes anzeigen"
 
 #: ../src/netspeed.c:1088
 msgid "Shorten _unit legend"
@@ -150,11 +157,11 @@ msgstr ""
 
 #: ../src/netspeed.c:1092
 msgid "Change _icon according to the selected device"
-msgstr "Das _Icon dem ausgewählten Gerät anpassen"
+msgstr "Das _Symbol dem ausgewählten Gerät anpassen"
 
 #: ../src/netspeed.c:1096
 msgid "Show _icon"
-msgstr ""
+msgstr "_Symbol anzeigen"
 
 #: ../src/netspeed.c:1211
 #, c-format
@@ -216,7 +223,7 @@ msgstr "Geräte_details"
 
 #: ../src/netspeed.c:1376
 msgid "Preferences..."
-msgstr "Einstellungen"
+msgstr "Einstellungen …"
 
 #: ../src/netspeed.c:1378
 msgid "Help"
@@ -224,7 +231,7 @@ msgstr "Hilfe"
 
 #: ../src/netspeed.c:1380
 msgid "About..."
-msgstr "Über"
+msgstr "Über …"
 
 #: ../src/netspeed.c:1421
 #, c-format
@@ -273,4 +280,4 @@ msgstr "unbekannt"
 
 #: ../src/netspeed.c:1575
 msgid "Mate Netspeed"
-msgstr "Mate Netzwerkmonitor"
+msgstr "Mate-Netzwerkmonitor"

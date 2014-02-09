@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Rezső Páder <rezso@rezso.net>, 2013
+# Rezső Páder <rezso@rezso.net>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-24 21:07+0100\n"
-"PO-Revision-Date: 2014-01-24 20:11+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"POT-Creation-Date: 2014-01-28 19:26+0100\n"
+"PO-Revision-Date: 2014-01-25 19:15+0000\n"
+"Last-Translator: Rezső Páder <rezso@rezso.net>\n"
 "Language-Team: Hungarian (http://www.transifex.com/projects/p/MATE/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,13 +18,15 @@ msgstr ""
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#. translators: bits (short)
 #: ../src/netspeed.c:417
 msgid "b"
-msgstr ""
+msgstr "b"
 
+#. translators: Bytes (short)
 #: ../src/netspeed.c:417
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: ../src/netspeed.c:419
 msgid "b/s"
@@ -42,13 +44,15 @@ msgstr "bit"
 msgid "bytes"
 msgstr "bájt"
 
+#. translators: kilobits (short)
 #: ../src/netspeed.c:430
 msgid "k"
-msgstr ""
+msgstr "k"
 
+#. translators: Kilobytes (short)
 #: ../src/netspeed.c:430
 msgid "K"
-msgstr ""
+msgstr "K"
 
 #: ../src/netspeed.c:432
 msgid "kb/s"
@@ -66,17 +70,19 @@ msgstr "kb"
 msgid "KiB"
 msgstr "KiB"
 
+#. translators: megabits (short)
 #: ../src/netspeed.c:445
 msgid "m"
-msgstr ""
+msgstr "m"
 
+#. translators: Megabytes (short)
 #: ../src/netspeed.c:445
 msgid "M"
-msgstr ""
+msgstr "M"
 
 #: ../src/netspeed.c:447
 msgid "mb/s"
-msgstr ""
+msgstr "mb/s"
 
 #: ../src/netspeed.c:447
 msgid "MiB/s"
@@ -84,7 +90,7 @@ msgstr "MiB/s"
 
 #: ../src/netspeed.c:450
 msgid "mb"
-msgstr ""
+msgstr "mb"
 
 #: ../src/netspeed.c:450
 msgid "MiB"
@@ -153,7 +159,7 @@ msgstr "_Ikon változtatása a kijelölt eszköznek megfelelően"
 
 #: ../src/netspeed.c:1096
 msgid "Show _icon"
-msgstr ""
+msgstr "I_kon megjelenítése"
 
 #: ../src/netspeed.c:1211
 #, c-format

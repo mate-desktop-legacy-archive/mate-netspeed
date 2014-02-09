@@ -4,17 +4,19 @@
 # 
 # Translators:
 # Koljan1970 <Stuartlittle1970@gmail.com>, 2013
+# Oleh Tsyupka <aalesshhkka@gmail.com>, 2014
 # Yarema aka Knedlyk <yupadmin@gmail.com>, 2012
 # zubr139 <zubr139@ukr.net>, 2013
 # zubr139 <zubr139@ukr.net>, 2012
 # zubr139 <zubr139@ukr.net>, 2012-2013
+# Koljan1970 <Stuartlittle1970@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-24 21:07+0100\n"
-"PO-Revision-Date: 2014-01-24 20:11+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"POT-Creation-Date: 2014-01-28 19:26+0100\n"
+"PO-Revision-Date: 2014-02-02 18:46+0000\n"
+"Last-Translator: Oleh Tsyupka <aalesshhkka@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/projects/p/MATE/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,13 +24,15 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+#. translators: bits (short)
 #: ../src/netspeed.c:417
 msgid "b"
-msgstr ""
+msgstr "b"
 
+#. translators: Bytes (short)
 #: ../src/netspeed.c:417
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: ../src/netspeed.c:419
 msgid "b/s"
@@ -46,13 +50,15 @@ msgstr "біт"
 msgid "bytes"
 msgstr "байт"
 
+#. translators: kilobits (short)
 #: ../src/netspeed.c:430
 msgid "k"
-msgstr ""
+msgstr "k"
 
+#. translators: Kilobytes (short)
 #: ../src/netspeed.c:430
 msgid "K"
-msgstr ""
+msgstr "K"
 
 #: ../src/netspeed.c:432
 msgid "kb/s"
@@ -70,17 +76,19 @@ msgstr "кб"
 msgid "KiB"
 msgstr "Кбіт"
 
+#. translators: megabits (short)
 #: ../src/netspeed.c:445
 msgid "m"
-msgstr ""
+msgstr "m"
 
+#. translators: Megabytes (short)
 #: ../src/netspeed.c:445
 msgid "M"
-msgstr ""
+msgstr "M"
 
 #: ../src/netspeed.c:447
 msgid "mb/s"
-msgstr ""
+msgstr "mb/s"
 
 #: ../src/netspeed.c:447
 msgid "MiB/s"
@@ -88,7 +96,7 @@ msgstr "Мбіт/с"
 
 #: ../src/netspeed.c:450
 msgid "mb"
-msgstr ""
+msgstr "mb"
 
 #: ../src/netspeed.c:450
 msgid "MiB"
@@ -149,7 +157,7 @@ msgstr "Показувати швидкість у _біт/сек (б/с) зам
 
 #: ../src/netspeed.c:1088
 msgid "Shorten _unit legend"
-msgstr ""
+msgstr "Скорочена легенда про одиницю"
 
 #: ../src/netspeed.c:1092
 msgid "Change _icon according to the selected device"
@@ -157,7 +165,7 @@ msgstr "Змінювати _піктограмму у відповідності
 
 #: ../src/netspeed.c:1096
 msgid "Show _icon"
-msgstr ""
+msgstr "Показати _піктограму"
 
 #: ../src/netspeed.c:1211
 #, c-format
