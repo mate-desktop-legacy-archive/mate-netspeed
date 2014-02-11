@@ -6,7 +6,8 @@ distuninstallcheck_listfiles = find . -type f -print | grep -v scrollkeeper
 
 EXTRA_DIST = intltool-update.in \
              intltool-merge.in \
-             intltool-extract.in
+             intltool-extract.in \
+             autogen.sh
 
 CLEANFILES = $(server_DATA)
 DISTCLEANFILES = \
