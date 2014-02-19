@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-28 19:26+0100\n"
-"PO-Revision-Date: 2014-01-24 23:12+0000\n"
+"PO-Revision-Date: 2014-02-14 15:54+0000\n"
 "Last-Translator: to_ba\n"
 "Language-Team: German (http://www.transifex.com/projects/p/MATE/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -62,7 +62,7 @@ msgstr "kb/s"
 
 #: ../src/netspeed.c:432
 msgid "KiB/s"
-msgstr "KB/s"
+msgstr "KiB/s"
 
 #: ../src/netspeed.c:435
 msgid "kb"
@@ -70,7 +70,7 @@ msgstr "kb"
 
 #: ../src/netspeed.c:435
 msgid "KiB"
-msgstr "KB"
+msgstr "KiB"
 
 #. translators: megabits (short)
 #: ../src/netspeed.c:445
@@ -88,7 +88,7 @@ msgstr "mb/s"
 
 #: ../src/netspeed.c:447
 msgid "MiB/s"
-msgstr "MB/s"
+msgstr "MiB/s"
 
 #: ../src/netspeed.c:450
 msgid "mb"
@@ -96,14 +96,14 @@ msgstr "mb"
 
 #: ../src/netspeed.c:450
 msgid "MiB"
-msgstr "MB"
+msgstr "MiB"
 
 #: ../src/netspeed.c:776
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
 "%s"
-msgstr "Die Hilfeseiten konnte nicht gefunden werden:\n%s"
+msgstr "Die Hilfe konnte nicht angezeigt werden:\n%s"
 
 #: ../src/netspeed.c:827
 #, c-format
@@ -116,11 +116,11 @@ msgstr "Anzeigen gescheitert:\n%s"
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
-msgstr "Ein kleines Applet, welches Informationen zum Verkehr auf einem angegebenen Netzwerkgerät anzeigt"
+msgstr "Ein kleines Applet, welches Informationen zum Datenverkehr auf einem angegebenen Netzwerkgerät anzeigt"
 
 #: ../src/netspeed.c:863
 msgid "translator-credits"
-msgstr "Jörgen Scheibengruber <mfcn@gmx.de>\nHendrik Richter <hendi@gnome-de.org>\nAndre Klapper <ak-47@gmx.net>"
+msgstr "Danksagungen an die Übersetzer"
 
 #: ../src/netspeed.c:865
 msgid "MATE Website"
@@ -136,7 +136,7 @@ msgstr "Allgemeine Einstellungen"
 
 #: ../src/netspeed.c:1056
 msgid "Network _device:"
-msgstr "Netzwerk_gerät:"
+msgstr "_Netzwerkgerät:"
 
 #. Default means device with default route set
 #: ../src/netspeed.c:1067
@@ -153,7 +153,7 @@ msgstr "_Bits anstelle von Bytes anzeigen"
 
 #: ../src/netspeed.c:1088
 msgid "Shorten _unit legend"
-msgstr ""
+msgstr "_Einheitenlegende kürzen"
 
 #: ../src/netspeed.c:1092
 msgid "Change _icon according to the selected device"
@@ -170,11 +170,11 @@ msgstr "Gerätedetails von %s"
 
 #: ../src/netspeed.c:1236
 msgid "_In graph color"
-msgstr "Graphfarbe _rein"
+msgstr "_Graphfarbe rein"
 
 #: ../src/netspeed.c:1237
 msgid "_Out graph color"
-msgstr "Graphfarbe r_aus"
+msgstr "Graphfarbe _raus"
 
 #: ../src/netspeed.c:1253
 msgid "Internet Address:"

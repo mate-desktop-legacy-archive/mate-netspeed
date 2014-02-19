@@ -5,14 +5,15 @@
 # Translators:
 # Fabrizzio Alphonsus Soares <fabrizzio.soares@gmail.com>, 2012
 # Pygmalion, 2014
+# Pygmalion, 2014
 # mkbu95 <mkbu95@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-24 21:07+0100\n"
-"PO-Revision-Date: 2014-01-24 20:11+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"POT-Creation-Date: 2014-01-28 19:26+0100\n"
+"PO-Revision-Date: 2014-02-19 00:09+0000\n"
+"Last-Translator: Pygmalion\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/MATE/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,10 +21,12 @@ msgstr ""
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#. translators: bits (short)
 #: ../src/netspeed.c:417
 msgid "b"
 msgstr ""
 
+#. translators: Bytes (short)
 #: ../src/netspeed.c:417
 msgid "B"
 msgstr ""
@@ -44,10 +47,12 @@ msgstr "bits"
 msgid "bytes"
 msgstr "bytes"
 
+#. translators: kilobits (short)
 #: ../src/netspeed.c:430
 msgid "k"
 msgstr ""
 
+#. translators: Kilobytes (short)
 #: ../src/netspeed.c:430
 msgid "K"
 msgstr ""
@@ -68,10 +73,12 @@ msgstr "kb"
 msgid "KiB"
 msgstr "KiB"
 
+#. translators: megabits (short)
 #: ../src/netspeed.c:445
 msgid "m"
 msgstr ""
 
+#. translators: Megabytes (short)
 #: ../src/netspeed.c:445
 msgid "M"
 msgstr ""
@@ -155,7 +162,7 @@ msgstr "_Alterar ícone de acordo com o disposito especificado"
 
 #: ../src/netspeed.c:1096
 msgid "Show _icon"
-msgstr ""
+msgstr "Ex_ibir ícone"
 
 #: ../src/netspeed.c:1211
 #, c-format
