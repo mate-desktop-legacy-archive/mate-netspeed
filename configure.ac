@@ -2,7 +2,7 @@ AC_PREREQ(2.52)
 
 AC_INIT(mate-netspeed, 1.7.0, https://github.com/mate-desktop/mate-netspeed)
 AC_CONFIG_SRCDIR(src/netspeed.c)
-AM_INIT_AUTOMAKE([foreign no-dist-gzip dist-xz])
+AM_INIT_AUTOMAKE([foreign no-dist-gzip dist-xz check-news])
 
 AM_MAINTAINER_MODE
 AC_CONFIG_HEADERS(config.h)
