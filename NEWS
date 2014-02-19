@@ -1,0 +1,5 @@
+1.7.0
+
+  * Use yelp-tools instead of mate-doc-utils
+  * Add an option to hide icon
+  * Add an option to use short units
