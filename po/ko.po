@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Darkcircle <darkcircle.0426@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-28 19:26+0100\n"
+"PO-Revision-Date: 2014-02-24 19:28+0000\n"
+"Last-Translator: Darkcircle <darkcircle.0426@gmail.com>\n"
+"Language-Team: Korean (http://www.transifex.com/projects/p/MATE/language/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. translators: bits (short)
+#: ../src/netspeed.c:417
+msgid "b"
+msgstr "b"
+
+#. translators: Bytes (short)
+#: ../src/netspeed.c:417
+msgid "B"
+msgstr "B"
+
+#: ../src/netspeed.c:419
+msgid "b/s"
+msgstr "b/s"
+
+#: ../src/netspeed.c:419
+msgid "B/s"
+msgstr "B/s"
+
+#: ../src/netspeed.c:422
+msgid "bits"
+msgstr "비트"
+
+#: ../src/netspeed.c:422
+msgid "bytes"
+msgstr "바이트"
+
+#. translators: kilobits (short)
+#: ../src/netspeed.c:430
+msgid "k"
+msgstr "k"
+
+#. translators: Kilobytes (short)
+#: ../src/netspeed.c:430
+msgid "K"
+msgstr "K"
+
+#: ../src/netspeed.c:432
+msgid "kb/s"
+msgstr "kb/s"
+
+#: ../src/netspeed.c:432
+msgid "KiB/s"
+msgstr "KiB/s"
+
+#: ../src/netspeed.c:435
+msgid "kb"
+msgstr "kb"
+
+#: ../src/netspeed.c:435
+msgid "KiB"
+msgstr "KiB"
+
+#. translators: megabits (short)
+#: ../src/netspeed.c:445
+msgid "m"
+msgstr "m"
+
+#. translators: Megabytes (short)
+#: ../src/netspeed.c:445
+msgid "M"
+msgstr "M"
+
+#: ../src/netspeed.c:447
+msgid "mb/s"
+msgstr "mb/s"
+
+#: ../src/netspeed.c:447
+msgid "MiB/s"
+msgstr "MiB/s"
+
+#: ../src/netspeed.c:450
+msgid "mb"
+msgstr "mb"
+
+#: ../src/netspeed.c:450
+msgid "MiB"
+msgstr "MiB"
+
+#: ../src/netspeed.c:776
+#, c-format
+msgid ""
+"There was an error displaying help:\n"
+"%s"
+msgstr "도움말을 표시하는데 오류가 있습니다:\n%s"
+
+#: ../src/netspeed.c:827
+#, c-format
+msgid ""
+"Failed to show:\n"
+"%s"
+msgstr "보여주기에 실패했습니다:\n%s"
+
+#: ../src/netspeed.c:860
+msgid ""
+"A little applet that displays some information on the traffic on the "
+"specified network device"
+msgstr "지정 네트워크 장치의 트래픽 정보를 보여주는 작은 애플릿입니다"
+
+#: ../src/netspeed.c:863
+msgid "translator-credits"
+msgstr "Seong-ho Cho <darkcircle.0426@gmail.com>"
+
+#: ../src/netspeed.c:865
+msgid "MATE Website"
+msgstr "마테 웹사이트"
+
+#: ../src/netspeed.c:1013
+msgid "Mate Netspeed Preferences"
+msgstr "마테 넷스피드 기본 설정"
+
+#: ../src/netspeed.c:1035
+msgid "General Settings"
+msgstr "일반 설정"
+
+#: ../src/netspeed.c:1056
+msgid "Network _device:"
+msgstr "네트워크 장치(_D):"
+
+#. Default means device with default route set
+#: ../src/netspeed.c:1067
+msgid "Default"
+msgstr " 기본"
+
+#: ../src/netspeed.c:1080
+msgid "Show _sum instead of in & out"
+msgstr "송수신 대신 합계 표시(_S)"
+
+#: ../src/netspeed.c:1084
+msgid "Show _bits instead of bytes"
+msgstr "바이트 단위 대신 비트 단위 표시(_B)"
+
+#: ../src/netspeed.c:1088
+msgid "Shorten _unit legend"
+msgstr "단위 범례 단순화(_U)"
+
+#: ../src/netspeed.c:1092
+msgid "Change _icon according to the selected device"
+msgstr "선택한 장치에 따라 아이콘 바꾸기(_I)"
+
+#: ../src/netspeed.c:1096
+msgid "Show _icon"
+msgstr "아이콘 표시(_I)"
+
+#: ../src/netspeed.c:1211
+#, c-format
+msgid "Device Details for %s"
+msgstr "%s 장치 세부 사항"
+
+#: ../src/netspeed.c:1236
+msgid "_In graph color"
+msgstr "수신 그래프 색상(_I)"
+
+#: ../src/netspeed.c:1237
+msgid "_Out graph color"
+msgstr "송신 그래프 색상(_O)"
+
+#: ../src/netspeed.c:1253
+msgid "Internet Address:"
+msgstr "인터넷 주소:"
+
+#: ../src/netspeed.c:1254
+msgid "Netmask:"
+msgstr "네트워크 마스크:"
+
+#: ../src/netspeed.c:1255
+msgid "Hardware Address:"
+msgstr "하드웨어 주소:"
+
+#: ../src/netspeed.c:1256
+msgid "P-t-P Address:"
+msgstr "P2P 주소:"
+
+#: ../src/netspeed.c:1257
+msgid "Bytes in:"
+msgstr "수신 바이트 수:"
+
+#: ../src/netspeed.c:1258
+msgid "Bytes out:"
+msgstr "송신 바이트 수:"
+
+#: ../src/netspeed.c:1260 ../src/netspeed.c:1261 ../src/netspeed.c:1262
+#: ../src/netspeed.c:1263
+msgid "none"
+msgstr "없음"
+
+#: ../src/netspeed.c:1302
+msgid "IPV6 Address:"
+msgstr "IPv6 주소:"
+
+#: ../src/netspeed.c:1334
+msgid "Signal Strength:"
+msgstr "신호 세기:"
+
+#: ../src/netspeed.c:1335
+msgid "ESSID:"
+msgstr "ESSID:"
+
+#: ../src/netspeed.c:1374
+msgid "Device _Details"
+msgstr "장치 세부 사항(_D)"
+
+#: ../src/netspeed.c:1376
+msgid "Preferences..."
+msgstr "기본 설정..."
+
+#: ../src/netspeed.c:1378
+msgid "Help"
+msgstr "도움말"
+
+#: ../src/netspeed.c:1380
+msgid "About..."
+msgstr "정보..."
+
+#: ../src/netspeed.c:1421
+#, c-format
+msgid "Do you want to disconnect %s now?"
+msgstr "%s 연결을 끊으시겠습니까?"
+
+#: ../src/netspeed.c:1425
+#, c-format
+msgid "Do you want to connect %s now?"
+msgstr "%s을(를) 연결하시겠습니까?"
+
+#: ../src/netspeed.c:1504
+#, c-format
+msgid "%s is down"
+msgstr "%s 장치를 껐습니다"
+
+#: ../src/netspeed.c:1509
+#, c-format
+msgid ""
+"%s: %s\n"
+"in: %s out: %s"
+msgstr "%s: %s\n수신: %s 송신: %s"
+
+#: ../src/netspeed.c:1511 ../src/netspeed.c:1520
+msgid "has no ip"
+msgstr "IP 없음"
+
+#: ../src/netspeed.c:1518
+#, c-format
+msgid ""
+"%s: %s\n"
+"sum: %s"
+msgstr "%s: %s\n합계: %s"
+
+#: ../src/netspeed.c:1527
+#, c-format
+msgid ""
+"\n"
+"ESSID: %s\n"
+"Strength: %d %%"
+msgstr "\nESSID: %s\n세기: %d %%"
+
+#: ../src/netspeed.c:1528
+msgid "unknown"
+msgstr "알 수 없음"
+
+#: ../src/netspeed.c:1575
+msgid "Mate Netspeed"
+msgstr "마테 넷스피드"

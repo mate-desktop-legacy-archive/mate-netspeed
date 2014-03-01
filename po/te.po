@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# ప్రవీణ్ ఇళ్ళ <mail2ipn@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-28 19:26+0100\n"
+"PO-Revision-Date: 2014-02-25 13:07+0000\n"
+"Last-Translator: ప్రవీణ్ ఇళ్ళ <mail2ipn@gmail.com>\n"
+"Language-Team: Telugu (http://www.transifex.com/projects/p/MATE/language/te/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: te\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. translators: bits (short)
+#: ../src/netspeed.c:417
+msgid "b"
+msgstr ""
+
+#. translators: Bytes (short)
+#: ../src/netspeed.c:417
+msgid "B"
+msgstr ""
+
+#: ../src/netspeed.c:419
+msgid "b/s"
+msgstr "బి/సె"
+
+#: ../src/netspeed.c:419
+msgid "B/s"
+msgstr "బై/సె"
+
+#: ../src/netspeed.c:422
+msgid "bits"
+msgstr "బిట్లు"
+
+#: ../src/netspeed.c:422
+msgid "bytes"
+msgstr "బైట్లు"
+
+#. translators: kilobits (short)
+#: ../src/netspeed.c:430
+msgid "k"
+msgstr ""
+
+#. translators: Kilobytes (short)
+#: ../src/netspeed.c:430
+msgid "K"
+msgstr ""
+
+#: ../src/netspeed.c:432
+msgid "kb/s"
+msgstr "కిబై/సె"
+
+#: ../src/netspeed.c:432
+msgid "KiB/s"
+msgstr ""
+
+#: ../src/netspeed.c:435
+msgid "kb"
+msgstr ""
+
+#: ../src/netspeed.c:435
+msgid "KiB"
+msgstr ""
+
+#. translators: megabits (short)
+#: ../src/netspeed.c:445
+msgid "m"
+msgstr ""
+
+#. translators: Megabytes (short)
+#: ../src/netspeed.c:445
+msgid "M"
+msgstr ""
+
+#: ../src/netspeed.c:447
+msgid "mb/s"
+msgstr ""
+
+#: ../src/netspeed.c:447
+msgid "MiB/s"
+msgstr ""
+
+#: ../src/netspeed.c:450
+msgid "mb"
+msgstr ""
+
+#: ../src/netspeed.c:450
+msgid "MiB"
+msgstr ""
+
+#: ../src/netspeed.c:776
+#, c-format
+msgid ""
+"There was an error displaying help:\n"
+"%s"
+msgstr ""
+
+#: ../src/netspeed.c:827
+#, c-format
+msgid ""
+"Failed to show:\n"
+"%s"
+msgstr ""
+
+#: ../src/netspeed.c:860
+msgid ""
+"A little applet that displays some information on the traffic on the "
+"specified network device"
+msgstr ""
+
+#: ../src/netspeed.c:863
+msgid "translator-credits"
+msgstr "Praveen Illa <mail2ipn@gmail.com>, 2014"
+
+#: ../src/netspeed.c:865
+msgid "MATE Website"
+msgstr "మేట్ జాలగూడు"
+
+#: ../src/netspeed.c:1013
+msgid "Mate Netspeed Preferences"
+msgstr "మేట్ జాలవేగం అభిరుచులు"
+
+#: ../src/netspeed.c:1035
+msgid "General Settings"
+msgstr "సాధారణ అమరికలు"
+
+#: ../src/netspeed.c:1056
+msgid "Network _device:"
+msgstr ""
+
+#. Default means device with default route set
+#: ../src/netspeed.c:1067
+msgid "Default"
+msgstr "అప్రమేయం"
+
+#: ../src/netspeed.c:1080
+msgid "Show _sum instead of in & out"
+msgstr ""
+
+#: ../src/netspeed.c:1084
+msgid "Show _bits instead of bytes"
+msgstr ""
+
+#: ../src/netspeed.c:1088
+msgid "Shorten _unit legend"
+msgstr ""
+
+#: ../src/netspeed.c:1092
+msgid "Change _icon according to the selected device"
+msgstr ""
+
+#: ../src/netspeed.c:1096
+msgid "Show _icon"
+msgstr ""
+
+#: ../src/netspeed.c:1211
+#, c-format
+msgid "Device Details for %s"
+msgstr ""
+
+#: ../src/netspeed.c:1236
+msgid "_In graph color"
+msgstr ""
+
+#: ../src/netspeed.c:1237
+msgid "_Out graph color"
+msgstr ""
+
+#: ../src/netspeed.c:1253
+msgid "Internet Address:"
+msgstr ""
+
+#: ../src/netspeed.c:1254
+msgid "Netmask:"
+msgstr ""
+
+#: ../src/netspeed.c:1255
+msgid "Hardware Address:"
+msgstr ""
+
+#: ../src/netspeed.c:1256
+msgid "P-t-P Address:"
+msgstr ""
+
+#: ../src/netspeed.c:1257
+msgid "Bytes in:"
+msgstr ""
+
+#: ../src/netspeed.c:1258
+msgid "Bytes out:"
+msgstr ""
+
+#: ../src/netspeed.c:1260 ../src/netspeed.c:1261 ../src/netspeed.c:1262
+#: ../src/netspeed.c:1263
+msgid "none"
+msgstr "ఏదీకాదు"
+
+#: ../src/netspeed.c:1302
+msgid "IPV6 Address:"
+msgstr ""
+
+#: ../src/netspeed.c:1334
+msgid "Signal Strength:"
+msgstr ""
+
+#: ../src/netspeed.c:1335
+msgid "ESSID:"
+msgstr ""
+
+#: ../src/netspeed.c:1374
+msgid "Device _Details"
+msgstr "పరికరం వివరాలు"
+
+#: ../src/netspeed.c:1376
+msgid "Preferences..."
+msgstr "అభిరుచులు..."
+
+#: ../src/netspeed.c:1378
+msgid "Help"
+msgstr "సహాయం"
+
+#: ../src/netspeed.c:1380
+msgid "About..."
+msgstr "గురించి..."
+
+#: ../src/netspeed.c:1421
+#, c-format
+msgid "Do you want to disconnect %s now?"
+msgstr ""
+
+#: ../src/netspeed.c:1425
+#, c-format
+msgid "Do you want to connect %s now?"
+msgstr ""
+
+#: ../src/netspeed.c:1504
+#, c-format
+msgid "%s is down"
+msgstr ""
+
+#: ../src/netspeed.c:1509
+#, c-format
+msgid ""
+"%s: %s\n"
+"in: %s out: %s"
+msgstr ""
+
+#: ../src/netspeed.c:1511 ../src/netspeed.c:1520
+msgid "has no ip"
+msgstr ""
+
+#: ../src/netspeed.c:1518
+#, c-format
+msgid ""
+"%s: %s\n"
+"sum: %s"
+msgstr ""
+
+#: ../src/netspeed.c:1527
+#, c-format
+msgid ""
+"\n"
+"ESSID: %s\n"
+"Strength: %d %%"
+msgstr ""
+
+#: ../src/netspeed.c:1528
+msgid "unknown"
+msgstr "తెలియదు"
+
+#: ../src/netspeed.c:1575
+msgid "Mate Netspeed"
+msgstr "మేట్ జాలవేగం"
