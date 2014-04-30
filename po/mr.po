@@ -3,151 +3,151 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# samson <sambelet@yahoo.com>, 2013-2014
+# vaibhav.dlv <vaibhav.dlv@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-28 19:26+0100\n"
-"PO-Revision-Date: 2014-03-30 23:42+0000\n"
-"Last-Translator: samson <sambelet@yahoo.com>\n"
-"Language-Team: Amharic (http://www.transifex.com/projects/p/MATE/language/am/)\n"
+"PO-Revision-Date: 2014-04-27 06:28+0000\n"
+"Last-Translator: vaibhav.dlv <vaibhav.dlv@gmail.com>\n"
+"Language-Team: Marathi (http://www.transifex.com/projects/p/MATE/language/mr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: am\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: mr\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. translators: bits (short)
 #: ../src/netspeed.c:417
 msgid "b"
-msgstr ""
+msgstr "b"
 
 #. translators: Bytes (short)
 #: ../src/netspeed.c:417
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: ../src/netspeed.c:419
 msgid "b/s"
-msgstr "ቢ/ሰ "
+msgstr "b/s"
 
 #: ../src/netspeed.c:419
 msgid "B/s"
-msgstr "ቢ/ሰ "
+msgstr "B/s"
 
 #: ../src/netspeed.c:422
 msgid "bits"
-msgstr "ቢትስ "
+msgstr "बिट्स"
 
 #: ../src/netspeed.c:422
 msgid "bytes"
-msgstr "ባይትስ "
+msgstr "बाईट्स"
 
 #. translators: kilobits (short)
 #: ../src/netspeed.c:430
 msgid "k"
-msgstr ""
+msgstr "k"
 
 #. translators: Kilobytes (short)
 #: ../src/netspeed.c:430
 msgid "K"
-msgstr ""
+msgstr "K"
 
 #: ../src/netspeed.c:432
 msgid "kb/s"
-msgstr "ኪቢ/ሰ "
+msgstr "kb/s"
 
 #: ../src/netspeed.c:432
 msgid "KiB/s"
-msgstr "ኪቢ/ሰ"
+msgstr "KiB/s"
 
 #: ../src/netspeed.c:435
 msgid "kb"
-msgstr "ኪቢ "
+msgstr "kb"
 
 #: ../src/netspeed.c:435
 msgid "KiB"
-msgstr "ኪቢ"
+msgstr "KiB"
 
 #. translators: megabits (short)
 #: ../src/netspeed.c:445
 msgid "m"
-msgstr ""
+msgstr "m"
 
 #. translators: Megabytes (short)
 #: ../src/netspeed.c:445
 msgid "M"
-msgstr ""
+msgstr "M"
 
 #: ../src/netspeed.c:447
 msgid "mb/s"
-msgstr ""
+msgstr "mb/s"
 
 #: ../src/netspeed.c:447
 msgid "MiB/s"
-msgstr "ሜቢ/ስ "
+msgstr "MiB/s"
 
 #: ../src/netspeed.c:450
 msgid "mb"
-msgstr ""
+msgstr "mb"
 
 #: ../src/netspeed.c:450
 msgid "MiB"
-msgstr "ሜቢ "
+msgstr "MiB"
 
 #: ../src/netspeed.c:776
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
 "%s"
-msgstr "እርዳታን በማሳየት ላይ እንዳለ ችግር ተፈጥሯል :\n%s"
+msgstr "मदत दर्शवितेवेळी त्रुटी: \n%s"
 
 #: ../src/netspeed.c:827
 #, c-format
 msgid ""
 "Failed to show:\n"
 "%s"
-msgstr "ማሳየት አልተቻለም :\n%s"
+msgstr "दाखविता आले नाही:\n%s"
 
 #: ../src/netspeed.c:860
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
-msgstr ""
+msgstr "एक छोटे अॅप्लेट जे निर्दिष्ट साधनावरील वाहतुकीची माहिती दाखवते"
 
 #: ../src/netspeed.c:863
 msgid "translator-credits"
-msgstr "ምስጋና ለተርጓሚዎች "
+msgstr "भाषांतराचे श्रेय Vaibhav Dalvi<vaibhav.dlv@gmail.com> 2014"
 
 #: ../src/netspeed.c:865
 msgid "MATE Website"
-msgstr "የሜት ድህረ ገጽ "
+msgstr "MATE संकेतस्थळ"
 
 #: ../src/netspeed.c:1013
 msgid "Mate Netspeed Preferences"
-msgstr "የሜት Netspeed ምርጫዎች "
+msgstr "MATE संजाळ गती प्राधान्यता"
 
 #: ../src/netspeed.c:1035
 msgid "General Settings"
-msgstr "ባጠቃላይ ማሰናጃዎች "
+msgstr "सर्वसाधारण संयोजना"
 
 #: ../src/netspeed.c:1056
 msgid "Network _device:"
-msgstr "የኔትዎርክ _አካሎች :"
+msgstr "संजाळ साधन(_D): "
 
 #. Default means device with default route set
 #: ../src/netspeed.c:1067
 msgid "Default"
-msgstr "ነባር "
+msgstr "मुलभूत"
 
 #: ../src/netspeed.c:1080
 msgid "Show _sum instead of in & out"
-msgstr "_ጠቅላላ ድምሩን ማሳያ የገባ & የወጣውን ከማሳየት ይልቅ "
+msgstr "In & out ऐवजी sum दाखवा (_S)"
 
 #: ../src/netspeed.c:1084
 msgid "Show _bits instead of bytes"
-msgstr "+ቢትስ ማሳያ ከባይትስ ይልቅ "
+msgstr "बिट्स ऐवजी बाईट्स दाखवा(_B)"
 
 #: ../src/netspeed.c:1088
 msgid "Shorten _unit legend"
@@ -155,61 +155,61 @@ msgstr ""
 
 #: ../src/netspeed.c:1092
 msgid "Change _icon according to the selected device"
-msgstr "በተመረጠው አካል መሰረት _ምልክቶችን መቀየሪያ "
+msgstr "निवडलेल्या साधनाप्रमाणे चिन्ह बदला"
 
 #: ../src/netspeed.c:1096
 msgid "Show _icon"
-msgstr " _ምልክት ማሳያ"
+msgstr "चिन्ह दाखवा(_I)"
 
 #: ../src/netspeed.c:1211
 #, c-format
 msgid "Device Details for %s"
-msgstr "የአካሉ ዝርዝር ለ %s"
+msgstr "%s साठी साधन तपशील"
 
 #: ../src/netspeed.c:1236
 msgid "_In graph color"
-msgstr ""
+msgstr "आत आलेख रंग(_I)"
 
 #: ../src/netspeed.c:1237
 msgid "_Out graph color"
-msgstr ""
+msgstr "बाहेर आलेख रंग(_O)"
 
 #: ../src/netspeed.c:1253
 msgid "Internet Address:"
-msgstr "የኢንተርኔት አድራሻ :"
+msgstr "इंटरनेट पत्ता:"
 
 #: ../src/netspeed.c:1254
 msgid "Netmask:"
-msgstr "Netmask:"
+msgstr "नेटमास्क:"
 
 #: ../src/netspeed.c:1255
 msgid "Hardware Address:"
-msgstr "የ ጠንካራ አካል አድራሻ:"
+msgstr "हार्डवेअर पत्ता:"
 
 #: ../src/netspeed.c:1256
 msgid "P-t-P Address:"
-msgstr "P-t-P Address:"
+msgstr "P-t-P पत्ता:"
 
 #: ../src/netspeed.c:1257
 msgid "Bytes in:"
-msgstr "ባይትስ ወደ ውስጥ :"
+msgstr "आत बाईट्स:"
 
 #: ../src/netspeed.c:1258
 msgid "Bytes out:"
-msgstr "ባይትስ ወደ ውጪ :"
+msgstr "बाहेर बाईट्स:"
 
 #: ../src/netspeed.c:1260 ../src/netspeed.c:1261 ../src/netspeed.c:1262
 #: ../src/netspeed.c:1263
 msgid "none"
-msgstr "ምንም "
+msgstr "काहिच नाही"
 
 #: ../src/netspeed.c:1302
 msgid "IPV6 Address:"
-msgstr "IPV6 Address:"
+msgstr "IPV6 पत्ता:"
 
 #: ../src/netspeed.c:1334
 msgid "Signal Strength:"
-msgstr "የምልክቱ ጥንካሬ :"
+msgstr "सिग्नल शक्ती:"
 
 #: ../src/netspeed.c:1335
 msgid "ESSID:"
@@ -217,52 +217,52 @@ msgstr "ESSID:"
 
 #: ../src/netspeed.c:1374
 msgid "Device _Details"
-msgstr "የአካሉ _ዝርዝሮች "
+msgstr "साधन तपशील (_D)"
 
 #: ../src/netspeed.c:1376
 msgid "Preferences..."
-msgstr "ምርጫዎች..."
+msgstr "प्राधान्यक्रम..."
 
 #: ../src/netspeed.c:1378
 msgid "Help"
-msgstr "እርዳታ "
+msgstr "मदत"
 
 #: ../src/netspeed.c:1380
 msgid "About..."
-msgstr "ስለ..."
+msgstr "विषयी..."
 
 #: ../src/netspeed.c:1421
 #, c-format
 msgid "Do you want to disconnect %s now?"
-msgstr "አሁን ማቋረጥ %s ይፈልጋሉ?"
+msgstr "तुम्हास जोडणी %s तोडायची आहे का?"
 
 #: ../src/netspeed.c:1425
 #, c-format
 msgid "Do you want to connect %s now?"
-msgstr "አሁን ማቋረጥ %s ይፈልጋሉ?"
+msgstr "तुम्हास जोडणी %s करायची आहे का?"
 
 #: ../src/netspeed.c:1504
 #, c-format
 msgid "%s is down"
-msgstr "%s አይሰራም "
+msgstr "%s बंद आहे"
 
 #: ../src/netspeed.c:1509
 #, c-format
 msgid ""
 "%s: %s\n"
 "in: %s out: %s"
-msgstr "%s: %s\nወደ ውስጥ : %s ወደ ውጪ : %s"
+msgstr "%s: %s\nआत: %s बाहेर: %s"
 
 #: ../src/netspeed.c:1511 ../src/netspeed.c:1520
 msgid "has no ip"
-msgstr " ip የለውም "
+msgstr "ip नाही आहे"
 
 #: ../src/netspeed.c:1518
 #, c-format
 msgid ""
 "%s: %s\n"
 "sum: %s"
-msgstr "%s: %s\nጠቅላላ ድምር : %s"
+msgstr "%s: %s\nबेरीज: %s"
 
 #: ../src/netspeed.c:1527
 #, c-format
@@ -270,12 +270,12 @@ msgid ""
 "\n"
 "ESSID: %s\n"
 "Strength: %d %%"
-msgstr "\nESSID: %s\nጥንካሬው : %d %%"
+msgstr "\nESSID: %s\nशक्ती: %d %%"
 
 #: ../src/netspeed.c:1528
 msgid "unknown"
-msgstr "ያልታወቀ"
+msgstr "अपरिचीत"
 
 #: ../src/netspeed.c:1575
 msgid "Mate Netspeed"
-msgstr "የሜት Netspeed"
+msgstr "मेट नेटस्पीड "

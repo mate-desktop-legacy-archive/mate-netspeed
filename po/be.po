@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-28 19:26+0100\n"
-"PO-Revision-Date: 2014-02-28 14:03+0000\n"
+"PO-Revision-Date: 2014-03-28 14:25+0000\n"
 "Last-Translator: meequz <meequz@gmail.com>\n"
 "Language-Team: Belarusian (http://www.transifex.com/projects/p/MATE/language/be/)\n"
 "MIME-Version: 1.0\n"
@@ -108,17 +108,17 @@ msgstr ""
 msgid ""
 "Failed to show:\n"
 "%s"
-msgstr ""
+msgstr "Не выйшла паказаць:\n%s"
 
 #: ../src/netspeed.c:860
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
-msgstr ""
+msgstr "Малы аплет, што паказвае інфармацыю пра трафік на пэўнай сеткавай прыладзе"
 
 #: ../src/netspeed.c:863
 msgid "translator-credits"
-msgstr "Mihas' Varantsou <meequz@gmail.com>"
+msgstr "Міхась Варанцоў <meequz@gmail.com>"
 
 #: ../src/netspeed.c:865
 msgid "MATE Website"
@@ -143,11 +143,11 @@ msgstr "Стандартна"
 
 #: ../src/netspeed.c:1080
 msgid "Show _sum instead of in & out"
-msgstr ""
+msgstr "Паказваць _суму замест уваходных і выходных"
 
 #: ../src/netspeed.c:1084
 msgid "Show _bits instead of bytes"
-msgstr ""
+msgstr "Паказваць _біты замест байтаў"
 
 #: ../src/netspeed.c:1088
 msgid "Shorten _unit legend"
@@ -155,28 +155,28 @@ msgstr ""
 
 #: ../src/netspeed.c:1092
 msgid "Change _icon according to the selected device"
-msgstr ""
+msgstr "Змяняць _значок паводле абранай прылады"
 
 #: ../src/netspeed.c:1096
 msgid "Show _icon"
-msgstr ""
+msgstr "Паказваць _значок"
 
 #: ../src/netspeed.c:1211
 #, c-format
 msgid "Device Details for %s"
-msgstr ""
+msgstr "Падрабязнасці прылады %s"
 
 #: ../src/netspeed.c:1236
 msgid "_In graph color"
-msgstr ""
+msgstr "Колер _уваходных"
 
 #: ../src/netspeed.c:1237
 msgid "_Out graph color"
-msgstr ""
+msgstr "Колер _выходных"
 
 #: ../src/netspeed.c:1253
 msgid "Internet Address:"
-msgstr ""
+msgstr "Інтэрнэт-адрас:"
 
 #: ../src/netspeed.c:1254
 msgid "Netmask:"
@@ -184,19 +184,19 @@ msgstr "Маска падсеткі:"
 
 #: ../src/netspeed.c:1255
 msgid "Hardware Address:"
-msgstr ""
+msgstr "Апаратурны адрас:"
 
 #: ../src/netspeed.c:1256
 msgid "P-t-P Address:"
-msgstr ""
+msgstr "Адрас P-t-P:"
 
 #: ../src/netspeed.c:1257
 msgid "Bytes in:"
-msgstr ""
+msgstr "Байтаў увайшло:"
 
 #: ../src/netspeed.c:1258
 msgid "Bytes out:"
-msgstr ""
+msgstr "Байтаў выйшла:"
 
 #: ../src/netspeed.c:1260 ../src/netspeed.c:1261 ../src/netspeed.c:1262
 #: ../src/netspeed.c:1263
@@ -229,7 +229,7 @@ msgstr "Даведка"
 
 #: ../src/netspeed.c:1380
 msgid "About..."
-msgstr "Пра"
+msgstr "Пра аплет..."
 
 #: ../src/netspeed.c:1421
 #, c-format
@@ -278,4 +278,4 @@ msgstr ""
 
 #: ../src/netspeed.c:1575
 msgid "Mate Netspeed"
-msgstr ""
+msgstr "Mate Netspeed"

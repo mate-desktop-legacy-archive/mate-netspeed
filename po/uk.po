@@ -6,16 +6,16 @@
 # Koljan1970 <Stuartlittle1970@gmail.com>, 2013
 # Oleh Tsyupka <aalesshhkka@gmail.com>, 2014
 # Yarema aka Knedlyk <yupadmin@gmail.com>, 2012
-# zubr139 <zubr139@ukr.net>, 2013
-# zubr139 <zubr139@ukr.net>, 2012
-# zubr139 <zubr139@ukr.net>, 2012-2013
+# zubr139, 2013
+# zubr139, 2012
+# zubr139, 2012-2013
 # Koljan1970 <Stuartlittle1970@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-28 19:26+0100\n"
-"PO-Revision-Date: 2014-02-02 18:46+0000\n"
+"PO-Revision-Date: 2014-04-19 08:29+0000\n"
 "Last-Translator: Oleh Tsyupka <aalesshhkka@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/projects/p/MATE/language/uk/)\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgstr "біт"
 
 #: ../src/netspeed.c:422
 msgid "bytes"
-msgstr "байт"
+msgstr "байтів"
 
 #. translators: kilobits (short)
 #: ../src/netspeed.c:430
@@ -88,7 +88,7 @@ msgstr "M"
 
 #: ../src/netspeed.c:447
 msgid "mb/s"
-msgstr "mb/s"
+msgstr "мб/с"
 
 #: ../src/netspeed.c:447
 msgid "MiB/s"
@@ -96,7 +96,7 @@ msgstr "Мбіт/с"
 
 #: ../src/netspeed.c:450
 msgid "mb"
-msgstr "mb"
+msgstr "мб"
 
 #: ../src/netspeed.c:450
 msgid "MiB"
@@ -120,11 +120,11 @@ msgstr "Не вдалося показати:\n%s"
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
-msgstr "Індикатор швидкості повідомляє статистичні відомості про потік даних що проходить через обраний мережевий пристрій ."
+msgstr "Індикатор швидкості повідомляє статистичні відомості про потік даних, що проходить через обраний мережевий пристрій."
 
 #: ../src/netspeed.c:863
 msgid "translator-credits"
-msgstr "Yarema aka Knedlyk <yupadmin@gmail.com>,\nMykola Tkach <Stuartlittle1970@gmail.com>"
+msgstr "Yarema aka Knedlyk <yupadmin@gmail.com>,\nMykola Tkach <Stuartlittle1970@gmail.com>,\nOleh Tsyupka <myr4yk@gmail.com>"
 
 #: ../src/netspeed.c:865
 msgid "MATE Website"
@@ -132,7 +132,7 @@ msgstr "Сайт MATE"
 
 #: ../src/netspeed.c:1013
 msgid "Mate Netspeed Preferences"
-msgstr "Mate Netspeed Налаштування"
+msgstr "Уподобання Mate Netspeed"
 
 #: ../src/netspeed.c:1035
 msgid "General Settings"
@@ -161,11 +161,11 @@ msgstr "Скорочена легенда про одиницю"
 
 #: ../src/netspeed.c:1092
 msgid "Change _icon according to the selected device"
-msgstr "Змінювати _піктограмму у відповідності з типом пристрою"
+msgstr "Змінювати _піктоґраму у відповідності з типом пристрою"
 
 #: ../src/netspeed.c:1096
 msgid "Show _icon"
-msgstr "Показати _піктограму"
+msgstr "Показати _піктоґраму"
 
 #: ../src/netspeed.c:1211
 #, c-format
@@ -174,15 +174,15 @@ msgstr "Інформація про пристрій %s"
 
 #: ../src/netspeed.c:1236
 msgid "_In graph color"
-msgstr "Колір графіку _вхідних даних"
+msgstr "Колір ґрафіку _вхідних даних"
 
 #: ../src/netspeed.c:1237
 msgid "_Out graph color"
-msgstr "Колір графіку _вихідних даних"
+msgstr "Колір ґрафіку _вихідних даних"
 
 #: ../src/netspeed.c:1253
 msgid "Internet Address:"
-msgstr "Мережна адреса:"
+msgstr "Усемережна адреса:"
 
 #: ../src/netspeed.c:1254
 msgid "Netmask:"
@@ -215,7 +215,7 @@ msgstr "IPV6 Адреса:"
 
 #: ../src/netspeed.c:1334
 msgid "Signal Strength:"
-msgstr "Сила сигналу"
+msgstr "Сила сиґналу"
 
 #: ../src/netspeed.c:1335
 msgid "ESSID:"
@@ -223,11 +223,11 @@ msgstr "ESSID:"
 
 #: ../src/netspeed.c:1374
 msgid "Device _Details"
-msgstr "Подробиці _Пристрою"
+msgstr "Подробиці _пристрою"
 
 #: ../src/netspeed.c:1376
 msgid "Preferences..."
-msgstr "Налаштування..."
+msgstr "Уподобання..."
 
 #: ../src/netspeed.c:1378
 msgid "Help"
@@ -235,17 +235,17 @@ msgstr "Допомога"
 
 #: ../src/netspeed.c:1380
 msgid "About..."
-msgstr "Про програму..."
+msgstr "Про нас..."
 
 #: ../src/netspeed.c:1421
 #, c-format
 msgid "Do you want to disconnect %s now?"
-msgstr "Від’єднати %s зараз?"
+msgstr "Бажаєте від'єднатися %s зараз?"
 
 #: ../src/netspeed.c:1425
 #, c-format
 msgid "Do you want to connect %s now?"
-msgstr "Під’єднати %s зараз?"
+msgstr "Бажаєте під'єднатися %s зараз?"
 
 #: ../src/netspeed.c:1504
 #, c-format
