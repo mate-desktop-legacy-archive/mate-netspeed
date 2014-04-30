@@ -1,6 +1,6 @@
 1.9.0
 
-  *
+  * Add GTK3 support (network load graph is a bit different with GTK3, drawn using cairo)
 
 1.8.0
 
