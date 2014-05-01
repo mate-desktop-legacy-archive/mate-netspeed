@@ -327,8 +327,8 @@ change_icons(MateNetspeedApplet *applet)
 
 	gtk_image_set_from_pixbuf(GTK_IMAGE(applet->out_pix), out_arrow);
 	gtk_image_set_from_pixbuf(GTK_IMAGE(applet->in_pix), in_arrow);
-	gdk_pixbuf_unref(in_arrow);
-	gdk_pixbuf_unref(out_arrow);
+	g_object_unref(in_arrow);
+	g_object_unref(out_arrow);
 	
 	if (applet->devinfo.running) {
 		gtk_widget_show(applet->in_box);
@@ -468,11 +468,9 @@ bytes_to_string(double bytes, gboolean per_sec, gboolean bits, gboolean shortene
 /* Redraws the graph drawingarea
  * Some really black magic is going on in here ;-)
  */
-#if GTK_CHECK_VERSION (3, 0, 0)
 static void
 redraw_graph(MateNetspeedApplet *applet, cairo_t *cr)
 {
-	GdkRGBA color;
 	GtkWidget *da = GTK_WIDGET(applet->drawingarea);
 	GtkStyle *style = gtk_widget_get_style (da);
 	GdkWindow *real_window = gtk_widget_get_window (da);
@@ -484,6 +482,7 @@ redraw_graph(MateNetspeedApplet *applet, cairo_t *cr)
 	char *text; 
 	int i, offset, w, h;
 	double max_val;
+	double dash[2] = { 1.0, 2.0 };
 	
 	w = gdk_window_get_width (real_window);
 	h = gdk_window_get_height (real_window);
@@ -507,16 +506,14 @@ redraw_graph(MateNetspeedApplet *applet, cairo_t *cr)
 	out_points[offset].y = out_points[offset + 1].y;
 	
 	/* draw the background */
-	gdk_cairo_set_source_color (cr, &style->bg[GTK_STATE_NORMAL]);
+	cairo_set_source_rgb (cr, 1.0, 1.0, 1.0);
+	cairo_rectangle (cr, 02, 2, w - 6, h - 6);
 	cairo_fill (cr);
 
 	cairo_set_line_width(cr, 1.0);
+	cairo_set_dash (cr, dash, 2, 0);
 
-	color.red = 0x3a00 / 65535.0;
-	color.green = 0x8000 / 65535.0;
-	color.blue = 0x1400 / 65535.0;
-	color.alpha = 1.0;
-	gdk_cairo_set_source_rgba (cr, &color);
+	cairo_set_source_rgb (cr, 0.0, 0.0, 0.0);
 	cairo_rectangle (cr, 2, 2, w - 6, h - 6);
 	cairo_stroke (cr);
 
@@ -528,6 +525,7 @@ redraw_graph(MateNetspeedApplet *applet, cairo_t *cr)
 	cairo_stroke (cr);
 	
 	/* draw the polygons */
+	cairo_set_dash (cr, dash, 0, 1);
 	cairo_set_line_cap (cr, CAIRO_LINE_CAP_ROUND);
 	cairo_set_line_join (cr, CAIRO_LINE_JOIN_ROUND);
 
@@ -553,7 +551,11 @@ redraw_graph(MateNetspeedApplet *applet, cairo_t *cr)
 	layout = gtk_widget_create_pango_layout (da, NULL);
 	pango_layout_set_markup(layout, text, -1);
 	g_free (text);
-	gtk_paint_layout(gtk_widget_get_style (da), cr, state, FALSE, da, "max_graph", 3, 2, layout);
+#if GTK_CHECK_VERSION (3, 0, 0)
+	gtk_paint_layout(style, cr, state, FALSE, da, "max_graph", 3, 2, layout);
+#else
+	gtk_paint_layout(style, real_window, state, FALSE, &ra, da, "max_graph", 3, 2, layout);
+#endif
 	g_object_unref(G_OBJECT(layout));
 
 	text = bytes_to_string(0.0, TRUE, applet->show_bits, applet->short_unit);
@@ -562,99 +564,13 @@ redraw_graph(MateNetspeedApplet *applet, cairo_t *cr)
 	pango_layout_set_markup(layout, text, -1);
 	pango_layout_get_pixel_extents (layout, NULL, &logical_rect);
 	g_free (text);
-	gtk_paint_layout(gtk_widget_get_style (da), cr, state, FALSE, da, "max_graph", 3, h - 4 - logical_rect.height, layout);
-	g_object_unref(G_OBJECT(layout));
-}
+#if GTK_CHECK_VERSION (3, 0, 0)
+	gtk_paint_layout(style, cr, state, FALSE, da, "max_graph", 3, h - 4 - logical_rect.height, layout);
 #else
-static void
-redraw_graph(MateNetspeedApplet *applet)
-{
-	GdkGC *gc;
-	GdkColor color;
-	GtkWidget *da = GTK_WIDGET(applet->drawingarea);
-	GdkWindow *window, *real_window = gtk_widget_get_window (da);
-	GdkRectangle ra;
-	GtkStateType state;
-	GdkPoint in_points[GRAPH_VALUES], out_points[GRAPH_VALUES];
-	PangoLayout *layout;
-	PangoRectangle logical_rect;
-	char *text; 
-	int i, offset, w, h;
-	double max_val;
-	
-	gc = gdk_gc_new (real_window);
-	gdk_drawable_get_size(real_window, &w, &h);
-
-	/* use doublebuffering to avoid flickering */
-	window = gdk_pixmap_new(real_window, w, h, -1);
-	
-	/* the graph hight should be: hight/2 <= applet->max_graph < hight */
-	for (max_val = 1; max_val < applet->max_graph; max_val *= 2) ;
-	
-	/* calculate the polygons (GdkPoint[]) for the graphs */ 
-	offset = 0;
-	for (i = applet->index_graph + 1; applet->in_graph[i] < 0; i = (i + 1) % GRAPH_VALUES)
-		offset++;
-	for (i = offset + 1; i < GRAPH_VALUES; i++)
-	{
-		int index = (applet->index_graph + i) % GRAPH_VALUES;
-		out_points[i].x = in_points[i].x = ((w - 8) * i) / GRAPH_VALUES + 2;
-		in_points[i].y = h - 6 - (int)((h - 8) * applet->in_graph[index] / max_val);
-		out_points[i].y = h - 6 - (int)((h - 8) * applet->out_graph[index] / max_val);
-	}	
-	in_points[offset].x = out_points[offset].x = ((w - 8) * offset) / GRAPH_VALUES + 2;
-	in_points[offset].y = in_points[offset + 1].y;
-	out_points[offset].y = out_points[offset + 1].y;
-	
-	/* draw the background */
-	gdk_gc_set_rgb_fg_color (gc, &da->style->black);
-	gdk_draw_rectangle (window, gc, TRUE, 0, 0, w, h);
-	
-	color.red = 0x3a00; color.green = 0x8000; color.blue = 0x1400;
-	gdk_gc_set_rgb_fg_color(gc, &color);
-	gdk_draw_rectangle (window, gc, FALSE, 2, 2, w - 6, h - 6);
-	
-	for (i = 0; i < GRAPH_LINES; i++) {
-		int y = 2 + ((h - 6) * i) / GRAPH_LINES; 
-		gdk_draw_line(window, gc, 2, y, w - 4, y);
-	}
-	
-	/* draw the polygons */
-	gdk_gc_set_line_attributes(gc, 2, GDK_LINE_SOLID, GDK_CAP_ROUND, GDK_JOIN_ROUND);
-	gdk_gc_set_rgb_fg_color(gc, &applet->in_color);
-	gdk_draw_lines(window, gc, in_points + offset, GRAPH_VALUES - offset);
-	gdk_gc_set_rgb_fg_color(gc, &applet->out_color);
-	gdk_draw_lines(window, gc, out_points + offset, GRAPH_VALUES - offset);
-
-	/* draw the 2 labels */
-	state = GTK_STATE_NORMAL;
-	ra.x = 0; ra.y = 0;
-	ra.width = w; ra.height = h;
-	
-	text = bytes_to_string(max_val, TRUE, applet->show_bits, applet->short_unit);
-	add_markup_fgcolor(&text, "white");
-	layout = gtk_widget_create_pango_layout (da, NULL);
-	pango_layout_set_markup(layout, text, -1);
-	g_free (text);
-	gtk_paint_layout(da->style, window, state,	FALSE, &ra, da, "max_graph", 3, 2, layout);
-	g_object_unref(G_OBJECT(layout));
-
-	text = bytes_to_string(0.0, TRUE, applet->show_bits, applet->short_unit);
-	add_markup_fgcolor(&text, "white");
-	layout = gtk_widget_create_pango_layout (da, NULL);
-	pango_layout_set_markup(layout, text, -1);
-	pango_layout_get_pixel_extents (layout, NULL, &logical_rect);
-	g_free (text);
-	gtk_paint_layout(da->style, window, state,	FALSE, &ra, da, "max_graph", 3, h - 4 - logical_rect.height, layout);
-	g_object_unref(G_OBJECT(layout));
-
-	/* draw the pixmap to the real window */	
-	gdk_draw_drawable(real_window, gc, window, 0, 0, 0, 0, w, h);
-	
-	g_object_unref(G_OBJECT(gc));
-	g_object_unref(G_OBJECT(window));
-}
+	gtk_paint_layout(style, real_window, state, FALSE, &ra, da, "max_graph", 3, h - 4 - logical_rect.height, layout);
 #endif
+	g_object_unref(G_OBJECT(layout));
+}
 
 static gboolean
 set_applet_devinfo(MateNetspeedApplet* applet, const char* iface)
@@ -813,11 +729,7 @@ update_applet(MateNetspeedApplet *applet)
 	}
 	/* Redraw the graph of the Infodialog */
 	if (applet->drawingarea)
-#if GTK_CHECK_VERSION (3, 0, 0)
-		gtk_widget_queue_draw (applet->drawingarea);
-#else
-		redraw_graph(applet);
-#endif
+		gtk_widget_queue_draw (GTK_WIDGET (applet->drawingarea));
 	
 	/* Save old values... */
 	applet->in_old[applet->index_old] = applet->devinfo.rx;
@@ -1211,10 +1123,15 @@ da_expose_event(GtkWidget *widget, GdkEventExpose *event, gpointer data)
 {
 	MateNetspeedApplet *applet = (MateNetspeedApplet*)data;
 	
-#if GTK_CHECK_VERSION (3, 0, 0)
+#if !GTK_CHECK_VERSION (3, 0, 0)
+	cairo_t *cr;
+	cr = gdk_cairo_create (event->window);
+	gdk_cairo_region (cr, event->region);
+	cairo_clip (cr);
+#endif
 	redraw_graph(applet, cr);
-#else
-	redraw_graph(applet);
+#if !GTK_CHECK_VERSION (3, 0, 0)
+	cairo_destroy (cr);
 #endif
 	
 	return FALSE;
@@ -1314,11 +1231,7 @@ showinfo_cb(GtkAction *action, gpointer data)
 	gtk_table_set_col_spacings(GTK_TABLE(table), 15);
 	
 	da_frame = gtk_frame_new(NULL);
-#if GTK_CHECK_VERSION (3, 0, 0)
 	gtk_frame_set_shadow_type(GTK_FRAME(da_frame), GTK_SHADOW_NONE);
-#else
-	gtk_frame_set_shadow_type(GTK_FRAME(da_frame), GTK_SHADOW_IN);
-#endif
 	applet->drawingarea = GTK_DRAWING_AREA(gtk_drawing_area_new());
 	gtk_widget_set_size_request(GTK_WIDGET(applet->drawingarea), -1, 180);
 	gtk_container_add(GTK_CONTAINER(da_frame), GTK_WIDGET(applet->drawingarea));
