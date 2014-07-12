@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-28 19:26+0100\n"
-"PO-Revision-Date: 2014-03-30 23:42+0000\n"
+"PO-Revision-Date: 2014-07-06 03:35+0000\n"
 "Last-Translator: samson <sambelet@yahoo.com>\n"
 "Language-Team: Amharic (http://www.transifex.com/projects/p/MATE/language/am/)\n"
 "MIME-Version: 1.0\n"
@@ -21,12 +21,12 @@ msgstr ""
 #. translators: bits (short)
 #: ../src/netspeed.c:417
 msgid "b"
-msgstr ""
+msgstr "b"
 
 #. translators: Bytes (short)
 #: ../src/netspeed.c:417
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: ../src/netspeed.c:419
 msgid "b/s"
@@ -47,12 +47,12 @@ msgstr "ባይትስ "
 #. translators: kilobits (short)
 #: ../src/netspeed.c:430
 msgid "k"
-msgstr ""
+msgstr "k"
 
 #. translators: Kilobytes (short)
 #: ../src/netspeed.c:430
 msgid "K"
-msgstr ""
+msgstr "K"
 
 #: ../src/netspeed.c:432
 msgid "kb/s"
@@ -73,16 +73,16 @@ msgstr "ኪቢ"
 #. translators: megabits (short)
 #: ../src/netspeed.c:445
 msgid "m"
-msgstr ""
+msgstr "m"
 
 #. translators: Megabytes (short)
 #: ../src/netspeed.c:445
 msgid "M"
-msgstr ""
+msgstr "M"
 
 #: ../src/netspeed.c:447
 msgid "mb/s"
-msgstr ""
+msgstr "ሜቢ/ስ "
 
 #: ../src/netspeed.c:447
 msgid "MiB/s"
@@ -90,7 +90,7 @@ msgstr "ሜቢ/ስ "
 
 #: ../src/netspeed.c:450
 msgid "mb"
-msgstr ""
+msgstr "ሜቢ"
 
 #: ../src/netspeed.c:450
 msgid "MiB"
