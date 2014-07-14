@@ -31,6 +31,7 @@
 #include <glib/gi18n.h>
 #include <gio/gio.h>
 #include <libmate-desktop/mate-aboutdialog.h>
+#include <libmate-desktop/mate-colorbutton.h>
 #if GTK_CHECK_VERSION (3, 0, 0)
 #define MATE_DESKTOP_USE_UNSTABLE_API 1
 #include <libmate-desktop/mate-desktop-utils.h>
@@ -1138,13 +1139,13 @@ da_expose_event(GtkWidget *widget, GdkEventExpose *event, gpointer data)
 }	
 
 static void
-incolor_changed_cb (GtkColorButton *cb, gpointer data)
+incolor_changed_cb (MateColorButton *cb, gpointer data)
 {
 	MateNetspeedApplet *applet = (MateNetspeedApplet*)data;
 	gchar *color;
 	GdkColor clr;
 	
-	gtk_color_button_get_color (cb, &clr);
+	mate_color_button_get_color (cb, &clr);
 	applet->in_color = clr;
 	
 	color = g_strdup_printf ("#%04x%04x%04x", clr.red, clr.green, clr.blue);
@@ -1153,13 +1154,13 @@ incolor_changed_cb (GtkColorButton *cb, gpointer data)
 }
 
 static void
-outcolor_changed_cb (GtkColorButton *cb, gpointer data)
+outcolor_changed_cb (MateColorButton *cb, gpointer data)
 {
 	MateNetspeedApplet *applet = (MateNetspeedApplet*)data;
 	gchar *color;
 	GdkColor clr;
 	
-	gtk_color_button_get_color (cb, &clr);
+	mate_color_button_get_color (cb, &clr);
 	applet->out_color = clr;
 	
 	color = g_strdup_printf ("#%04x%04x%04x", clr.red, clr.green, clr.blue);
@@ -1240,11 +1241,11 @@ showinfo_cb(GtkAction *action, gpointer data)
 	incolor_label = gtk_label_new_with_mnemonic(_("_In graph color"));
 	outcolor_label = gtk_label_new_with_mnemonic(_("_Out graph color"));
 	
-	incolor_sel = gtk_color_button_new ();
-	outcolor_sel = gtk_color_button_new ();
+	incolor_sel =  mate_color_button_new ();
+	outcolor_sel = mate_color_button_new ();
 	
-	gtk_color_button_set_color (GTK_COLOR_BUTTON (incolor_sel),  &applet->in_color);
-	gtk_color_button_set_color (GTK_COLOR_BUTTON (outcolor_sel),  &applet->out_color);
+	mate_color_button_set_color (MATE_COLOR_BUTTON (incolor_sel),  &applet->in_color);
+	mate_color_button_set_color (MATE_COLOR_BUTTON (outcolor_sel),  &applet->out_color);
 
 	gtk_label_set_mnemonic_widget(GTK_LABEL(incolor_label), incolor_sel);
 	gtk_label_set_mnemonic_widget(GTK_LABEL(outcolor_label), outcolor_sel);
