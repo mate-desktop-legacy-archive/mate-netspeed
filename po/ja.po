@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# ABE Tsunehiko, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-24 21:07+0100\n"
-"PO-Revision-Date: 2014-01-24 20:11+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"POT-Creation-Date: 2014-01-28 19:26+0100\n"
+"PO-Revision-Date: 2014-08-30 03:33+0000\n"
+"Last-Translator: ABE Tsunehiko\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/MATE/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,13 +18,15 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+#. translators: bits (short)
 #: ../src/netspeed.c:417
 msgid "b"
-msgstr ""
+msgstr "b"
 
+#. translators: Bytes (short)
 #: ../src/netspeed.c:417
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: ../src/netspeed.c:419
 msgid "b/s"
@@ -41,13 +44,15 @@ msgstr "ビット"
 msgid "bytes"
 msgstr "バイト"
 
+#. translators: kilobits (short)
 #: ../src/netspeed.c:430
 msgid "k"
-msgstr ""
+msgstr "k"
 
+#. translators: Kilobytes (short)
 #: ../src/netspeed.c:430
 msgid "K"
-msgstr ""
+msgstr "K"
 
 #: ../src/netspeed.c:432
 msgid "kb/s"
@@ -65,17 +70,19 @@ msgstr "kb"
 msgid "KiB"
 msgstr "KiB"
 
+#. translators: megabits (short)
 #: ../src/netspeed.c:445
 msgid "m"
-msgstr ""
+msgstr "m"
 
+#. translators: Megabytes (short)
 #: ../src/netspeed.c:445
 msgid "M"
-msgstr ""
+msgstr "M"
 
 #: ../src/netspeed.c:447
 msgid "mb/s"
-msgstr ""
+msgstr "mb/s"
 
 #: ../src/netspeed.c:447
 msgid "MiB/s"
@@ -83,7 +90,7 @@ msgstr "MiB/s"
 
 #: ../src/netspeed.c:450
 msgid "mb"
-msgstr ""
+msgstr "mb"
 
 #: ../src/netspeed.c:450
 msgid "MiB"
@@ -101,7 +108,7 @@ msgstr "ヘルプを表示する際にエラーが発生しました:\n%s"
 msgid ""
 "Failed to show:\n"
 "%s"
-msgstr ""
+msgstr "表示に失敗しました:\n%s"
 
 #: ../src/netspeed.c:860
 msgid ""
@@ -115,11 +122,11 @@ msgstr "相花 毅 <takeshi.aihana@gmail.com>\n日本GNOMEユーザー会 http:/
 
 #: ../src/netspeed.c:865
 msgid "MATE Website"
-msgstr ""
+msgstr "MATE Webサイト"
 
 #: ../src/netspeed.c:1013
 msgid "Mate Netspeed Preferences"
-msgstr ""
+msgstr "通信速度の設定"
 
 #: ../src/netspeed.c:1035
 msgid "General Settings"
@@ -132,7 +139,7 @@ msgstr "ネットワークのデバイス(_D):"
 #. Default means device with default route set
 #: ../src/netspeed.c:1067
 msgid "Default"
-msgstr ""
+msgstr "デフォルト"
 
 #: ../src/netspeed.c:1080
 msgid "Show _sum instead of in & out"
@@ -144,7 +151,7 @@ msgstr "バイト数ではなくビット数で表示する(_B)"
 
 #: ../src/netspeed.c:1088
 msgid "Shorten _unit legend"
-msgstr ""
+msgstr "省略した単位を使用する(_U)"
 
 #: ../src/netspeed.c:1092
 msgid "Change _icon according to the selected device"
@@ -152,7 +159,7 @@ msgstr "選択したデバイスに応じてアイコンを変更する(_I)"
 
 #: ../src/netspeed.c:1096
 msgid "Show _icon"
-msgstr ""
+msgstr "アイコンを表示する(_I)"
 
 #: ../src/netspeed.c:1211
 #, c-format
@@ -202,11 +209,11 @@ msgstr "IPv6-アドレス:"
 
 #: ../src/netspeed.c:1334
 msgid "Signal Strength:"
-msgstr ""
+msgstr "信号の強さ:"
 
 #: ../src/netspeed.c:1335
 msgid "ESSID:"
-msgstr ""
+msgstr "ESSID:"
 
 #: ../src/netspeed.c:1374
 msgid "Device _Details"
@@ -214,15 +221,15 @@ msgstr "デバイスの詳細(_D)..."
 
 #: ../src/netspeed.c:1376
 msgid "Preferences..."
-msgstr ""
+msgstr "ユーザー設定"
 
 #: ../src/netspeed.c:1378
 msgid "Help"
-msgstr ""
+msgstr "ヘルプ"
 
 #: ../src/netspeed.c:1380
 msgid "About..."
-msgstr ""
+msgstr "情報"
 
 #: ../src/netspeed.c:1421
 #, c-format
@@ -263,12 +270,12 @@ msgid ""
 "\n"
 "ESSID: %s\n"
 "Strength: %d %%"
-msgstr ""
+msgstr "\nESSID: %s\n強さ: %d %%"
 
 #: ../src/netspeed.c:1528
 msgid "unknown"
-msgstr ""
+msgstr "不明"
 
 #: ../src/netspeed.c:1575
 msgid "Mate Netspeed"
-msgstr ""
+msgstr "MATE 通信速度"

@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Ivar Smolin <okul@linux.ee>, 2014
 # xpander0 <xpander0@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-24 21:07+0100\n"
-"PO-Revision-Date: 2014-01-24 20:11+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"POT-Creation-Date: 2014-01-28 19:26+0100\n"
+"PO-Revision-Date: 2014-08-10 09:59+0000\n"
+"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/MATE/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,13 +19,15 @@ msgstr ""
 "Language: et\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#. translators: bits (short)
 #: ../src/netspeed.c:417
 msgid "b"
-msgstr ""
+msgstr "b"
 
+#. translators: Bytes (short)
 #: ../src/netspeed.c:417
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: ../src/netspeed.c:419
 msgid "b/s"
@@ -36,19 +39,21 @@ msgstr "B/s"
 
 #: ../src/netspeed.c:422
 msgid "bits"
-msgstr "bitid"
+msgstr "bitti"
 
 #: ../src/netspeed.c:422
 msgid "bytes"
-msgstr "baidid"
+msgstr "baiti"
 
+#. translators: kilobits (short)
 #: ../src/netspeed.c:430
 msgid "k"
-msgstr ""
+msgstr "k"
 
+#. translators: Kilobytes (short)
 #: ../src/netspeed.c:430
 msgid "K"
-msgstr ""
+msgstr "K"
 
 #: ../src/netspeed.c:432
 msgid "kb/s"
@@ -66,17 +71,19 @@ msgstr "kb"
 msgid "KiB"
 msgstr "KiB"
 
+#. translators: megabits (short)
 #: ../src/netspeed.c:445
 msgid "m"
-msgstr ""
+msgstr "m"
 
+#. translators: Megabytes (short)
 #: ../src/netspeed.c:445
 msgid "M"
-msgstr ""
+msgstr "M"
 
 #: ../src/netspeed.c:447
 msgid "mb/s"
-msgstr ""
+msgstr "mb/s"
 
 #: ../src/netspeed.c:447
 msgid "MiB/s"
@@ -84,7 +91,7 @@ msgstr "MiB/s"
 
 #: ../src/netspeed.c:450
 msgid "mb"
-msgstr ""
+msgstr "mb"
 
 #: ../src/netspeed.c:450
 msgid "MiB"
@@ -95,36 +102,36 @@ msgstr "MiB"
 msgid ""
 "There was an error displaying help:\n"
 "%s"
-msgstr "viga abi näitamisel: %s"
+msgstr "Abiteabe kuvamisel tekkis viga:\n%s"
 
 #: ../src/netspeed.c:827
 #, c-format
 msgid ""
 "Failed to show:\n"
 "%s"
-msgstr "ebaõnnestus näidata: %s"
+msgstr "Näitamine ei õnnestunud: %s"
 
 #: ../src/netspeed.c:860
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
-msgstr "Väike rakend, mis kuvab infot valitud võrguseadmel toimuva liikluse kohta."
+msgstr "Väike rakend teabe kuvamiseks valitud võrguseadmel toimuva liikluse kohta."
 
 #: ../src/netspeed.c:863
 msgid "translator-credits"
-msgstr "tõlke au"
+msgstr "Ivar Smolin <okul linux ee>, 2014."
 
 #: ../src/netspeed.c:865
 msgid "MATE Website"
-msgstr "MATE kodulehekülg"
+msgstr "MATE koduleht"
 
 #: ../src/netspeed.c:1013
 msgid "Mate Netspeed Preferences"
-msgstr "Mate internetikiiruse seadistused"
+msgstr "MATE võrgukiiruse eelistused"
 
 #: ../src/netspeed.c:1035
 msgid "General Settings"
-msgstr "Üldised sätted"
+msgstr "Üldsätted"
 
 #: ../src/netspeed.c:1056
 msgid "Network _device:"
@@ -133,44 +140,44 @@ msgstr "Võrgu_seade:"
 #. Default means device with default route set
 #: ../src/netspeed.c:1067
 msgid "Default"
-msgstr "vaikimisi"
+msgstr "Vaikimisi"
 
 #: ../src/netspeed.c:1080
 msgid "Show _sum instead of in & out"
-msgstr "Näita _kogumahtu sisse & välja asemel"
+msgstr "Sissetuleva & väljuva mahu asemel näidatakse _kogumahtu"
 
 #: ../src/netspeed.c:1084
 msgid "Show _bits instead of bytes"
-msgstr "Näita _bite baitide asemel"
+msgstr "_Baitide asemel näidatakse bitte "
 
 #: ../src/netspeed.c:1088
 msgid "Shorten _unit legend"
-msgstr ""
+msgstr "Ü_hikuid lühendatakse"
 
 #: ../src/netspeed.c:1092
 msgid "Change _icon according to the selected device"
-msgstr "Muuda _ikooni vastavalt valitud seadmele"
+msgstr "_Ikoon muutub vastavalt valitud seadmele"
 
 #: ../src/netspeed.c:1096
 msgid "Show _icon"
-msgstr ""
+msgstr "I_koon on nähtaval"
 
 #: ../src/netspeed.c:1211
 #, c-format
 msgid "Device Details for %s"
-msgstr "Seadme %s info"
+msgstr "Seadme %s üksikasjad"
 
 #: ../src/netspeed.c:1236
 msgid "_In graph color"
-msgstr "_Sisse graafiku värv"
+msgstr "_Sisendi graafiku värvus"
 
 #: ../src/netspeed.c:1237
 msgid "_Out graph color"
-msgstr "_Välja graafiku värv"
+msgstr "_Väljundi graafiku värvus"
 
 #: ../src/netspeed.c:1253
 msgid "Internet Address:"
-msgstr "Interneti aadress:"
+msgstr "Internetiaadress:"
 
 #: ../src/netspeed.c:1254
 msgid "Netmask:"
@@ -182,7 +189,7 @@ msgstr "Riistvaraline aadress:"
 
 #: ../src/netspeed.c:1256
 msgid "P-t-P Address:"
-msgstr "Kakspunktaadress:"
+msgstr "Partneraadress:"
 
 #: ../src/netspeed.c:1257
 msgid "Bytes in:"
@@ -195,11 +202,11 @@ msgstr "Baite välja:"
 #: ../src/netspeed.c:1260 ../src/netspeed.c:1261 ../src/netspeed.c:1262
 #: ../src/netspeed.c:1263
 msgid "none"
-msgstr "ei ole"
+msgstr "puudub"
 
 #: ../src/netspeed.c:1302
 msgid "IPV6 Address:"
-msgstr "IPB6  aadress:"
+msgstr "IPv6-aadress:"
 
 #: ../src/netspeed.c:1334
 msgid "Signal Strength:"
@@ -211,29 +218,29 @@ msgstr "ESSID:"
 
 #: ../src/netspeed.c:1374
 msgid "Device _Details"
-msgstr "Seadme _detailid"
+msgstr "S_eadme üksikasjad"
 
 #: ../src/netspeed.c:1376
 msgid "Preferences..."
-msgstr ""
+msgstr "Eelistused..."
 
 #: ../src/netspeed.c:1378
 msgid "Help"
-msgstr ""
+msgstr "Abi"
 
 #: ../src/netspeed.c:1380
 msgid "About..."
-msgstr ""
+msgstr "Rakendist lähemalt..."
 
 #: ../src/netspeed.c:1421
 #, c-format
 msgid "Do you want to disconnect %s now?"
-msgstr "Tahad sa %s ühenduse praegu katkestada?"
+msgstr "Kas soovid %s ühenduse katkestada?"
 
 #: ../src/netspeed.c:1425
 #, c-format
 msgid "Do you want to connect %s now?"
-msgstr "Tahad sa %s ühenduse praegu luua?"
+msgstr "Kas soovid %s ühendada?"
 
 #: ../src/netspeed.c:1504
 #, c-format
@@ -272,4 +279,4 @@ msgstr "tundmatu"
 
 #: ../src/netspeed.c:1575
 msgid "Mate Netspeed"
-msgstr "Mate internetikiirus"
+msgstr "MATE võrgukiirus"
