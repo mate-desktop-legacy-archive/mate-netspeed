@@ -100,7 +100,7 @@ get_default_route(void)
 		
 		fgets(buffer, 1024, fp);
 		
-		retval = sscanf(buffer, "%49s %x %x %x %d %d %d %x %d %d %d",
+		retval = sscanf(buffer, "%49s %x %x %x %u %u %u %x %u %u %u",
 				device, &ip, &gw, &flags, &ref, &use, &metric, &mask, &mtu, &window, &irtt);
 		
 		if (retval != 11) continue;
