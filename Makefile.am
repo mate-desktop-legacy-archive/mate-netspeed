@@ -2,7 +2,7 @@ SUBDIRS = data help icons po src
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
-distuninstallcheck_listfiles = find . -type f -print | grep -v scrollkeeper
+distuninstallcheck_listfiles = find . -type f -print
 
 EXTRA_DIST = intltool-update.in \
              intltool-merge.in \
@@ -15,8 +15,6 @@ DISTCLEANFILES = \
                  intltool-merge \
                  intltool-update \
                  $(server_in_files)
-
-DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper
 
 dist-hook:
 	@if test -d "$(srcdir)/.git"; \
