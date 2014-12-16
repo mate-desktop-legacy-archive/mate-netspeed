@@ -2,8 +2,6 @@ SUBDIRS = data help icons po src
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
-distuninstallcheck_listfiles = find . -type f -print
-
 EXTRA_DIST = intltool-update.in \
              intltool-merge.in \
              intltool-extract.in \
