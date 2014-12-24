@@ -97,8 +97,12 @@ get_default_route(void)
 		char buffer[1024]; 
 		unsigned int ip, gw, flags, ref, use, metric, mask, mtu, window, irtt;
 		int retval;
+		char *rv;
 		
-		fgets(buffer, 1024, fp);
+		rv = fgets(buffer, 1024, fp);
+		if (!rv) {
+			break;
+		}
 		
 		retval = sscanf(buffer, "%49s %x %x %x %u %u %u %x %u %u %u",
 				device, &ip, &gw, &flags, &ref, &use, &metric, &mask, &mtu, &window, &irtt);
