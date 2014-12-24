@@ -974,7 +974,6 @@ settings_cb(GtkAction *action, gpointer data)
 	GtkWidget *show_icon_checkbutton;
 	GtkWidget *change_icon_checkbutton;
 	GtkSizeGroup *category_label_size_group;
-	GtkSizeGroup *category_units_size_group;
   	gchar *header_str;
 	GList *ptr, *devices;
 	int i, active = -1;
@@ -988,7 +987,6 @@ settings_cb(GtkAction *action, gpointer data)
 	}
 
 	category_label_size_group = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
-	category_units_size_group = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
   
 	applet->settings = GTK_DIALOG(gtk_dialog_new_with_buttons(_("Mate Netspeed Preferences"), 
 								  NULL, 
