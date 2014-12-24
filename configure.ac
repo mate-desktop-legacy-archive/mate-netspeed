@@ -20,10 +20,14 @@ GETTEXT_PACKAGE=mate-netspeed
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", GETTEXT_PACKAGE)
 
+GTOP_REQUIRED_VERSION=2.14.2
+MATE_PANEL_REQUIRED_VERSION=1.7.0
+MATE_DESKTOP_REQUIRED_VERSION=1.9.0
+
 PKG_CHECK_MODULES(NETSPEED,
-                  libmatepanelapplet-4.0 >= 1.7.0
-                  mate-desktop-2.0 >= 1.9.0
-                  libgtop-2.0 >= 2.14.2
+                  libmatepanelapplet-4.0 >= $MATE_PANEL_REQUIRED_VERSION
+                  mate-desktop-2.0 >= $MATE_DESKTOP_REQUIRED_VERSION
+                  libgtop-2.0 >= $GTOP_REQUIRED_VERSION
                   gio-2.0)
 
 AC_SUBST(NETSPEED_APPLET_CFLAGS)
@@ -32,17 +36,18 @@ AC_SUBST(NETSPEED_APPLET_LIBS)
 YELP_HELP_INIT
 
 ac_have_iwevgenie=no
-AC_MSG_CHECKING([for wireless-tools >= 28pre9])
+AC_MSG_CHECKING([for libiw >= 28pre9])
 AC_COMPILE_IFELSE([AC_LANG_PROGRAM([
-		#include <iwlib.h>
+                #include <iwlib.h>
                 #ifndef IWEVGENIE
                 #error "not found"
                 #endif])],
-               [ac_have_iwevgenie=yes]
+               [ac_have_iwevgenie=yes],
+    AC_MSG_WARN([iwlib.h not found. It's provided by libiw or wireless-tools (depends on the distro)])
 )
 AC_MSG_RESULT([$ac_have_iwevgenie])
 if test "$ac_have_iwevgenie" = yes; then
-        AC_DEFINE(HAVE_IW, 1, [Defined if you have wirelesstools])
+        AC_DEFINE(HAVE_IW, 1, [Defined if you have libiw/wireless-tools (depends on the distro)])
 	IWLIB=-liw
 	AC_SUBST(IWLIB)
 fi
