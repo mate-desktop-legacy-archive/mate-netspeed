@@ -32,10 +32,10 @@
 #include <gio/gio.h>
 #include <libmate-desktop/mate-aboutdialog.h>
 #include <libmate-desktop/mate-colorbutton.h>
-#if GTK_CHECK_VERSION (3, 0, 0)
-#define MATE_DESKTOP_USE_UNSTABLE_API 1
+
+#define MATE_DESKTOP_USE_UNSTABLE_API
 #include <libmate-desktop/mate-desktop-utils.h>
-#endif
+
 #include "backend.h"
 
  /* Icons for the interfaces */
@@ -130,11 +130,8 @@ open_uri (GtkWidget *parent, const char *url, GError **error)
 
 	screen = gtk_widget_get_screen (parent);
 	cmdline = g_strconcat ("xdg-open ", url, NULL);
-#if GTK_CHECK_VERSION (3, 0, 0)
+
 	ret = mate_gdk_spawn_command_line_on_screen (screen, cmdline, error);
-#else
-	ret = gdk_spawn_command_line_on_screen (screen, cmdline, error);
-#endif
 	g_free (cmdline);
 
 	return ret;
