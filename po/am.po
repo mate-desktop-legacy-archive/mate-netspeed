@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-28 19:26+0100\n"
-"PO-Revision-Date: 2014-07-13 22:57+0000\n"
+"POT-Creation-Date: 2014-12-24 14:41+0100\n"
+"PO-Revision-Date: 2014-12-24 16:35+0000\n"
 "Last-Translator: samson <sambelet@yahoo.com>\n"
 "Language-Team: Amharic (http://www.transifex.com/projects/p/MATE/language/am/)\n"
 "MIME-Version: 1.0\n"
@@ -19,252 +19,247 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. translators: bits (short)
-#: ../src/netspeed.c:417
+#: ../src/netspeed.c:431
 msgid "b"
 msgstr "b"
 
 #. translators: Bytes (short)
-#: ../src/netspeed.c:417
+#: ../src/netspeed.c:431
 msgid "B"
 msgstr "B"
 
-#: ../src/netspeed.c:419
+#: ../src/netspeed.c:433
 msgid "b/s"
 msgstr "ቢ/ሰ "
 
-#: ../src/netspeed.c:419
+#: ../src/netspeed.c:433
 msgid "B/s"
 msgstr "ቢ/ሰ "
 
-#: ../src/netspeed.c:422
+#: ../src/netspeed.c:436
 msgid "bits"
 msgstr "ቢትስ "
 
-#: ../src/netspeed.c:422
+#: ../src/netspeed.c:436
 msgid "bytes"
 msgstr "ባይትስ "
 
 #. translators: kilobits (short)
-#: ../src/netspeed.c:430
+#: ../src/netspeed.c:444
 msgid "k"
 msgstr "k"
 
 #. translators: Kilobytes (short)
-#: ../src/netspeed.c:430
+#: ../src/netspeed.c:444
 msgid "K"
 msgstr "K"
 
-#: ../src/netspeed.c:432
+#: ../src/netspeed.c:446
 msgid "kb/s"
 msgstr "ኪቢ/ሰ "
 
-#: ../src/netspeed.c:432
+#: ../src/netspeed.c:446
 msgid "KiB/s"
 msgstr "ኪቢ/ሰ"
 
-#: ../src/netspeed.c:435
+#: ../src/netspeed.c:449
 msgid "kb"
 msgstr "ኪቢ "
 
-#: ../src/netspeed.c:435
+#: ../src/netspeed.c:449
 msgid "KiB"
 msgstr "ኪቢ"
 
 #. translators: megabits (short)
-#: ../src/netspeed.c:445
+#: ../src/netspeed.c:459
 msgid "m"
 msgstr "m"
 
 #. translators: Megabytes (short)
-#: ../src/netspeed.c:445
+#: ../src/netspeed.c:459
 msgid "M"
 msgstr "M"
 
-#: ../src/netspeed.c:447
+#: ../src/netspeed.c:461
 msgid "mb/s"
 msgstr "ሜቢ/ስ "
 
-#: ../src/netspeed.c:447
+#: ../src/netspeed.c:461
 msgid "MiB/s"
 msgstr "ሜቢ/ስ "
 
-#: ../src/netspeed.c:450
+#: ../src/netspeed.c:464
 msgid "mb"
 msgstr "ሜቢ"
 
-#: ../src/netspeed.c:450
+#: ../src/netspeed.c:464
 msgid "MiB"
 msgstr "ሜቢ "
 
-#: ../src/netspeed.c:776
+#: ../src/netspeed.c:804
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
 "%s"
 msgstr "እርዳታን በማሳየት ላይ እንዳለ ችግር ተፈጥሯል :\n%s"
 
-#: ../src/netspeed.c:827
-#, c-format
-msgid ""
-"Failed to show:\n"
-"%s"
-msgstr "ማሳየት አልተቻለም :\n%s"
-
-#: ../src/netspeed.c:860
+#: ../src/netspeed.c:843
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
 msgstr ""
 
-#: ../src/netspeed.c:863
+#: ../src/netspeed.c:846
 msgid "translator-credits"
 msgstr "ምስጋና ለተርጓሚዎች "
 
-#: ../src/netspeed.c:865
-msgid "MATE Website"
-msgstr "የሜት ድህረ ገጽ "
-
-#: ../src/netspeed.c:1013
+#: ../src/netspeed.c:993
 msgid "Mate Netspeed Preferences"
 msgstr "የሜት Netspeed ምርጫዎች "
 
-#: ../src/netspeed.c:1035
+#: ../src/netspeed.c:1015
 msgid "General Settings"
 msgstr "ባጠቃላይ ማሰናጃዎች "
 
-#: ../src/netspeed.c:1056
+#: ../src/netspeed.c:1036
 msgid "Network _device:"
 msgstr "የኔትዎርክ _አካሎች :"
 
-#. Default means device with default route set
-#: ../src/netspeed.c:1067
+#: ../src/netspeed.c:1052 ../src/netspeed.c:1054
 msgid "Default"
 msgstr "ነባር "
 
-#: ../src/netspeed.c:1080
+#: ../src/netspeed.c:1072
 msgid "Show _sum instead of in & out"
 msgstr "_ጠቅላላ ድምሩን ማሳያ የገባ & የወጣውን ከማሳየት ይልቅ "
 
-#: ../src/netspeed.c:1084
+#: ../src/netspeed.c:1076
 msgid "Show _bits instead of bytes"
 msgstr "+ቢትስ ማሳያ ከባይትስ ይልቅ "
 
-#: ../src/netspeed.c:1088
+#: ../src/netspeed.c:1080
 msgid "Shorten _unit legend"
 msgstr "አጭር የመለኪያ _መግለጫ"
 
-#: ../src/netspeed.c:1092
+#: ../src/netspeed.c:1084
 msgid "Change _icon according to the selected device"
 msgstr "በተመረጠው አካል መሰረት _ምልክቶችን መቀየሪያ "
 
-#: ../src/netspeed.c:1096
+#: ../src/netspeed.c:1088
 msgid "Show _icon"
 msgstr " _ምልክት ማሳያ"
 
-#: ../src/netspeed.c:1211
+#: ../src/netspeed.c:1216
 #, c-format
 msgid "Device Details for %s"
 msgstr "የአካሉ ዝርዝር ለ %s"
 
-#: ../src/netspeed.c:1236
+#: ../src/netspeed.c:1241
 msgid "_In graph color"
 msgstr "በ ቀለም ግራፍ _ውስጥ"
 
-#: ../src/netspeed.c:1237
+#: ../src/netspeed.c:1242
 msgid "_Out graph color"
 msgstr "በ ቀለም ግራፍ _ውጪ"
 
-#: ../src/netspeed.c:1253
+#: ../src/netspeed.c:1258
 msgid "Internet Address:"
 msgstr "የኢንተርኔት አድራሻ :"
 
-#: ../src/netspeed.c:1254
+#: ../src/netspeed.c:1259
 msgid "Netmask:"
 msgstr "Netmask:"
 
-#: ../src/netspeed.c:1255
+#: ../src/netspeed.c:1260
 msgid "Hardware Address:"
 msgstr "የ ጠንካራ አካል አድራሻ:"
 
-#: ../src/netspeed.c:1256
+#: ../src/netspeed.c:1261
 msgid "P-t-P Address:"
 msgstr "P-t-P Address:"
 
-#: ../src/netspeed.c:1257
+#: ../src/netspeed.c:1262
 msgid "Bytes in:"
 msgstr "ባይትስ ወደ ውስጥ :"
 
-#: ../src/netspeed.c:1258
+#: ../src/netspeed.c:1263
 msgid "Bytes out:"
 msgstr "ባይትስ ወደ ውጪ :"
 
-#: ../src/netspeed.c:1260 ../src/netspeed.c:1261 ../src/netspeed.c:1262
-#: ../src/netspeed.c:1263
+#: ../src/netspeed.c:1265 ../src/netspeed.c:1266 ../src/netspeed.c:1267
+#: ../src/netspeed.c:1268
 msgid "none"
 msgstr "ምንም "
 
-#: ../src/netspeed.c:1302
+#: ../src/netspeed.c:1307
 msgid "IPV6 Address:"
 msgstr "IPV6 Address:"
 
-#: ../src/netspeed.c:1334
+#: ../src/netspeed.c:1339
 msgid "Signal Strength:"
 msgstr "የምልክቱ ጥንካሬ :"
 
-#: ../src/netspeed.c:1335
+#: ../src/netspeed.c:1340
 msgid "ESSID:"
 msgstr "ESSID:"
 
-#: ../src/netspeed.c:1374
+#: ../src/netspeed.c:1385
 msgid "Device _Details"
 msgstr "የአካሉ _ዝርዝሮች "
 
-#: ../src/netspeed.c:1376
+#: ../src/netspeed.c:1387
 msgid "Preferences..."
 msgstr "ምርጫዎች..."
 
-#: ../src/netspeed.c:1378
+#: ../src/netspeed.c:1389
 msgid "Help"
 msgstr "እርዳታ "
 
-#: ../src/netspeed.c:1380
+#: ../src/netspeed.c:1391
 msgid "About..."
 msgstr "ስለ..."
 
-#: ../src/netspeed.c:1421
+#: ../src/netspeed.c:1432
 #, c-format
 msgid "Do you want to disconnect %s now?"
 msgstr "አሁን ማቋረጥ %s ይፈልጋሉ?"
 
-#: ../src/netspeed.c:1425
+#: ../src/netspeed.c:1436
 #, c-format
 msgid "Do you want to connect %s now?"
 msgstr "አሁን ማቋረጥ %s ይፈልጋሉ?"
 
-#: ../src/netspeed.c:1504
+#: ../src/netspeed.c:1464
+#, c-format
+msgid ""
+"<b>Running command %s failed</b>\n"
+"%s"
+msgstr "<b>ትእዛዝ ማስኬድ %s አልተቻለም</b>\n%s"
+
+#: ../src/netspeed.c:1523
 #, c-format
 msgid "%s is down"
 msgstr "%s አይሰራም "
 
-#: ../src/netspeed.c:1509
+#: ../src/netspeed.c:1528
 #, c-format
 msgid ""
 "%s: %s\n"
 "in: %s out: %s"
 msgstr "%s: %s\nወደ ውስጥ : %s ወደ ውጪ : %s"
 
-#: ../src/netspeed.c:1511 ../src/netspeed.c:1520
+#: ../src/netspeed.c:1530 ../src/netspeed.c:1539
 msgid "has no ip"
 msgstr " ip የለውም "
 
-#: ../src/netspeed.c:1518
+#: ../src/netspeed.c:1537
 #, c-format
 msgid ""
 "%s: %s\n"
 "sum: %s"
 msgstr "%s: %s\nጠቅላላ ድምር : %s"
 
-#: ../src/netspeed.c:1527
+#: ../src/netspeed.c:1546
 #, c-format
 msgid ""
 "\n"
@@ -272,10 +267,10 @@ msgid ""
 "Strength: %d %%"
 msgstr "\nESSID: %s\nጥንካሬው : %d %%"
 
-#: ../src/netspeed.c:1528
+#: ../src/netspeed.c:1547
 msgid "unknown"
 msgstr "ያልታወቀ"
 
-#: ../src/netspeed.c:1575
+#: ../src/netspeed.c:1594
 msgid "Mate Netspeed"
 msgstr "የሜት Netspeed"

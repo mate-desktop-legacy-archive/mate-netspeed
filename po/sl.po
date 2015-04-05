@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# jierro <jierro@windowslive.com>, 2013-2014
+# Damir Jerovšek <jierro@windowslive.com>, 2013-2014
 # Marko Šterman <marko.chamillionaire@gmail.com>, 2012
 # Marko Šterman <marko.chamillionaire@gmail.com>, 2012
+# worm <thewormhole@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-28 19:26+0100\n"
-"PO-Revision-Date: 2014-02-19 17:42+0000\n"
-"Last-Translator: jierro <jierro@windowslive.com>\n"
+"POT-Creation-Date: 2014-12-24 14:41+0100\n"
+"PO-Revision-Date: 2015-03-11 21:17+0000\n"
+"Last-Translator: worm <thewormhole@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/projects/p/MATE/language/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,252 +22,247 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 
 #. translators: bits (short)
-#: ../src/netspeed.c:417
+#: ../src/netspeed.c:431
 msgid "b"
 msgstr "b"
 
 #. translators: Bytes (short)
-#: ../src/netspeed.c:417
+#: ../src/netspeed.c:431
 msgid "B"
 msgstr "B"
 
-#: ../src/netspeed.c:419
+#: ../src/netspeed.c:433
 msgid "b/s"
 msgstr "b/s"
 
-#: ../src/netspeed.c:419
+#: ../src/netspeed.c:433
 msgid "B/s"
 msgstr "B/s"
 
-#: ../src/netspeed.c:422
+#: ../src/netspeed.c:436
 msgid "bits"
 msgstr "biti"
 
-#: ../src/netspeed.c:422
+#: ../src/netspeed.c:436
 msgid "bytes"
 msgstr "bajti"
 
 #. translators: kilobits (short)
-#: ../src/netspeed.c:430
+#: ../src/netspeed.c:444
 msgid "k"
 msgstr "k"
 
 #. translators: Kilobytes (short)
-#: ../src/netspeed.c:430
+#: ../src/netspeed.c:444
 msgid "K"
 msgstr "K"
 
-#: ../src/netspeed.c:432
+#: ../src/netspeed.c:446
 msgid "kb/s"
 msgstr "kb/s"
 
-#: ../src/netspeed.c:432
+#: ../src/netspeed.c:446
 msgid "KiB/s"
 msgstr "KiB/s"
 
-#: ../src/netspeed.c:435
+#: ../src/netspeed.c:449
 msgid "kb"
 msgstr "kb"
 
-#: ../src/netspeed.c:435
+#: ../src/netspeed.c:449
 msgid "KiB"
 msgstr "KiB"
 
 #. translators: megabits (short)
-#: ../src/netspeed.c:445
+#: ../src/netspeed.c:459
 msgid "m"
 msgstr "m"
 
 #. translators: Megabytes (short)
-#: ../src/netspeed.c:445
+#: ../src/netspeed.c:459
 msgid "M"
 msgstr "M"
 
-#: ../src/netspeed.c:447
+#: ../src/netspeed.c:461
 msgid "mb/s"
 msgstr "mb/s"
 
-#: ../src/netspeed.c:447
+#: ../src/netspeed.c:461
 msgid "MiB/s"
 msgstr "MiB/s"
 
-#: ../src/netspeed.c:450
+#: ../src/netspeed.c:464
 msgid "mb"
 msgstr "mb"
 
-#: ../src/netspeed.c:450
+#: ../src/netspeed.c:464
 msgid "MiB"
 msgstr "MiB"
 
-#: ../src/netspeed.c:776
+#: ../src/netspeed.c:804
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
 "%s"
 msgstr "Med prikazovanjem pomoči je prišlo do napake:\n%s"
 
-#: ../src/netspeed.c:827
-#, c-format
-msgid ""
-"Failed to show:\n"
-"%s"
-msgstr "Napaka med prikazovanjem:\n%s"
-
-#: ../src/netspeed.c:860
+#: ../src/netspeed.c:843
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
 msgstr "Aplet, ki prikazuje podrobnosti o omrežnem prometu določene omrežne naprave"
 
-#: ../src/netspeed.c:863
+#: ../src/netspeed.c:846
 msgid "translator-credits"
 msgstr "Matej Urbančič\nDamir Jerovšek <damir.jerovsek@ubuntu.si>"
 
-#: ../src/netspeed.c:865
-msgid "MATE Website"
-msgstr "Spletna stran MATE"
-
-#: ../src/netspeed.c:1013
+#: ../src/netspeed.c:993
 msgid "Mate Netspeed Preferences"
 msgstr "Nastavitve Mate Netspeed"
 
-#: ../src/netspeed.c:1035
+#: ../src/netspeed.c:1015
 msgid "General Settings"
 msgstr "Splošne nastavitve"
 
-#: ../src/netspeed.c:1056
+#: ../src/netspeed.c:1036
 msgid "Network _device:"
 msgstr "Omrežna _naprava:"
 
-#. Default means device with default route set
-#: ../src/netspeed.c:1067
+#: ../src/netspeed.c:1052 ../src/netspeed.c:1054
 msgid "Default"
 msgstr "Privzeto"
 
-#: ../src/netspeed.c:1080
+#: ../src/netspeed.c:1072
 msgid "Show _sum instead of in & out"
 msgstr "Pokaži _seštevek namesto poslanega in prejetega"
 
-#: ../src/netspeed.c:1084
+#: ../src/netspeed.c:1076
 msgid "Show _bits instead of bytes"
 msgstr "Prikaži _bite namesto bajtov"
 
-#: ../src/netspeed.c:1088
+#: ../src/netspeed.c:1080
 msgid "Shorten _unit legend"
 msgstr "Legenda okrajšanih _enot"
 
-#: ../src/netspeed.c:1092
+#: ../src/netspeed.c:1084
 msgid "Change _icon according to the selected device"
 msgstr "Spremeni _ikono glede na izbrano napravo"
 
-#: ../src/netspeed.c:1096
+#: ../src/netspeed.c:1088
 msgid "Show _icon"
 msgstr "Pokaži _ikono"
 
-#: ../src/netspeed.c:1211
+#: ../src/netspeed.c:1216
 #, c-format
 msgid "Device Details for %s"
 msgstr "Podrobnosti naprave %s"
 
-#: ../src/netspeed.c:1236
+#: ../src/netspeed.c:1241
 msgid "_In graph color"
 msgstr "Barva diagrama p_renosa"
 
-#: ../src/netspeed.c:1237
+#: ../src/netspeed.c:1242
 msgid "_Out graph color"
 msgstr "Barva diagrama _pošiljanja"
 
-#: ../src/netspeed.c:1253
+#: ../src/netspeed.c:1258
 msgid "Internet Address:"
 msgstr "Spletni naslov:"
 
-#: ../src/netspeed.c:1254
+#: ../src/netspeed.c:1259
 msgid "Netmask:"
 msgstr "Omrežna maska:"
 
-#: ../src/netspeed.c:1255
+#: ../src/netspeed.c:1260
 msgid "Hardware Address:"
 msgstr "Strojni naslov:"
 
-#: ../src/netspeed.c:1256
+#: ../src/netspeed.c:1261
 msgid "P-t-P Address:"
 msgstr "Naslov P-t-P:"
 
-#: ../src/netspeed.c:1257
+#: ../src/netspeed.c:1262
 msgid "Bytes in:"
 msgstr "Poslano bajtov:"
 
-#: ../src/netspeed.c:1258
+#: ../src/netspeed.c:1263
 msgid "Bytes out:"
 msgstr "Preneseno bajtov:"
 
-#: ../src/netspeed.c:1260 ../src/netspeed.c:1261 ../src/netspeed.c:1262
-#: ../src/netspeed.c:1263
+#: ../src/netspeed.c:1265 ../src/netspeed.c:1266 ../src/netspeed.c:1267
+#: ../src/netspeed.c:1268
 msgid "none"
 msgstr "noben"
 
-#: ../src/netspeed.c:1302
+#: ../src/netspeed.c:1307
 msgid "IPV6 Address:"
 msgstr "Naslov IPv6:"
 
-#: ../src/netspeed.c:1334
+#: ../src/netspeed.c:1339
 msgid "Signal Strength:"
 msgstr "Jakost signala:"
 
-#: ../src/netspeed.c:1335
+#: ../src/netspeed.c:1340
 msgid "ESSID:"
 msgstr "ESSID:"
 
-#: ../src/netspeed.c:1374
+#: ../src/netspeed.c:1385
 msgid "Device _Details"
 msgstr "Podrobnosti _naprave"
 
-#: ../src/netspeed.c:1376
+#: ../src/netspeed.c:1387
 msgid "Preferences..."
 msgstr "Možnosti ..."
 
-#: ../src/netspeed.c:1378
+#: ../src/netspeed.c:1389
 msgid "Help"
 msgstr "Pomoč"
 
-#: ../src/netspeed.c:1380
+#: ../src/netspeed.c:1391
 msgid "About..."
 msgstr "O programu ..."
 
-#: ../src/netspeed.c:1421
+#: ../src/netspeed.c:1432
 #, c-format
 msgid "Do you want to disconnect %s now?"
 msgstr "Ali želite takoj prekiniti povezavo z %s?"
 
-#: ../src/netspeed.c:1425
+#: ../src/netspeed.c:1436
 #, c-format
 msgid "Do you want to connect %s now?"
 msgstr "Ali želite takoj ustvariti povezavo z %s?"
 
-#: ../src/netspeed.c:1504
+#: ../src/netspeed.c:1464
+#, c-format
+msgid ""
+"<b>Running command %s failed</b>\n"
+"%s"
+msgstr "<b>Zaganjanje ukaza %s ni uspelo</b>\n%s"
+
+#: ../src/netspeed.c:1523
 #, c-format
 msgid "%s is down"
 msgstr "%s ne deluje"
 
-#: ../src/netspeed.c:1509
+#: ../src/netspeed.c:1528
 #, c-format
 msgid ""
 "%s: %s\n"
 "in: %s out: %s"
 msgstr "%s: %s\nprejeto: %s poslano: %s"
 
-#: ../src/netspeed.c:1511 ../src/netspeed.c:1520
+#: ../src/netspeed.c:1530 ../src/netspeed.c:1539
 msgid "has no ip"
 msgstr "je brez ip-ja"
 
-#: ../src/netspeed.c:1518
+#: ../src/netspeed.c:1537
 #, c-format
 msgid ""
 "%s: %s\n"
 "sum: %s"
 msgstr "%s: %s\nskupaj: %s"
 
-#: ../src/netspeed.c:1527
+#: ../src/netspeed.c:1546
 #, c-format
 msgid ""
 "\n"
@@ -274,10 +270,10 @@ msgid ""
 "Strength: %d %%"
 msgstr "\nESSID: %s\nJakost: %d %%"
 
-#: ../src/netspeed.c:1528
+#: ../src/netspeed.c:1547
 msgid "unknown"
 msgstr "neznano"
 
-#: ../src/netspeed.c:1575
+#: ../src/netspeed.c:1594
 msgid "Mate Netspeed"
 msgstr "Mate Netspeed"
