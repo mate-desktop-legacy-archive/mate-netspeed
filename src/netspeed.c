@@ -440,10 +440,10 @@ bytes_to_string(double bytes, gboolean per_sec, gboolean bits, gboolean shortene
 			if (shortened) {
 				unit = bits ? /* translators: kilobits (short) */ N_("k") : /* translators: Kilobytes (short) */ N_("K");
 			} else {
-				unit = bits ? N_("kb/s") : N_("KiB/s");
+				unit = bits ? N_("Kb/s") : N_("KiB/s");
 			}
 		else
-			unit = bits ? N_("kb")   : N_("KiB");
+			unit = bits ? N_("Kb")   : N_("KiB");
 
 	} else {
 
@@ -455,10 +455,10 @@ bytes_to_string(double bytes, gboolean per_sec, gboolean bits, gboolean shortene
 			if (shortened) {
 				unit = bits ? /* translators: megabits (short) */ N_("m") : /* translators: Megabytes (short) */ N_("M");
 			} else {
-				unit = bits ? N_("mb/s") : N_("MiB/s");
+				unit = bits ? N_("Mb/s") : N_("MiB/s");
 			}
 		else
-			unit = bits ? N_("mb")   : N_("MiB");
+			unit = bits ? N_("Mb")   : N_("MiB");
 	}
 
 	return g_strdup_printf(format, bytes, gettext(unit));
