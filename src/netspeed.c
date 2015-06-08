@@ -440,10 +440,10 @@ bytes_to_string(double bytes, gboolean per_sec, gboolean bits, gboolean shortene
 			if (shortened) {
 				unit = bits ? /* translators: kilobits (short) */ N_("k") : /* translators: Kilobytes (short) */ N_("K");
 			} else {
-				unit = bits ? N_("Kb/s") : N_("KiB/s");
+				unit = bits ? N_("kb/s") : N_("KiB/s");
 			}
 		else
-			unit = bits ? N_("Kb")   : N_("KiB");
+			unit = bits ? N_("kb")   : N_("KiB");
 
 	} else {
 
