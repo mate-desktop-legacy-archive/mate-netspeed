@@ -1,6 +1,6 @@
 @YELP_HELP_RULES@
 
-HELP_ID = mate_netspeed_applet
+HELP_ID = mate-netspeed-applet
 HELP_FILES = index.docbook legal.xml
 HELP_MEDIA = \
 	figures/details.png \
