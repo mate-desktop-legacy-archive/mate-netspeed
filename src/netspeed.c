@@ -33,9 +33,6 @@
 #include <libmate-desktop/mate-aboutdialog.h>
 #include <libmate-desktop/mate-colorbutton.h>
 
-#define MATE_DESKTOP_USE_UNSTABLE_API
-#include <libmate-desktop/mate-desktop-utils.h>
-
 #include "backend.h"
 
  /* Icons for the interfaces */
@@ -120,22 +117,6 @@ update_tooltip(MateNetspeedApplet* applet);
 
 static void
 device_change_cb(GtkComboBox *combo, MateNetspeedApplet *applet);
-
-static gboolean
-open_uri (GtkWidget *parent, const char *url, GError **error)
-{
-	gboolean ret;
-	char *cmdline;
-	GdkScreen *screen;
-
-	screen = gtk_widget_get_screen (parent);
-	cmdline = g_strconcat ("xdg-open ", url, NULL);
-
-	ret = mate_gdk_spawn_command_line_on_screen (screen, cmdline, error);
-	g_free (cmdline);
-
-	return ret;
-}
 
 /* Adds a Pango markup "size" to a bytestring
  */
@@ -782,6 +763,7 @@ timeout_function(MateNetspeedApplet *applet)
 static void
 display_help (GtkWidget *dialog, const gchar *section)
 {
+	GdkScreen *screen;
 	GError *error = NULL;
 	gboolean ret;
 	char *uri;
@@ -791,8 +773,10 @@ display_help (GtkWidget *dialog, const gchar *section)
 	else
 		uri = g_strdup ("help:mate-netspeed-applet");
 
-	ret = open_uri (dialog, uri, &error);
+	screen = gtk_widget_get_screen (dialog);
+	ret = gtk_show_uri (screen, uri, gtk_get_current_event_time (), &error);
 	g_free (uri);
+
 	if (ret == FALSE) {
 		GtkWidget *error_dialog = gtk_message_dialog_new (NULL,
 								  GTK_DIALOG_MODAL,
