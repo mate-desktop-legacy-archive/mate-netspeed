@@ -787,9 +787,9 @@ display_help (GtkWidget *dialog, const gchar *section)
 	char *uri;
 
 	if (section)
-		uri = g_strdup_printf ("http://wiki.mate-desktop.org/docs:mate-netspeed#%s", section);
+		uri = g_strdup_printf ("help:mate-netspeed-applet#%s", section);
 	else
-		uri = g_strdup ("http://wiki.mate-desktop.org/docs:mate-netspeed");
+		uri = g_strdup ("help:mate-netspeed-applet");
 
 	ret = open_uri (dialog, uri, &error);
 	g_free (uri);
@@ -1172,7 +1172,7 @@ info_response_cb (GtkDialog *dialog, gint id, MateNetspeedApplet *applet)
 {
   
 	if(id == GTK_RESPONSE_HELP){
-		display_help (GTK_WIDGET (dialog), "mate_netspeed_applet-details");
+		display_help (GTK_WIDGET (dialog), "netspeed_applet-details");
 		return;
 	}
 	
