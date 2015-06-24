@@ -1420,7 +1420,6 @@ applet_button_press(GtkWidget *widget, GdkEventButton *event, MateNetspeedApplet
 			applet->connect_dialog = gtk_message_dialog_new(NULL, 
 					GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
 					GTK_MESSAGE_QUESTION, GTK_BUTTONS_YES_NO,
-					"%s",
 					question,
 					applet->devinfo.name);
 			response = gtk_dialog_run(GTK_DIALOG(applet->connect_dialog));
