@@ -1,3 +1,9 @@
+1.10.1
+
+  * Reintroduced missing help
+  * Use uppercase prefix (Mb) when showing speed in megabits
+  * Other small bugfixes
+
 1.10.0
 
   * Add GTK3 support
