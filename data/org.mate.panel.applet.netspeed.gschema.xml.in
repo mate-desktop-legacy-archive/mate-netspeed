@@ -55,5 +55,10 @@
       <summary>Down command</summary>
       <description>Command the execute to shut down the device</description>
     </key>
+    <key name="show-quality-icon" type="b">
+      <default>true</default>
+      <summary>Show signal quality icon</summary>
+      <description>If true, show signal quality icon for wireless devices.</description>
+    </key>
   </schema>
 </schemalist>
