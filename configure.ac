@@ -4,6 +4,7 @@ AC_INIT(mate-netspeed, 1.10.2, https://github.com/mate-desktop/mate-netspeed)
 AC_CONFIG_SRCDIR(src/netspeed.c)
 AM_INIT_AUTOMAKE([foreign no-dist-gzip dist-xz check-news])
 
+m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 AM_MAINTAINER_MODE
 AC_CONFIG_HEADERS(config.h)
 AC_CONFIG_MACRO_DIR([m4])
