@@ -92,6 +92,7 @@ typedef struct
 	gboolean show_sum, show_bits;
 	gboolean change_icon, auto_change_device;
 	gboolean show_icon, short_unit;
+	gboolean show_quality_icon;
 	GdkColor in_color, out_color;
 	int width;
 	
@@ -336,9 +337,26 @@ change_icons(MateNetspeedApplet *applet)
 	g_object_unref(dev);
 }
 
+/* Change visibility of signal quality icon for wireless devices
+ */
+static void
+change_quality_icon(MateNetspeedApplet *applet)
+{
+	if (applet->devinfo.type == DEV_WIRELESS &&
+		applet->devinfo.up && applet->show_quality_icon) {
+		gtk_widget_show(applet->qual_pix);
+	} else {
+		gtk_widget_hide(applet->qual_pix);
+	}
+}
+
 static void
 update_quality_icon(MateNetspeedApplet *applet)
 {
+	if (!applet->show_quality_icon) {
+		return;
+	}
+
 	unsigned int q;
 	
 	q = (applet->devinfo.qual);
@@ -618,12 +636,7 @@ update_applet(MateNetspeedApplet *applet)
 	/* If the device has changed, reintialize stuff */	
 	if (applet->device_has_changed) {
 		change_icons(applet);
-		if (applet->devinfo.type == DEV_WIRELESS &&
-			applet->devinfo.up) {
-			gtk_widget_show(applet->qual_pix);
-		} else {
-			gtk_widget_hide(applet->qual_pix);
-		}	
+		change_quality_icon(applet);
 		for (i = 0; i < OLD_VALUES; i++)
 		{
 			applet->in_old[i] = applet->devinfo.rx;
@@ -882,6 +895,7 @@ pref_response_cb (GtkDialog *dialog, gint id, gpointer data)
     g_settings_set_boolean (applet->gsettings, "show-bits", applet->show_bits);
     g_settings_set_boolean (applet->gsettings, "short-unit", applet->short_unit);
     g_settings_set_boolean (applet->gsettings, "show-icon", applet->show_icon);
+    g_settings_set_boolean (applet->gsettings, "show-quality-icon", applet->show_quality_icon);
     g_settings_set_boolean (applet->gsettings, "change-icon", applet->change_icon);
     g_settings_set_boolean (applet->gsettings, "auto-change-device", applet->auto_change_device);
     g_settings_apply (applet->gsettings);
@@ -925,6 +939,15 @@ showicon_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
 	change_icons(applet);
 }
 
+/* Called when the showqualityicon checkbutton is toggled...
+ */
+static void
+showqualityicon_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
+{
+	applet->show_quality_icon = gtk_toggle_button_get_active(togglebutton);
+	change_quality_icon(applet);
+}
+
 /* Called when the changeicon checkbutton is toggled...
  */
 static void
@@ -955,6 +978,7 @@ settings_cb(GtkAction *action, gpointer data)
 	GtkWidget *show_bits_checkbutton;
 	GtkWidget *short_unit_checkbutton;
 	GtkWidget *show_icon_checkbutton;
+	GtkWidget *show_quality_icon_checkbutton;
 	GtkWidget *change_icon_checkbutton;
 	GtkSizeGroup *category_label_size_group;
   	gchar *header_str;
@@ -1070,6 +1094,10 @@ settings_cb(GtkAction *action, gpointer data)
 	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(show_icon_checkbutton), applet->show_icon);
 	gtk_box_pack_start(GTK_BOX(controls_vbox), show_icon_checkbutton, FALSE, FALSE, 0);
 
+	show_quality_icon_checkbutton = gtk_check_button_new_with_mnemonic(_("Show signal _quality icon for wireless devices"));
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(show_quality_icon_checkbutton), applet->show_quality_icon);
+	gtk_box_pack_start(GTK_BOX(controls_vbox), show_quality_icon_checkbutton, FALSE, FALSE, 0);
+
 	g_signal_connect(G_OBJECT (applet->network_device_combo), "changed",
 			 G_CALLBACK(device_change_cb), (gpointer)applet);
 
@@ -1084,6 +1112,9 @@ settings_cb(GtkAction *action, gpointer data)
 
 	g_signal_connect(G_OBJECT (show_icon_checkbutton), "toggled",
 			 G_CALLBACK(showicon_change_cb), (gpointer)applet);
+
+	g_signal_connect(G_OBJECT (show_quality_icon_checkbutton), "toggled",
+			 G_CALLBACK(showqualityicon_change_cb), (gpointer)applet);
 
 	g_signal_connect(G_OBJECT (change_icon_checkbutton), "toggled",
 			 G_CALLBACK(changeicon_change_cb), (gpointer)applet);
@@ -1586,6 +1617,7 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 	applet->show_bits = FALSE;
 	applet->short_unit = FALSE;
 	applet->show_icon = TRUE;
+	applet->show_quality_icon = TRUE;
 	applet->change_icon = TRUE;
 	applet->auto_change_device = TRUE;
 
@@ -1614,6 +1646,7 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 	applet->show_bits = g_settings_get_boolean (applet->gsettings, "show-bits");
 	applet->short_unit = g_settings_get_boolean (applet->gsettings, "short-unit");
 	applet->show_icon = g_settings_get_boolean (applet->gsettings, "show-icon");
+	applet->show_quality_icon = g_settings_get_boolean (applet->gsettings, "show-quality-icon");
 	applet->change_icon = g_settings_get_boolean (applet->gsettings, "change-icon");
 	applet->auto_change_device = g_settings_get_boolean (applet->gsettings, "auto-change-device");
 	
