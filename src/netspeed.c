@@ -434,7 +434,11 @@ static void
 redraw_graph(MateNetspeedApplet *applet, cairo_t *cr)
 {
 	GtkWidget *da = GTK_WIDGET(applet->drawingarea);
+#if GTK_CHECK_VERSION (3, 0, 0)
+	GtkStyleContext *stylecontext = gtk_widget_get_style_context (da);
+#else
 	GtkStyle *style = gtk_widget_get_style (da);
+#endif
 	GdkWindow *real_window = gtk_widget_get_window (da);
 	GdkRectangle ra;
 	GtkStateType state;
@@ -514,7 +518,7 @@ redraw_graph(MateNetspeedApplet *applet, cairo_t *cr)
 	pango_layout_set_markup(layout, text, -1);
 	g_free (text);
 #if GTK_CHECK_VERSION (3, 0, 0)
-	gtk_paint_layout(style, cr, state, FALSE, da, "max_graph", 3, 2, layout);
+	gtk_render_layout(stylecontext, cr, 3, 2, layout);
 #else
 	gtk_paint_layout(style, real_window, state, FALSE, &ra, da, "max_graph", 3, 2, layout);
 #endif
@@ -527,7 +531,7 @@ redraw_graph(MateNetspeedApplet *applet, cairo_t *cr)
 	pango_layout_get_pixel_extents (layout, NULL, &logical_rect);
 	g_free (text);
 #if GTK_CHECK_VERSION (3, 0, 0)
-	gtk_paint_layout(style, cr, state, FALSE, da, "max_graph", 3, h - 4 - logical_rect.height, layout);
+	gtk_render_layout(stylecontext, cr, 3, h - 4 - logical_rect.height, layout);
 #else
 	gtk_paint_layout(style, real_window, state, FALSE, &ra, da, "max_graph", 3, h - 4 - logical_rect.height, layout);
 #endif
