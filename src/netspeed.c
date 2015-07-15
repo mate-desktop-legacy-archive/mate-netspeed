@@ -1325,7 +1325,7 @@ showinfo_cb(GtkAction *action, gpointer data)
 			 (gpointer)applet);
 #else
 	g_signal_connect(G_OBJECT(applet->drawingarea), "expose_event",
-			 GTK_SIGNAL_FUNC(da_expose_event),
+			 G_CALLBACK(da_expose_event),
 			 (gpointer)applet);
 #endif
 
