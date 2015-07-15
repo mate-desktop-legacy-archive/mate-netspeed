@@ -1007,27 +1007,15 @@ settings_cb(GtkAction *action, gpointer data)
 	gtk_size_group_add_widget(category_label_size_group, network_device_label);
 	gtk_box_pack_start(GTK_BOX (network_device_hbox), network_device_label, FALSE, FALSE, 0);
 	
-#if GTK_CHECK_VERSION (3, 0, 0)
 	applet->network_device_combo = gtk_combo_box_text_new();
-#else
-	applet->network_device_combo = gtk_combo_box_new_text();
-#endif
 	gtk_label_set_mnemonic_widget(GTK_LABEL(network_device_label), applet->network_device_combo);
 	gtk_box_pack_start (GTK_BOX (network_device_hbox), applet->network_device_combo, TRUE, TRUE, 0);
 
 	/* Default means device with default route set */
-#if GTK_CHECK_VERSION (3, 0, 0)
 	gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(applet->network_device_combo), _("Default"));
-#else
-	gtk_combo_box_append_text(GTK_COMBO_BOX(applet->network_device_combo), _("Default"));
-#endif
 	ptr = devices = get_available_devices();
 	for (i = 0; ptr; ptr = g_list_next(ptr)) {
-#if GTK_CHECK_VERSION (3, 0, 0)
 		gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(applet->network_device_combo), ptr->data);
-#else
-		gtk_combo_box_append_text(GTK_COMBO_BOX(applet->network_device_combo), ptr->data);
-#endif
 		if (g_str_equal(ptr->data, applet->devinfo.name)) active = (i + 1);
 		++i;
 	}
