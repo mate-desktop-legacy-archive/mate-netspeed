@@ -1682,11 +1682,7 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 	mate_panel_applet_set_flags(applet_widget, MATE_PANEL_APPLET_EXPAND_MINOR);
 	
 	applet->timeout_id = g_timeout_add(applet->refresh_time,
-#if GTK_CHECK_VERSION (3, 0, 0)
                            (GSourceFunc)timeout_function,
-#else
-                           (GtkFunction)timeout_function,
-#endif
                            (gpointer)applet);
 
 	g_signal_connect(G_OBJECT(applet_widget), "change_size",
