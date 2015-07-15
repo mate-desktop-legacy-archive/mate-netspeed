@@ -234,43 +234,6 @@ applet_change_size_or_orient(MatePanelApplet *applet_widget, int arg1, MateNetsp
 	gtk_container_add(GTK_CONTAINER(applet->applet), applet->box);
 }
 
-#if !GTK_CHECK_VERSION (3, 0, 0)
-/* Change the background of the applet according to
- * the panel background.
- */
-static void 
-change_background_cb(MatePanelApplet *applet_widget, 
-				MatePanelAppletBackgroundType type,
-				GdkColor *color, GdkPixmap *pixmap, 
-				MateNetspeedApplet *applet)
-{
-	GtkStyle *style;
-	GtkRcStyle *rc_style = gtk_rc_style_new ();
-	gtk_widget_set_style (GTK_WIDGET (applet_widget), NULL);
-	gtk_widget_modify_style (GTK_WIDGET (applet_widget), rc_style);
-	gtk_rc_style_unref (rc_style);
-
-	switch (type) {
-		case PANEL_PIXMAP_BACKGROUND:
-			style = gtk_style_copy (GTK_WIDGET (applet_widget)->style);
-			if(style->bg_pixmap[GTK_STATE_NORMAL])
-				g_object_unref (style->bg_pixmap[GTK_STATE_NORMAL]);
-			style->bg_pixmap[GTK_STATE_NORMAL] = g_object_ref (pixmap);
-			gtk_widget_set_style (GTK_WIDGET(applet_widget), style);
-			g_object_unref (style);
-			break;
-
-		case PANEL_COLOR_BACKGROUND:
-			gtk_widget_modify_bg(GTK_WIDGET(applet_widget), GTK_STATE_NORMAL, color);
-			break;
-
-		case PANEL_NO_BACKGROUND:
-			break;
-	}
-}
-#endif
-
-
 /* Change the icons according to the selected device
  */
 static void
@@ -1598,6 +1561,10 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 	GtkIconTheme *icon_theme;
 	GtkWidget *spacer, *spacer_box;
 	
+	/* Have our background automatically painted. */
+	mate_panel_applet_set_background_widget(MATE_PANEL_APPLET(applet_widget),
+		GTK_WIDGET(applet_widget));
+
 	if (strcmp (iid, "NetspeedApplet"))
 		return FALSE;
 
@@ -1745,12 +1712,6 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 	g_signal_connect(G_OBJECT(applet_widget), "change_orient",
                            G_CALLBACK(applet_change_size_or_orient),
                            (gpointer)applet);
-
-#if !GTK_CHECK_VERSION (3, 0, 0)
-	g_signal_connect(G_OBJECT(applet_widget), "change_background",
-                           G_CALLBACK(change_background_cb),
-			   (gpointer)applet);
-#endif
 
 	g_signal_connect(G_OBJECT(applet->in_label), "size_request",
                            G_CALLBACK(label_size_request_cb),
