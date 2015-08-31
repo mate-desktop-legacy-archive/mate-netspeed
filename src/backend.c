@@ -15,7 +15,7 @@
  *  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
  *
  *  Netspeed Applet was writen by Jörgen Scheibengruber <mfcn@gmx.de>
- * 
+ *
  *  Mate Netspeed Applet migrated by Stefano Karapetsas <stefano@karapetsas.com>
  */
 
@@ -65,7 +65,7 @@ is_dummy_device(const char* device)
  * portable for at least all plattforms using the gnu c lib
  * TODO: drop it, use glibtop_get_netlist directly / gchar**
  */
-GList* 
+GList*
 get_available_devices(void)
 {
 	glibtop_netlist buf;
@@ -88,33 +88,33 @@ get_default_route(void)
 {
 	FILE *fp;
 	static char device[50];
-	
+
 	fp = fopen("/proc/net/route", "r");
-	
+
 	if (fp == NULL) return NULL;
-	
+
 	while (!feof(fp)) {
-		char buffer[1024]; 
+		char buffer[1024];
 		unsigned int ip, gw, flags, ref, use, metric, mask, mtu, window, irtt;
 		int retval;
 		char *rv;
-		
+
 		rv = fgets(buffer, 1024, fp);
 		if (!rv) {
 			break;
 		}
-		
+
 		retval = sscanf(buffer, "%49s %x %x %x %u %u %u %x %u %u %u",
 				device, &ip, &gw, &flags, &ref, &use, &metric, &mask, &mtu, &window, &irtt);
-		
+
 		if (retval != 11) continue;
-			
+
 		if (gw == 0 && !is_dummy_device(device)) {
 			fclose(fp);
 			return device;
-		}			
+		}
 	}
-	fclose(fp);	
+	fclose(fp);
 	return NULL;
 }
 
@@ -196,7 +196,7 @@ get_device_info(const char *device, DevInfo *devinfo)
 {
 	glibtop_netload netload;
 	guint8 *hw;
-    
+
 	g_assert(device);
 
 	memset(devinfo, 0, sizeof *devinfo);
@@ -267,18 +267,18 @@ compare_device_info(const DevInfo *a, const DevInfo *b)
 {
 	g_assert(a && b);
 	g_assert(a->name && b->name);
-	
+
 	if (!g_str_equal(a->name, b->name)) return TRUE;
 	if (a->ip && b->ip) {
 		if (!g_str_equal(a->ip, b->ip)) return TRUE;
 	} else {
 		if (a->ip || b->ip) return TRUE;
-	}			
+	}
 	/* Ignore hwaddr, ptpip and netmask... I think this is ok */
 	if (a->up != b->up) return TRUE;
 	if (a->running != b->running) return TRUE;
 
-	return FALSE;	
+	return FALSE;
 }
 #ifdef HAVE_IW
 void
@@ -293,9 +293,9 @@ get_wireless_info (DevInfo *devinfo)
 	if (fd < 0)
 		return;
 
-	if (iw_get_basic_config (fd, devinfo->name, &info.b) < 0) 
+	if (iw_get_basic_config (fd, devinfo->name, &info.b) < 0)
 		goto out;
-	
+
 	if (info.b.has_essid) {
 		if ((!devinfo->essid) || (strcmp (devinfo->essid, info.b.essid) != 0)) {
 			devinfo->essid = g_strdup (info.b.essid);
