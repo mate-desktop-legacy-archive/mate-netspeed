@@ -22,7 +22,8 @@ org.mate.panel.applet.NetspeedAppletFactory.service: $(service_in_files)
 		-e "s|\@LOCATION\@|$(APPLET_LOCATION)|" \
 		$< > $@
 
-gsettings_SCHEMAS = org.mate.panel.applet.netspeed.gschema.xml
+netspeed_gschema_in_files = org.mate.panel.applet.netspeed.gschema.xml.in
+gsettings_SCHEMAS = $(netspeed_gschema_in_files:.xml.in=.xml)
 @INTLTOOL_XML_NOMERGE_RULE@
 @GSETTINGS_RULES@
 
@@ -30,7 +31,7 @@ EXTRA_DIST = \
 	org.mate.panel.NetspeedApplet.mate-panel-applet.in.in \
 	$(xmlui_DATA) \
 	$(service_in_files) \
-	$(gsettings_SCHEMAS).in
+	$(netspeed_gschema_in_files)
 
 CLEANFILES = \
 	$(gsettings_SCHEMAS) \

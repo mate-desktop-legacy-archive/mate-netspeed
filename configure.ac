@@ -8,7 +8,7 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 AM_MAINTAINER_MODE
 AC_CONFIG_HEADERS(config.h)
 AC_CONFIG_MACRO_DIR([m4])
-IT_PROG_INTLTOOL([0.35.0])
+IT_PROG_INTLTOOL([0.50.1])
 
 AM_PROG_LIBTOOL
 AC_PROG_CC
@@ -57,6 +57,7 @@ GLIB_GSETTINGS
 AC_OUTPUT([
 Makefile
 data/Makefile
+data/org.mate.panel.applet.netspeed.gschema.xml
 icons/Makefile
 icons/16x16/Makefile
 icons/16x16/apps/Makefile
