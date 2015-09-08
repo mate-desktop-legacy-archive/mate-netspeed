@@ -1,4 +1,4 @@
-data/org.mate.panel.applet.netspeed.gschema.xml.in
+[type: gettext/gsettings]data/org.mate.panel.applet.netspeed.gschema.xml.in
 data/org.mate.panel.NetspeedApplet.mate-panel-applet.in.in
 src/netspeed.c
 
