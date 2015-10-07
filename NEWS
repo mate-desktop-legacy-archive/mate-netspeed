@@ -1,5 +1,10 @@
 1.11.0
 
+  * Have applet background automatically painted
+  * Add silent rules
+  * Retrieve strings directly from gschema (requires intltool 0.50.1)
+  * Some cleanups
+
 1.10.2
 
   * Some help fixes
