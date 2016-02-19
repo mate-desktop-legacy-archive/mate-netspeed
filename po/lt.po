@@ -3,265 +3,369 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Audrius Meskauskas <audrius.meskauskas@meska.info>, 2015
 # Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2014
 # brennus <jonas.ska@gmail.com>, 2014
-# Moo, 2014
+# Moo, 2014-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-24 14:41+0100\n"
-"PO-Revision-Date: 2014-12-24 15:15+0000\n"
-"Last-Translator: Moo\n"
-"Language-Team: Lithuanian (http://www.transifex.com/projects/p/MATE/language/lt/)\n"
+"POT-Creation-Date: 2015-11-03 17:16+0300\n"
+"PO-Revision-Date: 2016-02-15 19:17+0000\n"
+"Last-Translator: Audrius Meskauskas <audrius.meskauskas@meska.info>\n"
+"Language-Team: Lithuanian (http://www.transifex.com/mate/MATE/language/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: lt\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:1
+msgid "Device to monitor"
+msgstr "Stebimas įrenginys"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:2
+msgid "The name of the device to monitor"
+msgstr "Stebimo įrenginio vardas"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:3
+msgid "Show sum speed"
+msgstr "Rodyti bendrą greitų"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:4
+msgid "If true, show sum of inbound/outbound speed instead of separated ones."
+msgstr "Jei taip, rodyti įvedimo ir išvedimo greičių sumą, užuot rodžius abu greičius atskirai."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:5
+msgid "Show bits"
+msgstr "Rodyti bitus"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:6
+msgid "If true, show speed in bits instead of bytes."
+msgstr "Jei taip, rodyti greitį bitais (ne baitais)."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:7
+msgid "Show icon"
+msgstr "Rodyti piktogramą"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:8
+msgid "If true, show main icon."
+msgstr "Jei tiesa, rodyti pagrindinę piktogramą."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:9
+msgid "Short unit legend"
+msgstr "Rodyti matavimo vienetus glaustai"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:10
+msgid ""
+"If true, shorten unit legend to one letter: lowercase for bits / uppercase "
+"for Bytes."
+msgstr "Jei taip, sutrumpinti matavimų vienetų užrašus iki vienos raidės:  b - bitai, B - baitai."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:11
+msgid "Change icon"
+msgstr "Pakeisti piktogramą"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:12
+msgid "If true, change the icon due to selected device."
+msgstr "Jei taip, pakeisti pasirinkto įrenginio piktogramą"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:13
+msgid "Auto change device"
+msgstr "Automatiškai keisti įrenginį."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:14
+msgid "If true, change automatically the selected device."
+msgstr "Jei taip, automatiškai keisti pasirinktą įrenginį."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:15
+msgid "In color"
+msgstr "Spalva įėjimui"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:16
+msgid "The color of the graph of the inbound traffic"
+msgstr "Grafiko spalva įeinančiam duomenų srautui."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:17
+msgid "Out color"
+msgstr "Spalva išėjimui"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:18
+msgid "The color of the graph of the outbound traffic"
+msgstr "Grafiko spalva išeinančiam duomenų srautui."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:19
+msgid "Up command"
+msgstr "Aktyvavimo komanda"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:20
+msgid "Command the execute to activate the device"
+msgstr "Komanda, vykdoma įrenginiui aktyvuoti (įjungti)."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:21
+msgid "Down command"
+msgstr "Deaktyvavimo komanda"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:22
+msgid "Command the execute to shut down the device"
+msgstr "Komanda, vykdoma įrenginiui deaktyvuoti (išjungti)."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:23
+msgid "Show signal quality icon"
+msgstr "Rodyti signalo kokybės piktogramą"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:24
+msgid "If true, show signal quality icon for wireless devices."
+msgstr "Jei taip, bevieliams įrenginiams rodyti signalo kokybės piktogramą."
+
 #. translators: bits (short)
-#: ../src/netspeed.c:431
+#: ../src/netspeed.c:395
 msgid "b"
 msgstr "b"
 
 #. translators: Bytes (short)
-#: ../src/netspeed.c:431
+#: ../src/netspeed.c:395
 msgid "B"
 msgstr "B"
 
-#: ../src/netspeed.c:433
+#: ../src/netspeed.c:397
 msgid "b/s"
 msgstr "b/s"
 
-#: ../src/netspeed.c:433
+#: ../src/netspeed.c:397
 msgid "B/s"
 msgstr "B/s"
 
-#: ../src/netspeed.c:436
+#: ../src/netspeed.c:400
 msgid "bits"
 msgstr "bitų"
 
-#: ../src/netspeed.c:436
+#: ../src/netspeed.c:400
 msgid "bytes"
 msgstr "baitų"
 
 #. translators: kilobits (short)
-#: ../src/netspeed.c:444
+#: ../src/netspeed.c:408
 msgid "k"
 msgstr "k"
 
 #. translators: Kilobytes (short)
-#: ../src/netspeed.c:444
+#: ../src/netspeed.c:408
 msgid "K"
 msgstr "K"
 
-#: ../src/netspeed.c:446
+#: ../src/netspeed.c:410
 msgid "kb/s"
 msgstr "kb/s"
 
-#: ../src/netspeed.c:446
+#: ../src/netspeed.c:410
 msgid "KiB/s"
 msgstr "KiB/s"
 
-#: ../src/netspeed.c:449
+#: ../src/netspeed.c:413
 msgid "kb"
 msgstr "kb"
 
-#: ../src/netspeed.c:449
+#: ../src/netspeed.c:413
 msgid "KiB"
 msgstr "KiB"
 
 #. translators: megabits (short)
-#: ../src/netspeed.c:459
+#: ../src/netspeed.c:423
 msgid "m"
 msgstr "m"
 
 #. translators: Megabytes (short)
-#: ../src/netspeed.c:459
+#: ../src/netspeed.c:423
 msgid "M"
 msgstr "M"
 
-#: ../src/netspeed.c:461
-msgid "mb/s"
-msgstr "mb/s"
+#: ../src/netspeed.c:425
+msgid "Mb/s"
+msgstr "Mb/s"
 
-#: ../src/netspeed.c:461
+#: ../src/netspeed.c:425
 msgid "MiB/s"
 msgstr "MiB/s"
 
-#: ../src/netspeed.c:464
-msgid "mb"
-msgstr "mb"
+#: ../src/netspeed.c:428
+msgid "Mb"
+msgstr "Mb"
 
-#: ../src/netspeed.c:464
+#: ../src/netspeed.c:428
 msgid "MiB"
 msgstr "MiB"
 
-#: ../src/netspeed.c:804
+#: ../src/netspeed.c:770
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
 "%s"
 msgstr "Klaida rodant žinyną:\n%s"
 
-#: ../src/netspeed.c:843
+#: ../src/netspeed.c:809
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
 msgstr "Paprastas įtaisas, rodantis informaciją apie nurodyto tinklo įrenginio aktyvumą"
 
-#: ../src/netspeed.c:846
+#: ../src/netspeed.c:812
 msgid "translator-credits"
 msgstr "Gintautas Miliauskas <gintas@akl.lt>"
 
-#: ../src/netspeed.c:993
+#: ../src/netspeed.c:970
 msgid "Mate Netspeed Preferences"
 msgstr "MATE tinklo greičio nuostatos"
 
-#: ../src/netspeed.c:1015
+#: ../src/netspeed.c:992
 msgid "General Settings"
 msgstr "Bendrieji nustatymai"
 
-#: ../src/netspeed.c:1036
+#: ../src/netspeed.c:1018
 msgid "Network _device:"
 msgstr "Tinklo _įrenginys:"
 
-#: ../src/netspeed.c:1052 ../src/netspeed.c:1054
+#. Default means device with default route set
+#: ../src/netspeed.c:1034
 msgid "Default"
 msgstr "Numatytasis"
 
-#: ../src/netspeed.c:1072
+#: ../src/netspeed.c:1047
 msgid "Show _sum instead of in & out"
 msgstr "Rodyti _sumą vietoje gaunamo ir siunčiamo srauto"
 
-#: ../src/netspeed.c:1076
+#: ../src/netspeed.c:1051
 msgid "Show _bits instead of bytes"
 msgstr "Rodyti _bitus vietoje baitų"
 
-#: ../src/netspeed.c:1080
+#: ../src/netspeed.c:1055
 msgid "Shorten _unit legend"
 msgstr "Sutrumpintų vienetų žymėjimai"
 
-#: ../src/netspeed.c:1084
+#: ../src/netspeed.c:1059
 msgid "Change _icon according to the selected device"
 msgstr "Keisti _piktogramą atsižvelgiant į pasirinktą įrenginį"
 
-#: ../src/netspeed.c:1088
+#: ../src/netspeed.c:1063
 msgid "Show _icon"
 msgstr "Rodyti piktogramą"
 
-#: ../src/netspeed.c:1216
+#: ../src/netspeed.c:1067
+msgid "Show signal _quality icon for wireless devices"
+msgstr "Bevieliams įrenginiams rodyti signalo _kokybės piktogramą"
+
+#: ../src/netspeed.c:1198
 #, c-format
 msgid "Device Details for %s"
 msgstr "Įrenginio %s informacija"
 
-#: ../src/netspeed.c:1241
+#: ../src/netspeed.c:1223
 msgid "_In graph color"
 msgstr "_Gaunamų duomenų grafiko spalva"
 
-#: ../src/netspeed.c:1242
+#: ../src/netspeed.c:1224
 msgid "_Out graph color"
 msgstr "_Siunčiamų duomenų grafiko spalva"
 
-#: ../src/netspeed.c:1258
+#: ../src/netspeed.c:1240
 msgid "Internet Address:"
 msgstr "Interneto adresas:"
 
-#: ../src/netspeed.c:1259
+#: ../src/netspeed.c:1241
 msgid "Netmask:"
 msgstr "Tinklo kaukė:"
 
-#: ../src/netspeed.c:1260
+#: ../src/netspeed.c:1242
 msgid "Hardware Address:"
 msgstr "Įrenginio adresas:"
 
-#: ../src/netspeed.c:1261
+#: ../src/netspeed.c:1243
 msgid "P-t-P Address:"
 msgstr "P-t-P adresas:"
 
-#: ../src/netspeed.c:1262
+#: ../src/netspeed.c:1244
 msgid "Bytes in:"
 msgstr "Baitų gauta:"
 
-#: ../src/netspeed.c:1263
+#: ../src/netspeed.c:1245
 msgid "Bytes out:"
 msgstr "Baitų išsiųsta:"
 
-#: ../src/netspeed.c:1265 ../src/netspeed.c:1266 ../src/netspeed.c:1267
-#: ../src/netspeed.c:1268
+#: ../src/netspeed.c:1247 ../src/netspeed.c:1248 ../src/netspeed.c:1249
+#: ../src/netspeed.c:1250
 msgid "none"
 msgstr "jokio"
 
-#: ../src/netspeed.c:1307
+#: ../src/netspeed.c:1318
 msgid "IPV6 Address:"
 msgstr "IPV6 adresas:"
 
-#: ../src/netspeed.c:1339
+#: ../src/netspeed.c:1357
 msgid "Signal Strength:"
 msgstr "Signalo stiprumas:"
 
-#: ../src/netspeed.c:1340
+#: ../src/netspeed.c:1358
 msgid "ESSID:"
 msgstr "ESSID:"
 
-#: ../src/netspeed.c:1385
+#: ../src/netspeed.c:1412
 msgid "Device _Details"
 msgstr "Įrenginio _informacija"
 
-#: ../src/netspeed.c:1387
+#: ../src/netspeed.c:1414
 msgid "Preferences..."
-msgstr "Nustatymai..."
+msgstr "Nuostatos..."
 
-#: ../src/netspeed.c:1389
+#: ../src/netspeed.c:1416
 msgid "Help"
 msgstr "Žinynas"
 
-#: ../src/netspeed.c:1391
+#: ../src/netspeed.c:1418
 msgid "About..."
 msgstr "Apie..."
 
-#: ../src/netspeed.c:1432
+#: ../src/netspeed.c:1459
 #, c-format
 msgid "Do you want to disconnect %s now?"
 msgstr "Ar norite dabar atjungti %s?"
 
-#: ../src/netspeed.c:1436
+#: ../src/netspeed.c:1463
 #, c-format
 msgid "Do you want to connect %s now?"
 msgstr "Ar norite dabar prijungti %s?"
 
-#: ../src/netspeed.c:1464
+#: ../src/netspeed.c:1490
 #, c-format
 msgid ""
 "<b>Running command %s failed</b>\n"
 "%s"
 msgstr "<b>Komandos %s vykdymas nepavyko</b>\n%s"
 
-#: ../src/netspeed.c:1523
+#: ../src/netspeed.c:1549
 #, c-format
 msgid "%s is down"
 msgstr "%s atjungtas"
 
-#: ../src/netspeed.c:1528
+#: ../src/netspeed.c:1554
 #, c-format
 msgid ""
 "%s: %s\n"
 "in: %s out: %s"
 msgstr "%s: %s\ngaunama: %s siunčiama: %s"
 
-#: ../src/netspeed.c:1530 ../src/netspeed.c:1539
+#: ../src/netspeed.c:1556 ../src/netspeed.c:1565
 msgid "has no ip"
 msgstr "neturi ip"
 
-#: ../src/netspeed.c:1537
+#: ../src/netspeed.c:1563
 #, c-format
 msgid ""
 "%s: %s\n"
 "sum: %s"
 msgstr "%s: %s\nsuma: %s"
 
-#: ../src/netspeed.c:1546
+#: ../src/netspeed.c:1572
 #, c-format
 msgid ""
 "\n"
@@ -269,10 +373,10 @@ msgid ""
 "Strength: %d %%"
 msgstr "\nESSID: %s\nStiprumas: %d %%"
 
-#: ../src/netspeed.c:1547
+#: ../src/netspeed.c:1573
 msgid "unknown"
 msgstr "nežinoma"
 
-#: ../src/netspeed.c:1594
+#: ../src/netspeed.c:1624
 msgid "Mate Netspeed"
 msgstr "MATE tinklo greitis"

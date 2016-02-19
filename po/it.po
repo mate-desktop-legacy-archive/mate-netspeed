@@ -3,264 +3,370 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# dardin88 <linkin88mail@gmail.com>, 2014
+# Giuseppe Pignataro <rogepix@gmail.com>, 2015-2016
+# dardin88 <linkin88mail@gmail.com>, 2014-2015
+# Marco Bartolucci <nap.84@live.it>, 2016
+# Riccardo Di Maio <riccardodimaio11@gmail.com>, 2015
 # Stefano Karapetsas <stefano@karapetsas.com>, 2012-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-24 14:41+0100\n"
-"PO-Revision-Date: 2014-12-27 08:57+0000\n"
-"Last-Translator: dardin88 <linkin88mail@gmail.com>\n"
-"Language-Team: Italian (http://www.transifex.com/projects/p/MATE/language/it/)\n"
+"POT-Creation-Date: 2015-11-03 17:16+0300\n"
+"PO-Revision-Date: 2016-01-24 20:50+0000\n"
+"Last-Translator: Marco Bartolucci <nap.84@live.it>\n"
+"Language-Team: Italian (http://www.transifex.com/mate/MATE/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:1
+msgid "Device to monitor"
+msgstr "Dispositivo da monitorare"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:2
+msgid "The name of the device to monitor"
+msgstr "Il nome del dispositivo da monitorare"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:3
+msgid "Show sum speed"
+msgstr "Mostra la velocità di somma"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:4
+msgid "If true, show sum of inbound/outbound speed instead of separated ones."
+msgstr "Se impostato a vero, mostra la somma della velocità in entrata/uscita inveche che valori separati."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:5
+msgid "Show bits"
+msgstr "Mostra bit"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:6
+msgid "If true, show speed in bits instead of bytes."
+msgstr "Se impostato a vero, mostra la velocità in bit invece che in bytes."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:7
+msgid "Show icon"
+msgstr "Mostra icona"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:8
+msgid "If true, show main icon."
+msgstr "Se impostato a vero, mostra l'icona principale."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:9
+msgid "Short unit legend"
+msgstr "Abbrevia la legenda delle unità"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:10
+msgid ""
+"If true, shorten unit legend to one letter: lowercase for bits / uppercase "
+"for Bytes."
+msgstr "Se impostato a vero, abbrevia la legenda delle unità ad una lettera: minuscola per i bits / maiuscola per i Bytes."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:11
+msgid "Change icon"
+msgstr "Cambia icona"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:12
+msgid "If true, change the icon due to selected device."
+msgstr "Se impostato a vero, cambia l'icona secondo il dispositivo selezionato."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:13
+msgid "Auto change device"
+msgstr "Cambia dispositivo automaticamente"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:14
+msgid "If true, change automatically the selected device."
+msgstr "Se impostato a vero, cambia automaticamente il dispositivo selezionato."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:15
+msgid "In color"
+msgstr "Colore in entrata"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:16
+msgid "The color of the graph of the inbound traffic"
+msgstr "Colore del grafico per il traffico in entrata"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:17
+msgid "Out color"
+msgstr "Colore in uscita"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:18
+msgid "The color of the graph of the outbound traffic"
+msgstr "Colore del grafico per il traffico in uscita"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:19
+msgid "Up command"
+msgstr "Comando su"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:20
+msgid "Command the execute to activate the device"
+msgstr "Comando da eseguire per attivare il dispositivo"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:21
+msgid "Down command"
+msgstr "Comando giù"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:22
+msgid "Command the execute to shut down the device"
+msgstr "Comando da eseguire per spegnere il dispositivo"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:23
+msgid "Show signal quality icon"
+msgstr "Mostra l'icona di qualità del segnale"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:24
+msgid "If true, show signal quality icon for wireless devices."
+msgstr "Se impostato a vero, mostra l'icona di qualità del segnale per i dipositivi wireless"
+
 #. translators: bits (short)
-#: ../src/netspeed.c:431
+#: ../src/netspeed.c:395
 msgid "b"
 msgstr "b"
 
 #. translators: Bytes (short)
-#: ../src/netspeed.c:431
+#: ../src/netspeed.c:395
 msgid "B"
 msgstr "B"
 
-#: ../src/netspeed.c:433
+#: ../src/netspeed.c:397
 msgid "b/s"
 msgstr "b/s"
 
-#: ../src/netspeed.c:433
+#: ../src/netspeed.c:397
 msgid "B/s"
 msgstr "B/s"
 
-#: ../src/netspeed.c:436
+#: ../src/netspeed.c:400
 msgid "bits"
 msgstr "bit"
 
-#: ../src/netspeed.c:436
+#: ../src/netspeed.c:400
 msgid "bytes"
 msgstr "byte"
 
 #. translators: kilobits (short)
-#: ../src/netspeed.c:444
+#: ../src/netspeed.c:408
 msgid "k"
 msgstr "k"
 
 #. translators: Kilobytes (short)
-#: ../src/netspeed.c:444
+#: ../src/netspeed.c:408
 msgid "K"
 msgstr "K"
 
-#: ../src/netspeed.c:446
+#: ../src/netspeed.c:410
 msgid "kb/s"
 msgstr "kb/s"
 
-#: ../src/netspeed.c:446
+#: ../src/netspeed.c:410
 msgid "KiB/s"
 msgstr "KiB/s"
 
-#: ../src/netspeed.c:449
+#: ../src/netspeed.c:413
 msgid "kb"
 msgstr "kb"
 
-#: ../src/netspeed.c:449
+#: ../src/netspeed.c:413
 msgid "KiB"
 msgstr "KiB"
 
 #. translators: megabits (short)
-#: ../src/netspeed.c:459
+#: ../src/netspeed.c:423
 msgid "m"
 msgstr "m"
 
 #. translators: Megabytes (short)
-#: ../src/netspeed.c:459
+#: ../src/netspeed.c:423
 msgid "M"
 msgstr "M"
 
-#: ../src/netspeed.c:461
-msgid "mb/s"
-msgstr "mb/s"
+#: ../src/netspeed.c:425
+msgid "Mb/s"
+msgstr "Mb/s"
 
-#: ../src/netspeed.c:461
+#: ../src/netspeed.c:425
 msgid "MiB/s"
 msgstr "MiB/s"
 
-#: ../src/netspeed.c:464
-msgid "mb"
-msgstr "mb"
+#: ../src/netspeed.c:428
+msgid "Mb"
+msgstr "Mb"
 
-#: ../src/netspeed.c:464
+#: ../src/netspeed.c:428
 msgid "MiB"
 msgstr "MiB"
 
-#: ../src/netspeed.c:804
+#: ../src/netspeed.c:770
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
 "%s"
 msgstr "Si è verificato un errore visualizzando la guida:\n%s"
 
-#: ../src/netspeed.c:843
+#: ../src/netspeed.c:809
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
 msgstr "Una piccola applet per il pannello che mostra informazioni relative al traffico di rete per l'interfaccia selezionata."
 
-#: ../src/netspeed.c:846
+#: ../src/netspeed.c:812
 msgid "translator-credits"
 msgstr "Stefano Karapetsas <stefano@karapetsas.com>"
 
-#: ../src/netspeed.c:993
+#: ../src/netspeed.c:970
 msgid "Mate Netspeed Preferences"
 msgstr "Preferenze di Mate Netspeed"
 
-#: ../src/netspeed.c:1015
+#: ../src/netspeed.c:992
 msgid "General Settings"
 msgstr "Impostazioni generali"
 
-#: ../src/netspeed.c:1036
+#: ../src/netspeed.c:1018
 msgid "Network _device:"
 msgstr "Interfaccia _di rete:"
 
-#: ../src/netspeed.c:1052 ../src/netspeed.c:1054
+#. Default means device with default route set
+#: ../src/netspeed.c:1034
 msgid "Default"
 msgstr "Predefinita"
 
-#: ../src/netspeed.c:1072
+#: ../src/netspeed.c:1047
 msgid "Show _sum instead of in & out"
 msgstr "Visualizzare _solo la velocità totale"
 
-#: ../src/netspeed.c:1076
+#: ../src/netspeed.c:1051
 msgid "Show _bits instead of bytes"
 msgstr "Mostra _bit invece di byte"
 
-#: ../src/netspeed.c:1080
+#: ../src/netspeed.c:1055
 msgid "Shorten _unit legend"
 msgstr "Abbrevia _unità"
 
-#: ../src/netspeed.c:1084
+#: ../src/netspeed.c:1059
 msgid "Change _icon according to the selected device"
 msgstr "Cambiare l'ico_na secondo il tipo di interfaccia"
 
-#: ../src/netspeed.c:1088
+#: ../src/netspeed.c:1063
 msgid "Show _icon"
 msgstr "Mostra _icona"
 
-#: ../src/netspeed.c:1216
+#: ../src/netspeed.c:1067
+msgid "Show signal _quality icon for wireless devices"
+msgstr "Mostra l'icona di _qualità del segnale per i dispositivi wireless"
+
+#: ../src/netspeed.c:1198
 #, c-format
 msgid "Device Details for %s"
 msgstr "Dettagli dell'interfaccia %s"
 
-#: ../src/netspeed.c:1241
+#: ../src/netspeed.c:1223
 msgid "_In graph color"
 msgstr "Colore grafico _ricezione"
 
-#: ../src/netspeed.c:1242
+#: ../src/netspeed.c:1224
 msgid "_Out graph color"
 msgstr "Colore grafico _trasmissione"
 
-#: ../src/netspeed.c:1258
+#: ../src/netspeed.c:1240
 msgid "Internet Address:"
 msgstr "Indirizzo internet:"
 
-#: ../src/netspeed.c:1259
+#: ../src/netspeed.c:1241
 msgid "Netmask:"
 msgstr "Netmask:"
 
-#: ../src/netspeed.c:1260
+#: ../src/netspeed.c:1242
 msgid "Hardware Address:"
 msgstr "Indirizzo hardware:"
 
-#: ../src/netspeed.c:1261
+#: ../src/netspeed.c:1243
 msgid "P-t-P Address:"
 msgstr "Indirizzo P-t-P"
 
-#: ../src/netspeed.c:1262
+#: ../src/netspeed.c:1244
 msgid "Bytes in:"
 msgstr "Byte ricevuti:"
 
-#: ../src/netspeed.c:1263
+#: ../src/netspeed.c:1245
 msgid "Bytes out:"
 msgstr "Byte trasmessi:"
 
-#: ../src/netspeed.c:1265 ../src/netspeed.c:1266 ../src/netspeed.c:1267
-#: ../src/netspeed.c:1268
+#: ../src/netspeed.c:1247 ../src/netspeed.c:1248 ../src/netspeed.c:1249
+#: ../src/netspeed.c:1250
 msgid "none"
 msgstr "nessuno"
 
-#: ../src/netspeed.c:1307
+#: ../src/netspeed.c:1318
 msgid "IPV6 Address:"
 msgstr "Indirizzo IPV6:"
 
-#: ../src/netspeed.c:1339
+#: ../src/netspeed.c:1357
 msgid "Signal Strength:"
 msgstr "Potenza segnale:"
 
-#: ../src/netspeed.c:1340
+#: ../src/netspeed.c:1358
 msgid "ESSID:"
 msgstr "ESSID:"
 
-#: ../src/netspeed.c:1385
+#: ../src/netspeed.c:1412
 msgid "Device _Details"
 msgstr "_Dettagli dell'interfaccia"
 
-#: ../src/netspeed.c:1387
+#: ../src/netspeed.c:1414
 msgid "Preferences..."
 msgstr "Preferenze..."
 
-#: ../src/netspeed.c:1389
+#: ../src/netspeed.c:1416
 msgid "Help"
 msgstr "Aiuto"
 
-#: ../src/netspeed.c:1391
+#: ../src/netspeed.c:1418
 msgid "About..."
 msgstr "Informazioni su..."
 
-#: ../src/netspeed.c:1432
+#: ../src/netspeed.c:1459
 #, c-format
 msgid "Do you want to disconnect %s now?"
 msgstr "Vuoi disabilitare %s adesso?"
 
-#: ../src/netspeed.c:1436
+#: ../src/netspeed.c:1463
 #, c-format
 msgid "Do you want to connect %s now?"
 msgstr "Vuoi abilitare %s adesso?"
 
-#: ../src/netspeed.c:1464
+#: ../src/netspeed.c:1490
 #, c-format
 msgid ""
 "<b>Running command %s failed</b>\n"
 "%s"
 msgstr "<b>Esecuzione comando %s fallita</b>\n%s"
 
-#: ../src/netspeed.c:1523
+#: ../src/netspeed.c:1549
 #, c-format
 msgid "%s is down"
 msgstr "%s non è attiva"
 
-#: ../src/netspeed.c:1528
+#: ../src/netspeed.c:1554
 #, c-format
 msgid ""
 "%s: %s\n"
 "in: %s out: %s"
 msgstr "%s: %s\ningresso: %s uscita: %s"
 
-#: ../src/netspeed.c:1530 ../src/netspeed.c:1539
+#: ../src/netspeed.c:1556 ../src/netspeed.c:1565
 msgid "has no ip"
 msgstr "senza ip"
 
-#: ../src/netspeed.c:1537
+#: ../src/netspeed.c:1563
 #, c-format
 msgid ""
 "%s: %s\n"
 "sum: %s"
 msgstr "%s: %s\nTotale: %s"
 
-#: ../src/netspeed.c:1546
+#: ../src/netspeed.c:1572
 #, c-format
 msgid ""
 "\n"
@@ -268,10 +374,10 @@ msgid ""
 "Strength: %d %%"
 msgstr "\nESSID: %s\nPotenza: %d %%"
 
-#: ../src/netspeed.c:1547
+#: ../src/netspeed.c:1573
 msgid "unknown"
 msgstr "sconosciuto"
 
-#: ../src/netspeed.c:1594
+#: ../src/netspeed.c:1624
 msgid "Mate Netspeed"
 msgstr "Mate Netspeed"

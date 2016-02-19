@@ -5,265 +5,371 @@
 # Translators:
 # huskyviking <husky.viking@seznam.cz>, 2014
 # Lukáš Kvídera <lukas.kvidera@seznam.cz>, 2013
+# Martin Kříž <liberte.czech@gmail.com>, 2016
+# Martin Kříž <liberte.czech@gmail.com>, 2015
 # Michal Procházka <mich.procha@seznam.cz>, 2012
 # Michal <sinope@seznam.cz>, 2014
 # Ondřej Kolín <ondrej.kolin@gmail.com>, 2012
+# Radek kohout <radekpv@seznam.cz>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-24 14:41+0100\n"
-"PO-Revision-Date: 2014-12-29 20:42+0000\n"
-"Last-Translator: huskyviking <husky.viking@seznam.cz>\n"
-"Language-Team: Czech (http://www.transifex.com/projects/p/MATE/language/cs/)\n"
+"POT-Creation-Date: 2015-11-03 17:16+0300\n"
+"PO-Revision-Date: 2016-01-06 21:01+0000\n"
+"Last-Translator: Martin Kříž <liberte.czech@gmail.com>\n"
+"Language-Team: Czech (http://www.transifex.com/mate/MATE/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:1
+msgid "Device to monitor"
+msgstr "Zařízení ke sledování"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:2
+msgid "The name of the device to monitor"
+msgstr "Název zařízení určeného ke sledování"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:3
+msgid "Show sum speed"
+msgstr "Zobrazit součet rychlosti"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:4
+msgid "If true, show sum of inbound/outbound speed instead of separated ones."
+msgstr "Pokud je to pravda, zobrazit součet rychlostí příchozí/odchozí místo každého zvlášť."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:5
+msgid "Show bits"
+msgstr "Zobrazit bity"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:6
+msgid "If true, show speed in bits instead of bytes."
+msgstr "Pokud je to pravda, zobrazí rychlost v bitech namísto v bajtech."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:7
+msgid "Show icon"
+msgstr "Zobrazit ikonu"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:8
+msgid "If true, show main icon."
+msgstr "Pokud je to správně, zobraz hlavní ikonu."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:9
+msgid "Short unit legend"
+msgstr "Krátká legenda pro jednotku"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:10
+msgid ""
+"If true, shorten unit legend to one letter: lowercase for bits / uppercase "
+"for Bytes."
+msgstr "Pokud je to pravda, zkraťte legendu jednotky na jedno písmeno: malá písmena pro bity / velká písmena pro bajty."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:11
+msgid "Change icon"
+msgstr "Změnit ikonu"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:12
+msgid "If true, change the icon due to selected device."
+msgstr "Pokud je to pravda, změňte ikonu podle vybraného zařízení."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:13
+msgid "Auto change device"
+msgstr "Automatická změna zařízení"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:14
+msgid "If true, change automatically the selected device."
+msgstr "Pokud je to pravda, změňte automaticky vybrané zařízení."
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:15
+msgid "In color"
+msgstr "V barvě"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:16
+msgid "The color of the graph of the inbound traffic"
+msgstr "Barva grafu příchozího datového toku"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:17
+msgid "Out color"
+msgstr "Mimo barvu"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:18
+msgid "The color of the graph of the outbound traffic"
+msgstr "Barva grafu odchozího datového toku"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:19
+msgid "Up command"
+msgstr "Příkaz nahoru"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:20
+msgid "Command the execute to activate the device"
+msgstr "Příkaz k provedení spuštění zařízení"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:21
+msgid "Down command"
+msgstr "Příkaz dolu"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:22
+msgid "Command the execute to shut down the device"
+msgstr "Příkaz k provedení vypnutí zařízení"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:23
+msgid "Show signal quality icon"
+msgstr "Zobrazit ikonu kvality signálu"
+
+#: ../data/org.mate.panel.applet.netspeed.gschema.xml.in.h:24
+msgid "If true, show signal quality icon for wireless devices."
+msgstr "Pokud je to pravda, ukáže ikonu kvality signálu pro bezdrátová zařízení."
+
 #. translators: bits (short)
-#: ../src/netspeed.c:431
+#: ../src/netspeed.c:395
 msgid "b"
 msgstr "b"
 
 #. translators: Bytes (short)
-#: ../src/netspeed.c:431
+#: ../src/netspeed.c:395
 msgid "B"
 msgstr "B"
 
-#: ../src/netspeed.c:433
+#: ../src/netspeed.c:397
 msgid "b/s"
 msgstr "b/s"
 
-#: ../src/netspeed.c:433
+#: ../src/netspeed.c:397
 msgid "B/s"
 msgstr "B/s"
 
-#: ../src/netspeed.c:436
+#: ../src/netspeed.c:400
 msgid "bits"
 msgstr "bitů"
 
-#: ../src/netspeed.c:436
+#: ../src/netspeed.c:400
 msgid "bytes"
 msgstr "bytů"
 
 #. translators: kilobits (short)
-#: ../src/netspeed.c:444
+#: ../src/netspeed.c:408
 msgid "k"
 msgstr "k"
 
 #. translators: Kilobytes (short)
-#: ../src/netspeed.c:444
+#: ../src/netspeed.c:408
 msgid "K"
 msgstr "K"
 
-#: ../src/netspeed.c:446
+#: ../src/netspeed.c:410
 msgid "kb/s"
 msgstr "kb/s"
 
-#: ../src/netspeed.c:446
+#: ../src/netspeed.c:410
 msgid "KiB/s"
 msgstr "KiB/s"
 
-#: ../src/netspeed.c:449
+#: ../src/netspeed.c:413
 msgid "kb"
 msgstr "kb"
 
-#: ../src/netspeed.c:449
+#: ../src/netspeed.c:413
 msgid "KiB"
 msgstr "KiB"
 
 #. translators: megabits (short)
-#: ../src/netspeed.c:459
+#: ../src/netspeed.c:423
 msgid "m"
 msgstr "m"
 
 #. translators: Megabytes (short)
-#: ../src/netspeed.c:459
+#: ../src/netspeed.c:423
 msgid "M"
 msgstr "M"
 
-#: ../src/netspeed.c:461
-msgid "mb/s"
-msgstr "mb/s"
+#: ../src/netspeed.c:425
+msgid "Mb/s"
+msgstr "Mb/s"
 
-#: ../src/netspeed.c:461
+#: ../src/netspeed.c:425
 msgid "MiB/s"
 msgstr "MiB/s"
 
-#: ../src/netspeed.c:464
-msgid "mb"
-msgstr "mb"
+#: ../src/netspeed.c:428
+msgid "Mb"
+msgstr "Mb"
 
-#: ../src/netspeed.c:464
+#: ../src/netspeed.c:428
 msgid "MiB"
 msgstr "MiB"
 
-#: ../src/netspeed.c:804
+#: ../src/netspeed.c:770
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
 "%s"
 msgstr "Stala se chyba při zobrazování nápovědy:\n%s"
 
-#: ../src/netspeed.c:843
+#: ../src/netspeed.c:809
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
 msgstr "Malý aplet zobrazující vybrané informace o provozu na vybraném síťovém zařízení"
 
-#: ../src/netspeed.c:846
+#: ../src/netspeed.c:812
 msgid "translator-credits"
 msgstr "Michal Bukovjan <bukm@centrum.cz>\nMiloslav Trmač <mitr@volny.cz>\nKamil Páral <ripper42@gmail.com>\nMartin Picek <picek.martin@mate-cesko.cz>\nLukáš Kvídera <segfault@linux-mint-czech.cz>"
 
-#: ../src/netspeed.c:993
+#: ../src/netspeed.c:970
 msgid "Mate Netspeed Preferences"
 msgstr "Mate Netspeed nastavení"
 
-#: ../src/netspeed.c:1015
+#: ../src/netspeed.c:992
 msgid "General Settings"
 msgstr "Hlavní nastavení"
 
-#: ../src/netspeed.c:1036
+#: ../src/netspeed.c:1018
 msgid "Network _device:"
 msgstr "Síťové _zařízení:"
 
-#: ../src/netspeed.c:1052 ../src/netspeed.c:1054
+#. Default means device with default route set
+#: ../src/netspeed.c:1034
 msgid "Default"
 msgstr "Výchozí"
 
-#: ../src/netspeed.c:1072
+#: ../src/netspeed.c:1047
 msgid "Show _sum instead of in & out"
 msgstr "Ukazovat celkový _souhrn místo údajů \"Dovnitř a ven\""
 
-#: ../src/netspeed.c:1076
+#: ../src/netspeed.c:1051
 msgid "Show _bits instead of bytes"
 msgstr "Zobraz _bity místo bajtů"
 
-#: ../src/netspeed.c:1080
+#: ../src/netspeed.c:1055
 msgid "Shorten _unit legend"
 msgstr "Zkrácená legenda pro jednotk_u"
 
-#: ../src/netspeed.c:1084
+#: ../src/netspeed.c:1059
 msgid "Change _icon according to the selected device"
 msgstr "Změnit _ikonu podle vybraného zařízení"
 
-#: ../src/netspeed.c:1088
+#: ../src/netspeed.c:1063
 msgid "Show _icon"
 msgstr "Zobrazit _ikonu"
 
-#: ../src/netspeed.c:1216
+#: ../src/netspeed.c:1067
+msgid "Show signal _quality icon for wireless devices"
+msgstr "Zobrazit ikonu signal _quality pro bezdrátová zařízení"
+
+#: ../src/netspeed.c:1198
 #, c-format
 msgid "Device Details for %s"
 msgstr "Podrobnosti o zařízení %s"
 
-#: ../src/netspeed.c:1241
+#: ../src/netspeed.c:1223
 msgid "_In graph color"
 msgstr "Barva grafu stahování"
 
-#: ../src/netspeed.c:1242
+#: ../src/netspeed.c:1224
 msgid "_Out graph color"
 msgstr "Barva grafu odesílání"
 
-#: ../src/netspeed.c:1258
+#: ../src/netspeed.c:1240
 msgid "Internet Address:"
 msgstr "Internetová adresa:"
 
-#: ../src/netspeed.c:1259
+#: ../src/netspeed.c:1241
 msgid "Netmask:"
 msgstr "Síťová maska:"
 
-#: ../src/netspeed.c:1260
+#: ../src/netspeed.c:1242
 msgid "Hardware Address:"
 msgstr "Adresa hardware:"
 
-#: ../src/netspeed.c:1261
+#: ../src/netspeed.c:1243
 msgid "P-t-P Address:"
 msgstr "Adresa P-t-P:"
 
-#: ../src/netspeed.c:1262
+#: ../src/netspeed.c:1244
 msgid "Bytes in:"
 msgstr "Bajtů dovnitř:"
 
-#: ../src/netspeed.c:1263
+#: ../src/netspeed.c:1245
 msgid "Bytes out:"
 msgstr "Bajtů ven:"
 
-#: ../src/netspeed.c:1265 ../src/netspeed.c:1266 ../src/netspeed.c:1267
-#: ../src/netspeed.c:1268
+#: ../src/netspeed.c:1247 ../src/netspeed.c:1248 ../src/netspeed.c:1249
+#: ../src/netspeed.c:1250
 msgid "none"
 msgstr "žádné"
 
-#: ../src/netspeed.c:1307
+#: ../src/netspeed.c:1318
 msgid "IPV6 Address:"
 msgstr "IPV6 Adresa:"
 
-#: ../src/netspeed.c:1339
+#: ../src/netspeed.c:1357
 msgid "Signal Strength:"
 msgstr "Síla signálu"
 
-#: ../src/netspeed.c:1340
+#: ../src/netspeed.c:1358
 msgid "ESSID:"
 msgstr "ESSID:"
 
-#: ../src/netspeed.c:1385
+#: ../src/netspeed.c:1412
 msgid "Device _Details"
 msgstr "_Detaily zařízení"
 
-#: ../src/netspeed.c:1387
+#: ../src/netspeed.c:1414
 msgid "Preferences..."
 msgstr "Předvolby..."
 
-#: ../src/netspeed.c:1389
+#: ../src/netspeed.c:1416
 msgid "Help"
 msgstr "Nápověda"
 
-#: ../src/netspeed.c:1391
+#: ../src/netspeed.c:1418
 msgid "About..."
 msgstr "O aplikaci..."
 
-#: ../src/netspeed.c:1432
+#: ../src/netspeed.c:1459
 #, c-format
 msgid "Do you want to disconnect %s now?"
 msgstr "Chcete odpojit %s?"
 
-#: ../src/netspeed.c:1436
+#: ../src/netspeed.c:1463
 #, c-format
 msgid "Do you want to connect %s now?"
 msgstr "Chcete připojit %s?"
 
-#: ../src/netspeed.c:1464
+#: ../src/netspeed.c:1490
 #, c-format
 msgid ""
 "<b>Running command %s failed</b>\n"
 "%s"
 msgstr "<b>Spuštěný příkaz %s selhal</b>\n%s"
 
-#: ../src/netspeed.c:1523
+#: ../src/netspeed.c:1549
 #, c-format
 msgid "%s is down"
 msgstr "%s je dole"
 
-#: ../src/netspeed.c:1528
+#: ../src/netspeed.c:1554
 #, c-format
 msgid ""
 "%s: %s\n"
 "in: %s out: %s"
 msgstr "%s: %s\npřijímání: %s odesílání: %s"
 
-#: ../src/netspeed.c:1530 ../src/netspeed.c:1539
+#: ../src/netspeed.c:1556 ../src/netspeed.c:1565
 msgid "has no ip"
 msgstr "nemá IP adresu"
 
-#: ../src/netspeed.c:1537
+#: ../src/netspeed.c:1563
 #, c-format
 msgid ""
 "%s: %s\n"
 "sum: %s"
 msgstr "%s: %s\ncelkem: %s"
 
-#: ../src/netspeed.c:1546
+#: ../src/netspeed.c:1572
 #, c-format
 msgid ""
 "\n"
@@ -271,10 +377,10 @@ msgid ""
 "Strength: %d %%"
 msgstr "\nESSID: %s\nSíla: %d %%"
 
-#: ../src/netspeed.c:1547
+#: ../src/netspeed.c:1573
 msgid "unknown"
 msgstr "neznámý"
 
-#: ../src/netspeed.c:1594
+#: ../src/netspeed.c:1624
 msgid "Mate Netspeed"
 msgstr "Mate Netspeed"
